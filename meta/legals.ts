@@ -6,6 +6,7 @@ import { Filter } from '../interfaces'
  * The main goal of this file is to update quickly the current list of authorized/banned cards in the standard and expanded formats
  *
  * For included cards/set/etc we are currently using the April post of each years (note: posts seems to be coming each April)
+ * - 2025: https://www.pokemon.com/us/pokemon-news/2025-pokemon-tcg-standard-format-rotation-announcement
  * - 2024: https://www.pokemon.com/us/pokemon-news/2024-pokemon-tcg-standard-format-rotation-announcement
  * - 2023: https://www.pokemon.com/us/pokemon-news/2023-pokemon-tcg-standard-format-rotation-and-pokemon-tool-errata
  * - 2022: https://www.pokemon.com/us/pokemon-news/2022-pokemon-tcg-championship-series-season-format-rotation/

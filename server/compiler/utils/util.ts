@@ -25,13 +25,23 @@ export async function fetchRemoteFile<T = any>(url: string): Promise<T> {
 
 		const finished = setTimeout(() => {
 			signal.abort()
-		}, 60 * 1000);
+		}, 60 * 1000)
 
-		const resp = await fetch(url, {
-			signal: signal.signal
-		})
-		clearTimeout(finished)
-		fileCache[url] = resp.json()
+		try {
+			const resp = await fetch(url, {
+				signal: signal.signal
+			})
+			clearTimeout(finished)
+			fileCache[url] = resp.json()
+		} catch (error: any) {
+			clearTimeout(finished)
+			if (error.name === 'AbortError') {
+				console.warn(`Fetch aborted for URL: ${url}`)
+			} else {
+				console.error(`Error fetching URL: ${url}`, error)
+			}
+			throw error
+		}
 	}
 	return fileCache[url]
 }

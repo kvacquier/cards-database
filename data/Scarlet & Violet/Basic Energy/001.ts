@@ -17,15 +17,6 @@ const card: Card = {
 	set: Set,
 	stage: "Basic",
 	energyType: "Normal",
-
-	effect: {
-		en: "",
-		fr: "",
-		es: "",
-		it: "",
-		pt: "",
-		de: ""
-	}
 }
 
 export default card

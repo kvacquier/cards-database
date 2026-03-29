@@ -27,11 +27,15 @@ import { Filter } from '../interfaces'
  * - if the card is in the `cards` list
  */
 
+/** From 2026-04-03 (rotation): G leaves Standard; before that, G is still legal. */
+const standardRegulationMarks =
+	Date.now() >= Date.UTC(2026, 3, 3) ? ['H', 'I', 'J'] : ['G', 'H', 'I', 'J']
+
 export const standard: Filter = {
 	includes: {
 		series: [],
 		sets: [],
-		regulationMark: ['G', 'H', 'I']
+		regulationMark: standardRegulationMarks
 	},
 	excludes: {
 		sets: [],

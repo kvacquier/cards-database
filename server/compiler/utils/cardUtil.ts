@@ -9,10 +9,11 @@ import { objectMap, objectPick } from '@dzeio/object-util'
 import { variant_detailed } from "../../public/v2/api";
 
 /**
- * Post-processes compiled cards to enhance Trainer legality based on reprints.
- * If any reprint of a Trainer card is legal, all cards with the same English name are marked as legal.
+ * Post-processes compiled cards to enhance legality based on reprints.
+ * If any reprint of a Trainer or Special Energy card is legal,
+ * all cards with the same English name are marked as legal.
  */
-export function enhanceTrainerLegality(
+export function enhanceReprintLegality(
 	compiledCards: Array<CardSingle>,
 	originalCards: Array<[string, Card]>
 ): Array<CardSingle> {
@@ -21,35 +22,41 @@ export function enhanceTrainerLegality(
 		const cardId = `${card.set.id}-${localId}`
 		originalCardMap.set(cardId, card)
 	}
-	
-	const trainerCardsByName = new Map<string, Array<{ compiled: CardSingle; original: Card; localId: string }>>()
-	
+
+	const cardsByName = new Map<string, Array<{ compiled: CardSingle; original: Card; localId: string }>>()
+
 	for (const compiledCard of compiledCards) {
 		const originalCard = originalCardMap.get(compiledCard.id)
-		if (!originalCard || originalCard.category !== 'Trainer') {
+		if (!originalCard) {
 			continue
 		}
-		
+
+		const isTrainer = originalCard.category === 'Trainer'
+		const isSpecialEnergy = originalCard.category === 'Energy' && originalCard.energyType === 'Special'
+		if (!isTrainer && !isSpecialEnergy) {
+			continue
+		}
+
 		const cardNameEn = originalCard.name.en
 		if (!cardNameEn) {
 			continue
 		}
-		
-		if (!trainerCardsByName.has(cardNameEn)) {
-			trainerCardsByName.set(cardNameEn, [])
+
+		if (!cardsByName.has(cardNameEn)) {
+			cardsByName.set(cardNameEn, [])
 		}
-		
-		trainerCardsByName.get(cardNameEn)!.push({ 
-			compiled: compiledCard, 
-			original: originalCard, 
-			localId: compiledCard.localId 
+
+		cardsByName.get(cardNameEn)!.push({
+			compiled: compiledCard,
+			original: originalCard,
+			localId: compiledCard.localId
 		})
 	}
-	
-	for (const [cardNameEn, cardsWithName] of trainerCardsByName) {
+
+	for (const [cardNameEn, cardsWithName] of cardsByName) {
 		let hasLegalStandard = false
 		let hasLegalExpanded = false
-		
+
 		for (const { compiled } of cardsWithName) {
 			if (compiled.legal.standard) {
 				hasLegalStandard = true
@@ -58,13 +65,13 @@ export function enhanceTrainerLegality(
 				hasLegalExpanded = true
 			}
 		}
-		
+
 		for (const { compiled } of cardsWithName) {
 			compiled.legal.standard = hasLegalStandard || compiled.legal.standard
 			compiled.legal.expanded = hasLegalExpanded || compiled.legal.expanded
 		}
 	}
-	
+
 	return compiledCards
 }
 

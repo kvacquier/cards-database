@@ -3,7 +3,7 @@ import { promises as fs } from 'fs'
 import { SupportedLanguages } from '../../interfaces'
 import { FileFunction } from './compilerInterfaces'
 import { fetchRemoteFile, loadLastEdits } from './utils/util'
-import { enhanceTrainerLegality, getCards } from './utils/cardUtil'
+import { enhanceReprintLegality, getCards } from './utils/cardUtil'
 import { Card as CardSingle } from '../../meta/definitions/api'
 
 const LANGS: Array<SupportedLanguages> = [
@@ -58,11 +58,11 @@ const DIST_FOLDER = './generated'
 			console.log('      ', 'Compiling', lang, file)
 			let item = await fn(lang)
 
-			// Post-process Trainer legality after compilation but before writing JSON
+			// Post-process Trainer and Special Energy reprint legality after compilation but before writing JSON
 			if (file === 'cards.ts' && Array.isArray(item)) {
-				console.log('      ', 'Post-processing Trainer legality', lang)
+				console.log('      ', 'Post-processing reprint legality', lang)
 				const originalCards = await getCards(lang)
-				item = enhanceTrainerLegality(item as Array<CardSingle>, originalCards)
+				item = enhanceReprintLegality(item as Array<CardSingle>, originalCards)
 			}
 
 			// Write to file

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python scripts/evolution-tree.py)",
+      "Bash(python3 scripts/evolution-tree.py)",
+      "Bash(/usr/bin/python3 --version)",
+      "Bash(/usr/bin/python3 scripts/evolution-tree.py)",
+      "Bash(/usr/bin/python3 -c \":*)"
+    ]
+  }
+}

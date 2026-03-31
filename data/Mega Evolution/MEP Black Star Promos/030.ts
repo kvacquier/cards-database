@@ -11,7 +11,7 @@ const card: Card = {
 		it: "Mega Charizard Y-ex",
 		es: "Mega-Charizard Y ex",
 		pt: "Mega Charizard Y ex",
-		'es-mx': "Mega Charizard Y ex",
+		'es-mx': "Mega-Charizard Y ex",
 	},
 
 	suffix: "EX",
@@ -34,7 +34,7 @@ const card: Card = {
 			it: "Esplosione Y",
 			es: "Explosión Y",
 			pt: "Explosão Y",
-			'es-mx': "Explosion Y",
+			'es-mx': "Explosión Y",
 		},
 
 		effect: {
@@ -44,7 +44,7 @@ const card: Card = {
 			it: "Scarta tre Energie da questo Pokémon e questo attacco infligge 280 danni a uno dei Pokémon del tuo avversario. Non applicare debolezza e resistenza ai Pokémon in panchina.",
 			es: "Descarta 3 Energías de este Pokémon, y este ataque hace 280 puntos de daño a uno de los Pokémon de tu rival. (No apliques Debilidad y Resistencia a los Pokémon en Banca).",
 			pt: "Descarte 3 Energias deste Pokémon, e este ataque causa 280 pontos de dano a 1 dos Pokémon do seu oponente. (Não aplique Fraqueza e Resistência aos Pokémon no Banco.)",
-			'es-mx': "Discard 3 Energy from this Pokémon, and this attack does 280 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
+			'es-mx': "Descarta 3 Energías de este Pokémon, y este ataque hace 280 puntos de daño a uno de los Pokémon de tu rival. (No apliques Debilidad y Resistencia a los Pokémon en Banca).",
 		},
 	},
 	],
@@ -55,7 +55,8 @@ const card: Card = {
 		de: "Glutexo",
 		it: "Charmeleon",
 		es: "Charmeleon",
-		pt: "Charmeleon"
+		pt: "Charmeleon",
+		"es-mx": "Charmeleon"
 	},
 
 	retreat: 1,
@@ -67,13 +68,8 @@ const card: Card = {
 
 	variants: [
 	{
-		type: "holo",
-		stamp: ["set-logo"]
-	},
-	{
-		type: "holo",
-		stamp: ["set-logo","staff"]
-	},
+		type: "holo"
+	}
 	]
 }
 

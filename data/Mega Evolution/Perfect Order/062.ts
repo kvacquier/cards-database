@@ -1,0 +1,85 @@
+import { Card } from "../../../interfaces"
+import Set from "../Perfect Order"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: "Meowth ex",
+		fr: "Miaouss-ex",
+		de: "Mauzi-ex",
+		it: "Meowth-ex",
+		es: "Meowth ex",
+		pt: "Meowth ex",
+		'es-mx': "Meowth ex",
+	},
+
+	suffix: "EX",
+	rarity: "None",
+	category: "Pokemon",
+	hp: 170,
+	types: ["Colorless"],
+	stage: "Basic",
+	dexId: [52],
+
+	abilities: [{
+		type: "Ability",
+
+		name: {
+			en: "Last-Ditch Catch",
+			fr: "Prise Dernier Ressort",
+			de: "Fang aus der Not",
+			it: "Cattura in Extremis",
+			es: "Captura a la Desesperada",
+			pt: "Chance Final de Captura",
+			'es-mx': "Captura a la Desesperada",
+		},
+
+		effect: {
+			en: "Once during your turn, when you play this Pokémon from your hand onto your Bench, you may use this Ability. Search your deck for a Supporter card, reveal it, and put it into your hand. Then, shuffle your deck. You can't use more than 1 Ability that has \"Last-Ditch\" in its name each turn.",
+			fr: "Une fois pendant votre tour, lorsque vous jouez ce Pokémon de votre main sur votre Banc, vous pouvez utiliser ce talent. Cherchez dans votre deck une carte Supporter, montrez-la, puis ajoutez-la à votre main. Mélangez ensuite votre deck. Vous ne pouvez utiliser qu'un talent ayant « Dernier Ressort » dans son nom par tour.",
+			de: "Einmal während deines Zuges, wenn du dieses Pokémon aus deiner Hand auf deine Bank spielst, kannst du diese Fähigkeit einsetzen. Durchsuche dein Deck nach 1 Unterstützerkarte, zeige sie deinem Gegner und nimm sie auf deine Hand. Mische anschließend dein Deck. Du kannst nur 1 Fähigkeit, bei der „aus der Not\" zum Namen gehört, pro Zug einsetzen.",
+			it: "Una sola volta durante il tuo turno, quando giochi questo Pokémon dalla tua mano e lo metti in panchina, puoi usare questa abilità. Cerca nel tuo mazzo una carta Aiuto, mostrala e aggiungila alle carte che hai in mano. Poi rimischia il tuo mazzo. Non puoi usare più di un'abilità che ha \"in Extremis\" nel nome per turno.",
+			es: "Una vez durante tu turno, cuando juegas este Pokémon de tu mano a tu Banca, puedes usar esta habilidad. Busca en tu baraja 1 carta de Partidario, enséñala y ponla en tu mano. Después, baraja las cartas de tu baraja. No puedes usar más de una habilidad que tenga \"a la Desesperada\" en su nombre en cada turno.",
+			pt: "Uma vez durante o seu turno, quando você jogar este Pokémon da sua mão para o seu Banco, você poderá usar esta Habilidade. Procure por uma carta de Apoiador no seu baralho, revele-a e coloque-a na sua mão. Em seguida, embaralhe o seu baralho. Você não pode usar mais de 1 Habilidade que tem \"Chance Final\" em seu nome por turno.",
+			'es-mx': "Una vez durante tu turno, cuando juegas este Pokémon de tu mano a tu Banca, puedes usar esta habilidad. Busca en tu baraja 1 carta de Partidario, enséñala y ponla en tu mano. Después, baraja las cartas de tu baraja. No puedes usar más de una habilidad que tenga \"a la Desesperada\" en su nombre en cada turno.",
+		},
+	}],
+
+	attacks: [
+	{
+		cost: ["Colorless", "Colorless", "Colorless"],
+
+		name: {
+			en: "Tuck Tail",
+			fr: "Queue Repliée",
+			de: "Schweif einziehen",
+			it: "Ritiracoda",
+			es: "Cola Asustadiza",
+			pt: "Rabo Entre as Pernas",
+			'es-mx': "Cola Asustadiza",
+		},
+
+		damage: 60,
+
+		effect: {
+			en: "Put this Pokémon and all attached cards into your hand.",
+			fr: "Ajoutez à votre main ce Pokémon et toutes les cartes qui lui sont attachées.",
+			de: "Nimm dieses Pokémon und alle angelegten Karten auf deine Hand.",
+			it: "Riprendi in mano questo Pokémon e tutte le carte a esso assegnate.",
+			es: "Pon este Pokémon y todas las cartas unidas a él en tu mano.",
+			pt: "Coloque este Pokémon e todas as cartas ligadas a ele na sua mão.",
+			'es-mx': "Pon este Pokémon y todas las cartas unidas a él en tu mano.",
+		},
+	},
+	],
+
+	retreat: 1,
+	regulationMark: "J",
+
+	thirdParty: {
+		tcgplayer: 684340,
+	},
+}
+
+export default card

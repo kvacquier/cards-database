@@ -11,7 +11,7 @@ const card: Card = {
 		it: "Mega Charizard X-ex",
 		es: "Mega-Charizard X ex",
 		pt: "Mega Charizard X ex",
-		'es-mx': "Mega Charizard X ex",
+		'es-mx': "Mega-Charizard X ex",
 	},
 
 	suffix: "EX",
@@ -34,7 +34,7 @@ const card: Card = {
 			it: "Inferno X",
 			es: "Infierno X",
 			pt: "Inferno X",
-			'es-mx': "Inferno X",
+			'es-mx': "Infierno X",
 		},
 
 		damage: "90×",
@@ -46,7 +46,7 @@ const card: Card = {
 			it: "Scarta un numero qualsiasi di Energie {R} dai tuoi Pokémon e questo attacco infligge 90 danni per ogni carta che hai scartato in questo modo.",
 			es: "Descarta cualquier cantidad de Energías {R} de tus Pokémon, y este ataque hace 90 puntos de daño por cada carta que hayas descartado de esta manera.",
 			pt: "Descarte qualquer quantidade de Energia {R} dentre seus Pokémon, e este ataque causa 90 pontos de dano para cada carta descartada desta forma.",
-			'es-mx': "Discard any amount of {R} Energy from among your Pokémon, and this attack does 90 damage for each card you discarded in this way.",
+			'es-mx': "Descarta cualquier cantidad de Energías {R} de tus Pokémon, y este ataque hace 90 puntos de daño por cada carta que hayas descartado de esta manera.",
 		},
 	},
 	],
@@ -70,12 +70,7 @@ const card: Card = {
 	variants: [
 	{
 		type: "holo",
-		stamp: ["set-logo"]
-	},
-	{
-		type: "holo",
-		stamp: ["set-logo","staff"]
-	},
+	}
 	]
 }
 

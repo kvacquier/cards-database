@@ -11,7 +11,7 @@ const card: Card = {
 		it: "Zekrom di N",
 		es: "Zekrom de N",
 		pt: "Zekrom do N",
-		'es-mx': "N's Zekrom",
+		'es-mx': "Zekrom de N",
 	},
 
 	illustrator: "Bun Toujo",
@@ -33,7 +33,7 @@ const card: Card = {
 			it: "Tritatutto",
 			es: "Hacer Trizas",
 			pt: "Triturar",
-			'es-mx': "Shred",
+			'es-mx': "Hacer Trizas",
 		},
 
 		damage: 70,
@@ -45,7 +45,7 @@ const card: Card = {
 			it: "I danni di questo attacco non sono influenzati da alcun effetto presente sul Pokémon attivo del tuo avversario.",
 			es: "El daño de este ataque no se ve afectado por ningún efecto en el Pokémon Activo de tu rival.",
 			pt: "O dano deste ataque não é afetado por quaisquer efeitos no Pokémon Ativo do seu oponente.",
-			'es-mx': "This attack's damage isn't affected by any effects on your opponent's Active Pokémon.",
+			'es-mx': "El daño de este ataque no se ve afectado por ningún efecto en el Pokémon Activo de tu rival.",
 		},
 	},
 	{
@@ -58,7 +58,7 @@ const card: Card = {
 			it: "Tuono Impazzito",
 			es: "Furia Trueno",
 			pt: "Trovão Voraz",
-			'es-mx': "Rampaging Thunder",
+			'es-mx': "Furia Trueno",
 		},
 
 		damage: 250,
@@ -70,7 +70,7 @@ const card: Card = {
 			it: "Durante il tuo prossimo turno, questo Pokémon non può usare attacchi.",
 			es: "Durante tu próximo turno, este Pokémon no puede usar ataques.",
 			pt: "Durante o seu próximo turno, este Pokémon não poderá usar ataques.",
-			'es-mx': "During your next turn, this Pokémon can't use attacks.",
+			'es-mx': "Durante tu próximo turno, este Pokémon no puede usar ataques.",
 		},
 	},
 	],

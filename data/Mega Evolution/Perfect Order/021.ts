@@ -13,6 +13,14 @@ const card: Card = {
 		pt: "Mega Starmie ex",
 		'es-mx': "Mega-Starmie ex",
 	},
+	evolveFrom: {
+		en: "Staryu",
+		de: "Sterndu",
+		es: "Staryu",
+		fr: "Stari",
+		it: "Staryu",
+		pt: "Staryu",
+	},
 
 	suffix: "EX",
 	rarity: "None",

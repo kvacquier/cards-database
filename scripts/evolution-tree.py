@@ -24,6 +24,11 @@ DEFAULT_OUTPUT = PROJECT_ROOT / "evolution-tree.json"
 CATEGORY_RE = re.compile(r'^\s*category:\s*"([^"]+)"', re.MULTILINE)
 STAGE_RE = re.compile(r'^\s*stage:\s*"([^"]+)"', re.MULTILINE)
 
+STAGES_AUTO_EVOLVE_FROM = frozenset({"Stage1", "Stage2"})
+
+# English "Mega … ex" → inner species name (e.g. Mega Starmie ex → Starmie)
+MEGA_EX_EN_RE = re.compile(r"^Mega\s+(.+)\s+ex$", re.IGNORECASE)
+
 # Matches a shallow multilingual block: name: { en: "Foo", fr: "Bar" }
 # [^}]* is safe because multilingual objects have no nested braces
 BLOCK_RE_TEMPLATE = r'^\s*{field}:\s*\{{([^}}]*)\}}'
@@ -74,6 +79,162 @@ def parse_card_file(path: Path) -> dict | None:
         evolve_from = _parse_multilingual(ef_block) or None
 
     return {"name": name, "evolveFrom": evolve_from, "stage": stage}
+
+
+def _strip_ex_suffix_english(name_en: str) -> str | None:
+    """Strip trailing ' ex' (any case) only, e.g. Charizard ex → Charizard."""
+    s = name_en.strip()
+    if not s:
+        return None
+    s = re.sub(r"\s+ex$", "", s, flags=re.IGNORECASE).strip()
+    return s or None
+
+
+def _ts_object_key(key: str) -> str:
+    if re.match(r"^[A-Za-z_]\w*$", key):
+        return key
+    return f"'{key}'"
+
+
+def _escape_ts_string(s: str) -> str:
+    return s.replace("\\", "\\\\").replace('"', '\\"')
+
+
+def _format_evolve_from_block(names: dict[str, str]) -> str:
+    keys = sorted(names.keys(), key=lambda k: (0 if k == "en" else 1, k))
+    lines = ["\tevolveFrom: {"]
+    for k in keys:
+        lines.append(f"\t\t{_ts_object_key(k)}: \"{_escape_ts_string(names[k])}\",")
+    lines.append("\t},")
+    return "\n".join(lines)
+
+
+def _find_insert_index_after_name_block(source: str) -> int | None:
+    m = re.search(r"^\s*name:\s*\{", source, re.MULTILINE)
+    if not m:
+        return None
+    i = m.end() - 1
+    if i < 0 or source[i] != "{":
+        return None
+    depth = 0
+    while i < len(source):
+        c = source[i]
+        if c == "{":
+            depth += 1
+        elif c == "}":
+            depth -= 1
+            if depth == 0:
+                i += 1
+                while i < len(source) and source[i] in " \t":
+                    i += 1
+                if i < len(source) and source[i] == ",":
+                    i += 1
+                return i
+        i += 1
+    return None
+
+
+def _find_evolve_from_property_span(source: str) -> tuple[int, int] | None:
+    """Start/end indices of the full `evolveFrom: { ... },` property (end after comma)."""
+    m = re.search(r"^\s*evolveFrom:\s*\{", source, re.MULTILINE)
+    if not m:
+        return None
+    start = m.start()
+    i = m.end() - 1
+    if i < 0 or source[i] != "{":
+        return None
+    depth = 0
+    while i < len(source):
+        c = source[i]
+        if c == "{":
+            depth += 1
+        elif c == "}":
+            depth -= 1
+            if depth == 0:
+                i += 1
+                while i < len(source) and source[i] in " \t":
+                    i += 1
+                if i < len(source) and source[i] == ",":
+                    i += 1
+                return (start, i)
+        i += 1
+    return None
+
+
+def apply_decorated_name_evolve_fixes(
+    card_pairs: list[tuple[Path, dict]],
+    species_map: dict[str, dict],
+) -> list[Path]:
+    """
+    Stage1/Stage2 repair rules (Mega … ex and non-Mega … ex):
+    Strip Mega / trailing ex to get the English species key (e.g. Starmie, Charizard).
+    Set evolveFrom from that species' merged evolve_from_names (e.g. Staryu, Charmeleon),
+    not from its printed card names — ex and Mega-ex stages follow the same chain as
+    the non-ex Stage1/Stage2 species.
+    """
+    fixed: list[Path] = []
+    for path, card in card_pairs:
+        if card.get("stage") not in STAGES_AUTO_EVOLVE_FROM:
+            continue
+        name = card.get("name") or {}
+        en = name.get("en")
+        if not en:
+            continue
+        en_stripped = en.strip()
+
+        mega_m = MEGA_EX_EN_RE.match(en_stripped)
+        if mega_m:
+            lookup_key = mega_m.group(1).strip()
+        else:
+            lookup_key = _strip_ex_suffix_english(en_stripped) or ""
+            if not lookup_key or lookup_key.casefold() == en_stripped.casefold():
+                continue
+
+        if lookup_key not in species_map:
+            continue
+        parent_ef = species_map[lookup_key].get("evolve_from_names")
+        if not parent_ef:
+            continue
+        cur = card.get("evolveFrom")
+        if cur:
+            cur_en = (cur.get("en") or "").strip()
+            if cur_en.casefold() != lookup_key.casefold():
+                continue
+        payload = dict(parent_ef)
+        if mega_m:
+            action = "Mega ex → inner species' evolveFrom"
+        else:
+            action = f"ex variant (from {lookup_key!r} species' evolveFrom)"
+
+        try:
+            source = path.read_text(encoding="utf-8")
+        except OSError as e:
+            print(f"Warning: could not read {path}: {e}", file=sys.stderr)
+            continue
+
+        block = _format_evolve_from_block(payload)
+        span = _find_evolve_from_property_span(source)
+        if span is not None:
+            new_source = source[: span[0]] + block + source[span[1] :]
+        else:
+            insert_at = _find_insert_index_after_name_block(source)
+            if insert_at is None:
+                print(f"Warning: could not find name block in {path}", file=sys.stderr)
+                continue
+            new_source = source[:insert_at] + "\n" + block + source[insert_at:]
+
+        if new_source == source:
+            continue
+        try:
+            path.write_text(new_source, encoding="utf-8")
+        except OSError as e:
+            print(f"Warning: could not write {path}: {e}", file=sys.stderr)
+            continue
+
+        fixed.append(path)
+        print(f"Fixed evolveFrom ({action}): {path}")
+
+    return fixed
 
 
 # --- File discovery ---
@@ -200,6 +361,97 @@ def build_node(
     return {"name": sp["names"], "stage": sp["stage"], "evolvesInto": children}
 
 
+# --- Pipeline passes ---
+
+
+def pass_scan_and_repair(
+    dirs: list[Path],
+    *,
+    auto_evolve_from: bool,
+) -> tuple[list[tuple[Path, dict]], dict[str, dict]]:
+    """
+    Pass 1: Discover and parse all Pokémon cards, then repair evolveFrom on disk
+    when enabled (Mega … ex and … ex use the stripped species key's evolve chain,
+    e.g. Charizard ex → Charmeleon, Mega Starmie ex → Staryu).
+    """
+    print("=== Pass 1: Scan ===")
+    files = discover_card_files(dirs)
+    if not files:
+        print("No card files found.", file=sys.stderr)
+        sys.exit(1)
+
+    pairs: list[tuple[Path, dict]] = []
+    for f in files:
+        card = parse_card_file(f)
+        if card:
+            pairs.append((f, card))
+
+    print(f"  Files scanned: {len(files)}")
+    print(f"  Pokémon cards parsed: {len(pairs)}")
+
+    species_map = build_species_map([c for _, c in pairs])
+    print(f"  Unique species (English key): {len(species_map)}")
+
+    print("=== Pass 1: Repair (evolveFrom) ===")
+    if not auto_evolve_from:
+        print("  Skipped (--no-auto-evolve-from / --no-fix-mega-ex).")
+        return pairs, species_map
+
+    fixed_paths = apply_decorated_name_evolve_fixes(pairs, species_map)
+    if not fixed_paths:
+        print("  No cards needed evolveFrom repair.")
+        return pairs, species_map
+
+    fixed_set = set(fixed_paths)
+    for i, (p, _) in enumerate(pairs):
+        if p in fixed_set:
+            updated = parse_card_file(p)
+            if updated:
+                pairs[i] = (p, updated)
+    species_map = build_species_map([c for _, c in pairs])
+    print(f"  Patched {len(fixed_paths)} card file(s); species map rebuilt.")
+    return pairs, species_map
+
+
+def pass_fill_tree(
+    species_map: dict[str, dict],
+    *,
+    include_standalone: bool,
+) -> tuple[list[dict], int, int]:
+    """
+    Pass 2: Resolve parent links from evolveFrom, find roots, build nested tree nodes.
+    Returns (tree, chain_count, orphan_root_count).
+    """
+    print("=== Pass 2: Fill tree ===")
+    name_lookup = build_name_lookup(species_map)
+    children_map, orphan_roots = resolve_parents(species_map, name_lookup)
+
+    natural_roots = {
+        key for key, sp in species_map.items()
+        if sp["evolve_from_names"] is None and key in children_map
+    }
+    all_roots = natural_roots | orphan_roots
+
+    if include_standalone:
+        standalone = {
+            key for key, sp in species_map.items()
+            if sp["stage"] == "Basic"
+            and key not in children_map
+            and sp["evolve_from_names"] is None
+        }
+        all_roots |= standalone
+
+    tree = [
+        build_node(key, species_map, children_map, frozenset())
+        for key in sorted(all_roots)
+    ]
+
+    chains = len(natural_roots) + len(orphan_roots)
+    print(f"  Evolution chains: {chains} ({len(orphan_roots)} orphan root(s))")
+    print(f"  Tree roots: {len(tree)}")
+    return tree, chains, len(orphan_roots)
+
+
 # --- Main ---
 
 def main() -> None:
@@ -221,63 +473,35 @@ def main() -> None:
         action="store_true",
         help="Include Basic Pokémon with no evolutions",
     )
+    parser.add_argument(
+        "--no-auto-evolve-from",
+        action="store_true",
+        help="Do not patch evolveFrom from Mega/ex name → species evolve chain (Stage1/Stage2)",
+    )
+    parser.add_argument(
+        "--no-fix-mega-ex",
+        action="store_true",
+        help=argparse.SUPPRESS,
+    )
     args = parser.parse_args()
 
     dirs = [Path(d) for d in args.dirs] if args.dirs else DEFAULT_DIRS
 
-    # 1. Discover and parse
-    files = discover_card_files(dirs)
-    if not files:
-        print("No card files found.", file=sys.stderr)
-        sys.exit(1)
+    skip_auto = args.no_auto_evolve_from or args.no_fix_mega_ex
+    pairs, species_map = pass_scan_and_repair(
+        dirs,
+        auto_evolve_from=not skip_auto,
+    )
 
-    cards = []
-    for f in files:
-        card = parse_card_file(f)
-        if card:
-            cards.append(card)
+    tree, _, _ = pass_fill_tree(
+        species_map,
+        include_standalone=args.include_standalone,
+    )
 
-    print(f"Scanned {len(files)} files, parsed {len(cards)} Pokémon cards.")
-
-    # 2. Deduplicate into species
-    species_map = build_species_map(cards)
-    print(f"Found {len(species_map)} unique Pokémon species.")
-
-    # 3. Build name lookup
-    name_lookup = build_name_lookup(species_map)
-
-    # 4. Resolve parent links
-    children_map, orphan_roots = resolve_parents(species_map, name_lookup)
-
-    # 5. Find roots
-    natural_roots = {
-        key for key, sp in species_map.items()
-        if sp["evolve_from_names"] is None and key in children_map
-    }
-    all_roots = natural_roots | orphan_roots
-
-    if args.include_standalone:
-        standalone = {
-            key for key, sp in species_map.items()
-            if sp["stage"] == "Basic"
-            and key not in children_map
-            and sp["evolve_from_names"] is None
-        }
-        all_roots |= standalone
-
-    # 6. Build tree
-    tree = [
-        build_node(key, species_map, children_map, frozenset())
-        for key in sorted(all_roots)
-    ]
-
-    # 7. Write output
     output_path = Path(args.output)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(tree, f, ensure_ascii=False, indent=2)
 
-    chains = len(natural_roots) + len(orphan_roots)
-    print(f"Built {chains} evolution chain(s) ({len(orphan_roots)} orphan root(s)).")
     print(f"Output written to: {output_path}")
 
 

@@ -13,6 +13,14 @@ const card: Card = {
 		pt: "Salazzle ex",
 		'es-mx': "Salazzle ex",
 	},
+	evolveFrom: {
+		en: "Salandit",
+		de: "Molunk",
+		es: "Salandit",
+		fr: "Tritox",
+		it: "Salandit",
+		pt: "Salandit",
+	},
 
 	suffix: "EX",
 	rarity: "None",

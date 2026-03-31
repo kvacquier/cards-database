@@ -891,6 +891,19 @@
         },
         "stage": "Stage1",
         "evolvesInto": []
+      },
+      {
+        "name": {
+          "en": "Mega Lopunny ex",
+          "fr": "Méga-Lockpin-ex",
+          "es": "Mega-Lopunny ex",
+          "es-mx": "Mega-Lopunny ex",
+          "de": "Mega-Schlapor-ex",
+          "it": "Mega Lopunny-ex",
+          "pt": "Mega Lopunny ex"
+        },
+        "stage": "Stage1",
+        "evolvesInto": []
       }
     ]
   },
@@ -901,7 +914,8 @@
       "es": "Bunnelby",
       "it": "Bunnelby",
       "pt": "Bunnelby",
-      "de": "Scoppel"
+      "de": "Scoppel",
+      "es-mx": "Bunnelby"
     },
     "stage": "Basic",
     "evolvesInto": [
@@ -912,7 +926,8 @@
           "es": "Diggersby",
           "it": "Diggersby",
           "pt": "Diggersby",
-          "de": "Grebbit"
+          "de": "Grebbit",
+          "es-mx": "Diggersby"
         },
         "stage": "Stage1",
         "evolvesInto": []
@@ -993,6 +1008,19 @@
     },
     "stage": "Basic",
     "evolvesInto": [
+      {
+        "name": {
+          "en": "Mega Sharpedo ex",
+          "fr": "Méga-Sharpedo-ex",
+          "es": "Mega-Sharpedo ex",
+          "es-mx": "Mega-Sharpedo ex",
+          "de": "Mega-Tohaido-ex",
+          "it": "Mega Sharpedo-ex",
+          "pt": "Mega Sharpedo ex"
+        },
+        "stage": "Stage1",
+        "evolvesInto": []
+      },
       {
         "name": {
           "en": "Sharpedo",
@@ -1236,7 +1264,7 @@
               "en": "Mega Charizard X ex",
               "fr": "Méga-Dracaufeu X-ex",
               "es": "Mega-Charizard X ex",
-              "es-mx": "Mega Charizard X ex",
+              "es-mx": "Mega-Charizard X ex",
               "de": "Mega-Glurak X-ex",
               "it": "Mega Charizard X-ex",
               "pt": "Mega Charizard X ex"
@@ -1249,7 +1277,7 @@
               "en": "Mega Charizard Y ex",
               "fr": "Méga-Dracaufeu Y-ex",
               "es": "Mega-Charizard Y ex",
-              "es-mx": "Mega Charizard Y ex",
+              "es-mx": "Mega-Charizard Y ex",
               "de": "Mega-Glurak Y-ex",
               "it": "Mega Charizard Y-ex",
               "pt": "Mega Charizard Y ex"
@@ -1310,6 +1338,19 @@
         },
         "stage": "Stage1",
         "evolvesInto": [
+          {
+            "name": {
+              "en": "Mega Meganium ex",
+              "fr": "Méga-Méganium-ex",
+              "es": "Mega-Meganium ex",
+              "es-mx": "Mega-Meganium ex",
+              "de": "Mega-Meganie-ex",
+              "it": "Mega Meganium-ex",
+              "pt": "Mega Meganium ex"
+            },
+            "stage": "Stage2",
+            "evolvesInto": []
+          },
           {
             "name": {
               "en": "Meganium",
@@ -1490,6 +1531,19 @@
           "it": "Clefable-ex",
           "pt": "Clefable ex",
           "de": "Pixi-ex"
+        },
+        "stage": "Stage1",
+        "evolvesInto": []
+      },
+      {
+        "name": {
+          "en": "Mega Clefable ex",
+          "fr": "Méga-Mélodelfe-ex",
+          "de": "Mega-Pixi-ex",
+          "it": "Mega Clefable-ex",
+          "es": "Mega-Clefable ex",
+          "pt": "Mega Clefable ex",
+          "es-mx": "Mega-Clefable ex"
         },
         "stage": "Stage1",
         "evolvesInto": []
@@ -2114,6 +2168,19 @@
               "it": "Dragonite-ex",
               "pt": "Dragonite ex",
               "de": "Dragoran-ex"
+            },
+            "stage": "Stage2",
+            "evolvesInto": []
+          },
+          {
+            "name": {
+              "en": "Mega Dragonite ex",
+              "fr": "Méga-Dracolosse-ex",
+              "es": "Mega-Dragonite ex",
+              "es-mx": "Mega-Dragonite ex",
+              "de": "Mega-Dragoran-ex",
+              "it": "Mega Dragonite-ex",
+              "pt": "Mega Dragonite ex"
             },
             "stage": "Stage2",
             "evolvesInto": []
@@ -2777,7 +2844,8 @@
       "es": "Espurr",
       "it": "Espurr",
       "pt": "Espurr",
-      "de": "Psiau"
+      "de": "Psiau",
+      "es-mx": "Espurr"
     },
     "stage": "Basic",
     "evolvesInto": [
@@ -2788,7 +2856,8 @@
           "es": "Meowstic",
           "it": "Meowstic",
           "pt": "Meowstic",
-          "de": "Psiaugon"
+          "de": "Psiaugon",
+          "es-mx": "Meowstic"
         },
         "stage": "Stage1",
         "evolvesInto": []
@@ -3110,7 +3179,8 @@
       "es": "Fletchling",
       "it": "Fletchling",
       "pt": "Fletchling",
-      "de": "Dartiri"
+      "de": "Dartiri",
+      "es-mx": "Fletchling"
     },
     "stage": "Basic",
     "evolvesInto": [
@@ -3121,7 +3191,8 @@
           "es": "Fletchinder",
           "it": "Fletchinder",
           "pt": "Fletchinder",
-          "de": "Dartignis"
+          "de": "Dartignis",
+          "es-mx": "Fletchinder"
         },
         "stage": "Stage1",
         "evolvesInto": [
@@ -3132,7 +3203,8 @@
               "es": "Talonflame",
               "it": "Talonflame",
               "pt": "Talonflame",
-              "de": "Fiaro"
+              "de": "Fiaro",
+              "es-mx": "Talonflame"
             },
             "stage": "Stage2",
             "evolvesInto": []
@@ -3429,7 +3501,8 @@
               "es": "Gengar",
               "it": "Gengar",
               "pt": "Gengar",
-              "de": "Gengar"
+              "de": "Gengar",
+              "es-mx": "Gengar"
             },
             "stage": "Stage2",
             "evolvesInto": []
@@ -3442,6 +3515,19 @@
               "it": "Gengar-ex",
               "pt": "Gengar ex",
               "de": "Gengar-ex"
+            },
+            "stage": "Stage2",
+            "evolvesInto": []
+          },
+          {
+            "name": {
+              "en": "Mega Gengar ex",
+              "fr": "Méga-Ectoplasma-ex",
+              "es": "Mega-Gengar ex",
+              "es-mx": "Mega-Gengar ex",
+              "de": "Mega-Gengar-ex",
+              "it": "Mega Gengar-ex",
+              "pt": "Mega Gengar ex"
             },
             "stage": "Stage2",
             "evolvesInto": []
@@ -4102,7 +4188,8 @@
       "es": "Honedge",
       "it": "Honedge",
       "pt": "Honedge",
-      "de": "Gramokles"
+      "de": "Gramokles",
+      "es-mx": "Honedge"
     },
     "stage": "Basic",
     "evolvesInto": [
@@ -4113,7 +4200,8 @@
           "es": "Doublade",
           "it": "Doublade",
           "pt": "Doublade",
-          "de": "Duokles"
+          "de": "Duokles",
+          "es-mx": "Doublade"
         },
         "stage": "Stage1",
         "evolvesInto": [
@@ -4124,7 +4212,8 @@
               "es": "Aegislash",
               "it": "Aegislash",
               "pt": "Aegislash",
-              "de": "Durengard"
+              "de": "Durengard",
+              "es-mx": "Aegislash"
             },
             "stage": "Stage2",
             "evolvesInto": []
@@ -5477,6 +5566,19 @@
         },
         "stage": "Stage1",
         "evolvesInto": []
+      },
+      {
+        "name": {
+          "en": "Azumarill ex",
+          "fr": "Azumarill-ex",
+          "es": "Azumarill ex",
+          "es-mx": "Azumarill ex",
+          "de": "Azumarill-ex",
+          "it": "Azumarill-ex",
+          "pt": "Azumarill ex"
+        },
+        "stage": "Stage1",
+        "evolvesInto": []
       }
     ]
   },
@@ -5829,6 +5931,19 @@
           "pt": "Mismagius",
           "de": "Traunmagil",
           "es-mx": "Mismagius"
+        },
+        "stage": "Stage1",
+        "evolvesInto": []
+      },
+      {
+        "name": {
+          "en": "Mismagius ex",
+          "fr": "Magirêve-ex",
+          "es": "Mismagius ex",
+          "es-mx": "Mismagius ex",
+          "de": "Traunmagil-ex",
+          "it": "Mismagius-ex",
+          "pt": "Mismagius ex"
         },
         "stage": "Stage1",
         "evolvesInto": []
@@ -7475,7 +7590,8 @@
       "es": "Rattata",
       "it": "Rattata",
       "pt": "Rattata",
-      "de": "Rattfratz"
+      "de": "Rattfratz",
+      "es-mx": "Rattata"
     },
     "stage": "Basic",
     "evolvesInto": [
@@ -7486,7 +7602,8 @@
           "es": "Raticate",
           "it": "Raticate",
           "pt": "Raticate",
-          "de": "Rattikarl"
+          "de": "Rattikarl",
+          "es-mx": "Raticate"
         },
         "stage": "Stage1",
         "evolvesInto": []
@@ -7839,7 +7956,8 @@
       "es": "Rowlet",
       "it": "Rowlet",
       "pt": "Rowlet",
-      "de": "Bauz"
+      "de": "Bauz",
+      "es-mx": "Rowlet"
     },
     "stage": "Basic",
     "evolvesInto": [
@@ -7850,7 +7968,8 @@
           "es": "Dartrix",
           "it": "Dartrix",
           "pt": "Dartrix",
-          "de": "Arboretoss"
+          "de": "Arboretoss",
+          "es-mx": "Dartrix"
         },
         "stage": "Stage1",
         "evolvesInto": [
@@ -7873,7 +7992,8 @@
               "es": "Decidueye ex",
               "it": "Decidueye-ex",
               "pt": "Decidueye ex",
-              "de": "Silvarro-ex"
+              "de": "Silvarro-ex",
+              "es-mx": "Decidueye ex"
             },
             "stage": "Stage2",
             "evolvesInto": []
@@ -7930,6 +8050,19 @@
           "pt": "Salazzle",
           "de": "Amfira",
           "es-mx": "Salazzle"
+        },
+        "stage": "Stage1",
+        "evolvesInto": []
+      },
+      {
+        "name": {
+          "en": "Salazzle ex",
+          "fr": "Malamandre-ex",
+          "de": "Amfira-ex",
+          "it": "Salazzle-ex",
+          "es": "Salazzle ex",
+          "pt": "Salazzle ex",
+          "es-mx": "Salazzle ex"
         },
         "stage": "Stage1",
         "evolvesInto": []
@@ -8048,7 +8181,8 @@
       "es": "Scatterbug",
       "it": "Scatterbug",
       "pt": "Scatterbug",
-      "de": "Purmel"
+      "de": "Purmel",
+      "es-mx": "Scatterbug"
     },
     "stage": "Basic",
     "evolvesInto": [
@@ -8059,7 +8193,8 @@
           "es": "Spewpa",
           "it": "Spewpa",
           "pt": "Spewpa",
-          "de": "Puponcho"
+          "de": "Puponcho",
+          "es-mx": "Spewpa"
         },
         "stage": "Stage1",
         "evolvesInto": [
@@ -8070,7 +8205,8 @@
               "es": "Vivillon",
               "it": "Vivillon",
               "pt": "Vivillon",
-              "de": "Vivillon"
+              "de": "Vivillon",
+              "es-mx": "Vivillon"
             },
             "stage": "Stage2",
             "evolvesInto": []
@@ -8145,6 +8281,19 @@
     },
     "stage": "Basic",
     "evolvesInto": [
+      {
+        "name": {
+          "en": "Mega Scrafty ex",
+          "fr": "Méga-Baggaïd-ex",
+          "es": "Mega-Scrafty ex",
+          "es-mx": "Mega-Scrafty ex",
+          "de": "Mega-Irokex-ex",
+          "it": "Mega Scrafty-ex",
+          "pt": "Mega Scrafty ex"
+        },
+        "stage": "Stage1",
+        "evolvesInto": []
+      },
       {
         "name": {
           "en": "Scrafty",
@@ -8417,7 +8566,8 @@
       "es": "Shinx",
       "it": "Shinx",
       "pt": "Shinx",
-      "de": "Sheinux"
+      "de": "Sheinux",
+      "es-mx": "Shinx"
     },
     "stage": "Basic",
     "evolvesInto": [
@@ -8428,7 +8578,8 @@
           "es": "Luxio",
           "it": "Luxio",
           "pt": "Luxio",
-          "de": "Luxio"
+          "de": "Luxio",
+          "es-mx": "Luxio"
         },
         "stage": "Stage1",
         "evolvesInto": [
@@ -8439,7 +8590,8 @@
               "es": "Luxray",
               "it": "Luxray",
               "pt": "Luxray",
-              "de": "Luxtra"
+              "de": "Luxtra",
+              "es-mx": "Luxray"
             },
             "stage": "Stage2",
             "evolvesInto": []
@@ -9064,6 +9216,19 @@
         },
         "stage": "Stage1",
         "evolvesInto": []
+      },
+      {
+        "name": {
+          "en": "Mega Froslass ex",
+          "fr": "Méga-Momartik-ex",
+          "es": "Mega-Froslass ex",
+          "es-mx": "Mega-Froslass ex",
+          "de": "Mega-Frosdedje-ex",
+          "it": "Mega Froslass-ex",
+          "pt": "Mega Froslass ex"
+        },
+        "stage": "Stage1",
+        "evolvesInto": []
       }
     ]
   },
@@ -9288,7 +9453,8 @@
       "es": "Spinarak",
       "it": "Spinarak",
       "pt": "Spinarak",
-      "de": "Webarak"
+      "de": "Webarak",
+      "es-mx": "Spinarak"
     },
     "stage": "Basic",
     "evolvesInto": [
@@ -9299,7 +9465,8 @@
           "es": "Ariados",
           "it": "Ariados",
           "pt": "Ariados",
-          "de": "Ariados"
+          "de": "Ariados",
+          "es-mx": "Ariados"
         },
         "stage": "Stage1",
         "evolvesInto": []
@@ -9393,7 +9560,8 @@
       "es": "Spritzee",
       "pt": "Spritzee",
       "it": "Spritzee",
-      "de": "Parfi"
+      "de": "Parfi",
+      "es-mx": "Spritzee"
     },
     "stage": "Basic",
     "evolvesInto": [
@@ -9404,7 +9572,8 @@
           "es": "Aromatisse",
           "pt": "Aromatisse",
           "it": "Aromatisse",
-          "de": "Parfinesse"
+          "de": "Parfinesse",
+          "es-mx": "Aromatisse"
         },
         "stage": "Stage1",
         "evolvesInto": []
@@ -9494,10 +9663,24 @@
       "es": "Staryu",
       "it": "Staryu",
       "pt": "Staryu",
-      "de": "Sterndu"
+      "de": "Sterndu",
+      "es-mx": "Staryu"
     },
     "stage": "Basic",
     "evolvesInto": [
+      {
+        "name": {
+          "en": "Mega Starmie ex",
+          "fr": "Méga-Staross-ex",
+          "de": "Mega-Starmie-ex",
+          "it": "Mega Starmie-ex",
+          "es": "Mega-Starmie ex",
+          "pt": "Mega Starmie ex",
+          "es-mx": "Mega-Starmie ex"
+        },
+        "stage": "Stage1",
+        "evolvesInto": []
+      },
       {
         "name": {
           "fr": "Staross",
@@ -10491,6 +10674,19 @@
             },
             "stage": "Stage2",
             "evolvesInto": []
+          },
+          {
+            "name": {
+              "en": "Mega Emboar ex",
+              "fr": "Méga-Roitiflam-ex",
+              "es": "Mega-Emboar ex",
+              "es-mx": "Mega-Emboar ex",
+              "de": "Mega-Flambirex-ex",
+              "it": "Mega Emboar-ex",
+              "pt": "Mega Emboar ex"
+            },
+            "stage": "Stage2",
+            "evolvesInto": []
           }
         ]
       }
@@ -10786,6 +10982,19 @@
             },
             "stage": "Stage2",
             "evolvesInto": []
+          },
+          {
+            "name": {
+              "en": "Mega Feraligatr ex",
+              "fr": "Méga-Aligatueur-ex",
+              "es": "Mega-Feraligatr ex",
+              "es-mx": "Mega-Feraligatr ex",
+              "de": "Mega-Impergator-ex",
+              "it": "Mega Feraligatr-ex",
+              "pt": "Mega Feraligatr ex"
+            },
+            "stage": "Stage2",
+            "evolvesInto": []
           }
         ]
       }
@@ -11012,6 +11221,19 @@
             },
             "stage": "Stage2",
             "evolvesInto": []
+          },
+          {
+            "name": {
+              "en": "Mega Eelektross ex",
+              "fr": "Méga-Ohmassacre-ex",
+              "es": "Mega-Eelektross ex",
+              "es-mx": "Mega-Eelektross ex",
+              "de": "Mega-Zapplarang-ex",
+              "it": "Mega Eelektross-ex",
+              "pt": "Mega Eelektross ex"
+            },
+            "stage": "Stage2",
+            "evolvesInto": []
           }
         ]
       }
@@ -11207,6 +11429,19 @@
           "pt": "Mandibuzz",
           "es": "Mandibuzz",
           "es-mx": "Mandibuzz"
+        },
+        "stage": "Stage1",
+        "evolvesInto": []
+      },
+      {
+        "name": {
+          "en": "Mandibuzz ex",
+          "fr": "Vaututrice-ex",
+          "es": "Mandibuzz ex",
+          "es-mx": "Mandibuzz ex",
+          "de": "Grypheldis-ex",
+          "it": "Mandibuzz-ex",
+          "pt": "Mandibuzz ex"
         },
         "stage": "Stage1",
         "evolvesInto": []

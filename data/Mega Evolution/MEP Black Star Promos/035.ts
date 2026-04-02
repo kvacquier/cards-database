@@ -17,7 +17,7 @@ const card: Card = {
 	},
 
 	illustrator: "Keisuke Azuma",
-	rarity: "Black Star Promo",
+	rarity: "None",,
 	category: "Pokemon",
 	hp: 380,
 	types: ["Fire"],

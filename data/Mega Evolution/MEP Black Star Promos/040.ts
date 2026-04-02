@@ -10,7 +10,7 @@ const card: Card = {
 	},
 
 	illustrator: "Saboteri",
-	rarity: "Black Star Promo",
+	rarity: "None",,
 	category: "Pokemon",
 	hp: 90,
 	types: ["Grass"],

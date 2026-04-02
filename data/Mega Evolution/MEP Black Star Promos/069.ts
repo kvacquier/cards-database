@@ -10,7 +10,7 @@ const card: Card = {
 		fr: "Germignon"
 	},
 
-	rarity: "Black Star Promo",
+	rarity: "None",,
 	category: "Pokemon",
 	hp: 70,
 	types: ["Grass"],

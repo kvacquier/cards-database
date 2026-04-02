@@ -17,7 +17,7 @@ const card: Card = {
 	},
 
 	illustrator: "5ban Graphics",
-	rarity: "Black Star Promo",
+	rarity: "None",,
 	category: "Pokemon",
 	hp: 340,
 	types: ["Fighting"],

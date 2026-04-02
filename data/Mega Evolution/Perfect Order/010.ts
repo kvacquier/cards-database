@@ -7,67 +7,65 @@ const card: Card = {
 	name: {
 		en: "Rowlet",
 		fr: "Brindibou",
+		es: "Rowlet",
+		'es-mx': "Rowlet",
 		de: "Bauz",
 		it: "Rowlet",
-		es: "Rowlet",
-		pt: "Rowlet",
-		'es-mx': "Rowlet",
+		pt: "Rowlet"
 	},
 
-	rarity: "None",
+	illustrator: "Atsuya Uki",
+	rarity: "Common",
 	category: "Pokemon",
 	hp: 80,
 	types: ["Grass"],
 	stage: "Basic",
-	dexId: [722],
 
-	attacks: [
-	{
+	attacks: [{
 		cost: ["Grass"],
 
 		name: {
 			en: "Find a Friend",
 			fr: "Trouver un Ami",
+			es: "Encontrar un Amigo",
+			'es-mx': "Encontrar un Amigo",
 			de: "Freunde finden",
 			it: "Trovamico",
-			es: "Encontrar un Amigo",
-			pt: "Encontre um Amigo",
-			'es-mx': "Encontrar un Amigo",
+			pt: "Encontre um Amigo"
 		},
 
 		effect: {
 			en: "Search your deck for a Pokémon, reveal it, and put it into your hand. Then, shuffle your deck.",
 			fr: "Cherchez dans votre deck un Pokémon, montrez-le, puis ajoutez-le à votre main. Mélangez ensuite votre deck.",
+			es: "Busca en tu baraja 1 Pokémon, enséñalo y ponlo en tu mano. Después, baraja las cartas de tu baraja.",
+			'es-mx': "Busca en tu mazo 1 Pokémon, muéstralo y ponlo en tu mano. Después, baraja tu mazo.",
 			de: "Durchsuche dein Deck nach 1 Pokémon, zeige es deinem Gegner und nimm es auf deine Hand. Mische anschließend dein Deck.",
 			it: "Cerca nel tuo mazzo un Pokémon, mostralo e aggiungilo alle carte che hai in mano. Poi rimischia il tuo mazzo.",
-			es: "Busca en tu baraja 1 Pokémon, enséñalo y ponlo en tu mano. Después, baraja las cartas de tu baraja.",
-			pt: "Procure por um Pokémon no seu baralho, revele-o e coloque-o na sua mão. Em seguida, embaralhe o seu baralho.",
-			'es-mx': "Busca en tu baraja 1 Pokémon, enséñalo y ponlo en tu mano. Después, baraja las cartas de tu baraja.",
-		},
-	},
-	{
+			pt: "Procure por um Pokémon no seu baralho, revele-o e coloque-o na sua mão. Em seguida, embaralhe o seu baralho."
+		}
+	}, {
 		cost: ["Colorless", "Colorless", "Colorless"],
 
 		name: {
 			en: "Tackle",
 			fr: "Charge",
+			es: "Placaje",
+			'es-mx': "Tacleada",
 			de: "Tackle",
 			it: "Azione",
-			es: "Placaje",
-			pt: "Investida",
-			'es-mx': "Placaje",
+			pt: "Investida"
 		},
 
-		damage: 30,
-	},
-	],
+		damage: 30
+	}],
 
 	retreat: 2,
 	regulationMark: "J",
 
 	thirdParty: {
 		tcgplayer: 684367,
-	},
+		cardmarket: 877422
+	}
 }
 
 export default card

@@ -7,32 +7,34 @@ const card: Card = {
 	name: {
 		en: "Potion",
 		fr: "Potion",
+		es: "Poción",
+		'es-mx': "Poción",
 		de: "Trank",
 		it: "Pozione",
-		es: "Poción",
-		pt: "Poção",
-		'es-mx': "Poción",
+		pt: "Poção"
 	},
 
-	rarity: "None",
+	illustrator: "Ayaka Yoshida",
+	rarity: "Common",
 	category: "Trainer",
-	trainerType: "Item",
 
 	effect: {
 		en: "Heal 30 damage from 1 of your Pokémon.",
 		fr: "Soignez 30 dégâts de l'un de vos Pokémon.",
+		es: "Cura 30 puntos de daño a uno de tus Pokémon.",
+		'es-mx': "Cura 30 puntos de daño a 1 de tus Pokémon.",
 		de: "Heile 30 Schadenspunkte bei 1 deiner Pokémon.",
 		it: "Cura uno dei tuoi Pokémon da 30 danni.",
-		es: "Cura 30 puntos de daño a uno de tus Pokémon.",
-		pt: "Cure 30 pontos de dano de 1 dos seus Pokémon.",
-		'es-mx': "Cura 30 puntos de daño a uno de tus Pokémon.",
+		pt: "Cure 30 pontos de dano de 1 dos seus Pokémon."
 	},
 
+	trainerType: "Item",
 	regulationMark: "J",
 
 	thirdParty: {
 		tcgplayer: 684320,
-	},
+		cardmarket: 877500
+	}
 }
 
 export default card

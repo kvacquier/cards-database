@@ -7,54 +7,43 @@ const card: Card = {
 	name: {
 		en: "Fletchinder",
 		fr: "Braisillon",
+		es: "Fletchinder",
+		'es-mx': "Fletchinder",
 		de: "Dartignis",
 		it: "Fletchinder",
-		es: "Fletchinder",
-		pt: "Fletchinder",
-		'es-mx': "Fletchinder",
+		pt: "Fletchinder"
 	},
 
-	rarity: "None",
+	illustrator: "Sumiyoshi Kizuki",
+	rarity: "Common",
 	category: "Pokemon",
 	hp: 90,
 	types: ["Fire"],
-
-	evolveFrom: {
-		en: "Fletchling",
-		fr: "Passerouge",
-		de: "Dartiri",
-		it: "Fletchling",
-		es: "Fletchling",
-		pt: "Fletchling",
-		'es-mx': "Fletchling",
-	},
 	stage: "Stage1",
-	dexId: [662],
 
-	attacks: [
-	{
+	attacks: [{
 		cost: ["Fire", "Fire"],
 
 		name: {
 			en: "Flare",
 			fr: "Flamboiement",
+			es: "Llama",
+			'es-mx': "Llama",
 			de: "Flackern",
 			it: "Fiammata",
-			es: "Llama",
-			pt: "Chama",
-			'es-mx': "Llama",
+			pt: "Chama"
 		},
 
-		damage: 60,
-	},
-	],
+		damage: 60
+	}],
 
 	retreat: 1,
 	regulationMark: "J",
 
 	thirdParty: {
 		tcgplayer: 684404,
-	},
+		cardmarket: 877425
+	}
 }
 
 export default card

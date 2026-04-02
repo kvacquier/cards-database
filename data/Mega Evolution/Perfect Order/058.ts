@@ -7,79 +7,67 @@ const card: Card = {
 	name: {
 		en: "Aegislash",
 		fr: "Exagide",
+		es: "Aegislash",
+		'es-mx': "Aegislash",
 		de: "Durengard",
 		it: "Aegislash",
-		es: "Aegislash",
-		pt: "Aegislash",
-		'es-mx': "Aegislash",
+		pt: "Aegislash"
 	},
 
-	rarity: "None",
+	illustrator: "Mitsuhiro Arita",
+	rarity: "Uncommon",
 	category: "Pokemon",
 	hp: 150,
 	types: ["Metal"],
-
-	evolveFrom: {
-		en: "Doublade",
-		fr: "Dimoclès",
-		de: "Duokles",
-		it: "Doublade",
-		es: "Doublade",
-		pt: "Doublade",
-		'es-mx': "Doublade",
-	},
 	stage: "Stage2",
-	dexId: [681],
 
-	attacks: [
-	{
+	attacks: [{
 		cost: ["Colorless", "Colorless", "Colorless"],
 
 		name: {
 			en: "Slash",
 			fr: "Tranche",
+			es: "Cuchillada",
+			'es-mx': "Cuchillada",
 			de: "Schlitzer",
 			it: "Lacerazione",
-			es: "Cuchillada",
-			pt: "Talho",
-			'es-mx': "Cuchillada",
+			pt: "Talho"
 		},
 
-		damage: 80,
-	},
-	{
+		damage: 80
+	}, {
 		cost: ["Metal", "Colorless", "Colorless", "Colorless"],
 
 		name: {
 			en: "Metal Slash",
 			fr: "Tranche Métallique",
+			es: "Tajo Metálico",
+			'es-mx': "Cuchillada Metálica",
 			de: "Metallschlitzer",
 			it: "Lacerametallo",
-			es: "Tajo Metálico",
-			pt: "Talho de Metal",
-			'es-mx': "Tajo Metálico",
+			pt: "Talho de Metal"
 		},
-
-		damage: 230,
 
 		effect: {
 			en: "During your next turn, this Pokémon can't use attacks.",
 			fr: "Pendant votre prochain tour, ce Pokémon ne peut pas utiliser d'attaques.",
+			es: "Durante tu próximo turno, este Pokémon no puede usar ataques.",
+			'es-mx': "Durante tu próximo turno, este Pokémon no puede usar ataques.",
 			de: "Während deines nächsten Zuges kann dieses Pokémon keine Attacken einsetzen.",
 			it: "Durante il tuo prossimo turno, questo Pokémon non può usare attacchi.",
-			es: "Durante tu próximo turno, este Pokémon no puede usar ataques.",
-			pt: "Durante o seu próximo turno, este Pokémon não poderá usar ataques.",
-			'es-mx': "Durante tu próximo turno, este Pokémon no puede usar ataques.",
+			pt: "Durante o seu próximo turno, este Pokémon não poderá usar ataques."
 		},
-	},
-	],
+
+		damage: 230
+	}],
 
 	retreat: 3,
 	regulationMark: "J",
 
 	thirdParty: {
 		tcgplayer: 684381,
-	},
+		cardmarket: 877474
+	}
 }
 
 export default card

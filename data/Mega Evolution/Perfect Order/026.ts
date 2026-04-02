@@ -7,54 +7,53 @@ const card: Card = {
 	name: {
 		en: "Shinx",
 		fr: "Lixy",
+		es: "Shinx",
+		'es-mx': "Shinx",
 		de: "Sheinux",
 		it: "Shinx",
-		es: "Shinx",
-		pt: "Shinx",
-		'es-mx': "Shinx",
+		pt: "Shinx"
 	},
 
-	rarity: "None",
+	illustrator: "Saboteri",
+	rarity: "Common",
 	category: "Pokemon",
 	hp: 70,
 	types: ["Lightning"],
 	stage: "Basic",
-	dexId: [403],
 
-	attacks: [
-	{
+	attacks: [{
 		cost: ["Lightning"],
 
 		name: {
 			en: "Double Scratch",
 			fr: "Double Écorchure",
+			es: "Arañazo Doble",
+			'es-mx': "Doble Arañazo",
 			de: "Doppelkratzer",
 			it: "Doppio Graffio",
-			es: "Arañazo Doble",
-			pt: "Arranhão Duplo",
-			'es-mx': "Arañazo Doble",
+			pt: "Arranhão Duplo"
 		},
-
-		damage: "10×",
 
 		effect: {
 			en: "Flip 2 coins. This attack does 10 damage for each heads.",
 			fr: "Lancez 2 pièces. Cette attaque inflige 10 dégâts pour chaque côté face.",
+			es: "Lanza 2 monedas. Este ataque hace 10 puntos de daño por cada cara.",
+			'es-mx': "Lanza 2 monedas. Este ataque hace 10 puntos de daño por cada cara.",
 			de: "Wirf 2 Münzen. Diese Attacke fügt 10 Schadenspunkte pro Kopf zu.",
 			it: "Lancia due volte una moneta. Questo attacco infligge 10 danni ogni volta che esce testa.",
-			es: "Lanza 2 monedas. Este ataque hace 10 puntos de daño por cada cara.",
-			pt: "Jogue 2 moedas. Este ataque causa 10 pontos de dano para cada cara.",
-			'es-mx': "Lanza 2 monedas. Este ataque hace 10 puntos de daño por cada cara.",
+			pt: "Jogue 2 moedas. Este ataque causa 10 pontos de dano para cada cara."
 		},
-	},
-	],
+
+		damage: "10×"
+	}],
 
 	retreat: 1,
 	regulationMark: "J",
 
 	thirdParty: {
 		tcgplayer: 684409,
-	},
+		cardmarket: 877439
+	}
 }
 
 export default card

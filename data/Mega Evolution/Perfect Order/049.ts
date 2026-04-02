@@ -7,62 +7,51 @@ const card: Card = {
 	name: {
 		en: "Haunter",
 		fr: "Spectrum",
+		es: "Haunter",
+		'es-mx': "Haunter",
 		de: "Alpollo",
 		it: "Haunter",
-		es: "Haunter",
-		pt: "Haunter",
-		'es-mx': "Haunter",
+		pt: "Haunter"
 	},
 
-	rarity: "None",
+	illustrator: "Kedamahadaitai Yawarakai",
+	rarity: "Common",
 	category: "Pokemon",
 	hp: 100,
 	types: ["Darkness"],
-
-	evolveFrom: {
-		en: "Gastly",
-		fr: "Fantominus",
-		de: "Nebulak",
-		it: "Gastly",
-		es: "Gastly",
-		pt: "Gastly",
-		'es-mx': "Gastly",
-	},
 	stage: "Stage1",
-	dexId: [93],
 
-	attacks: [
-	{
+	attacks: [{
 		cost: ["Darkness"],
 
 		name: {
 			en: "Haunt",
 			fr: "Hanter",
+			es: "Espanto",
+			'es-mx': "Maleficio",
 			de: "Spuk",
 			it: "Infestare",
-			es: "Espanto",
-			pt: "Assombrar",
-			'es-mx': "Espanto",
+			pt: "Assombrar"
 		},
 
 		effect: {
 			en: "Place 3 damage counters on your opponent's Active Pokémon.",
 			fr: "Placez 3 marqueurs de dégâts sur le Pokémon Actif de votre adversaire.",
+			es: "Pon 3 contadores de daño en el Pokémon Activo de tu rival.",
+			'es-mx': "Pon 3 contadores de daño en el Pokémon Activo de tu rival.",
 			de: "Lege 3 Schadensmarken auf das Aktive Pokémon deines Gegners.",
 			it: "Metti tre segnalini danno sul Pokémon attivo del tuo avversario.",
-			es: "Pon 3 contadores de daño en el Pokémon Activo de tu rival.",
-			pt: "Coloque 3 contadores de dano no Pokémon Ativo do seu oponente.",
-			'es-mx': "Pon 3 contadores de daño en el Pokémon Activo de tu rival.",
-		},
-	},
-	],
+			pt: "Coloque 3 contadores de dano no Pokémon Ativo do seu oponente."
+		}
+	}],
 
 	retreat: 1,
 	regulationMark: "J",
 
 	thirdParty: {
 		tcgplayer: 684430,
-	},
+		cardmarket: 877464
+	}
 }
 
 export default card

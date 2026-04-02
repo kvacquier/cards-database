@@ -7,32 +7,34 @@ const card: Card = {
 	name: {
 		en: "Pokémon Catcher",
 		fr: "Attrape-Pokémon",
+		es: "Capturapokémon",
+		'es-mx': "Capturador de Pokémon",
 		de: "Pokémon-Fänger",
 		it: "Acchiappa-Pokémon",
-		es: "Capturapokémon",
-		pt: "Pegador de Pokémon",
-		'es-mx': "Capturapokémon",
+		pt: "Pegador de Pokémon"
 	},
 
-	rarity: "None",
+	illustrator: "Studio Bora Inc.",
+	rarity: "Common",
 	category: "Trainer",
-	trainerType: "Item",
 
 	effect: {
-		en: "Switch your opponent's Active Pokémon with 1 of their Benched Pokémon.",
+		en: "Flip a coin. If heads, switch in 1 of your opponent's Benched Pokémon to the Active Spot.",
 		fr: "Lancez une pièce. Si c'est face, envoyez l'un des Pokémon de Banc de votre adversaire sur le Poste Actif.",
+		es: "Lanza 1 moneda. Si sale cara, cambia 1 de los Pokémon en Banca de tu rival por el Pokémon que esté en el Puesto Activo.",
+		'es-mx': "Lanza 1 moneda. Si sale cara, cambia 1 de los Pokémon en Banca de tu rival por el Pokémon que esté en el Puesto Activo.",
 		de: "Wirf 1 Münze. Wechsle bei Kopf 1 Pokémon von der Bank deines Gegners in die Aktive Position ein.",
 		it: "Lancia una moneta. Se esce testa, sostituisci uno dei Pokémon nella panchina del tuo avversario con il suo Pokémon in posizione attiva.",
-		es: "Lanza 1 moneda. Si sale cara, cambia 1 de los Pokémon en Banca de tu rival por el Pokémon que esté en el Puesto Activo.",
-		pt: "Jogue uma moeda. Se sair cara, mande 1 dos Pokémon no Banco do seu oponente para o Campo Ativo.",
-		'es-mx': "Lanza 1 moneda. Si sale cara, cambia 1 de los Pokémon en Banca de tu rival por el Pokémon que esté en el Puesto Activo.",
+		pt: "Jogue uma moeda. Se sair cara, mande 1 dos Pokémon no Banco do seu oponente para o Campo Ativo."
 	},
 
+	trainerType: "Item",
 	regulationMark: "J",
 
 	thirdParty: {
-		tcgplayer: 684324,
-	},
+		cardmarket: 877499,
+		tcgplayer: 684324
+	}
 }
 
 export default card

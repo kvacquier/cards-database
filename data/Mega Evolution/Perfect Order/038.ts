@@ -7,79 +7,67 @@ const card: Card = {
 	name: {
 		en: "Probopass",
 		fr: "Tarinorme",
+		es: "Probopass",
+		'es-mx': "Probopass",
 		de: "Voluminas",
 		it: "Probopass",
-		es: "Probopass",
-		pt: "Probopass",
-		'es-mx': "Probopass",
+		pt: "Probopass"
 	},
 
-	rarity: "None",
+	illustrator: "Nurikabe",
+	rarity: "Common",
 	category: "Pokemon",
 	hp: 140,
 	types: ["Fighting"],
-
-	evolveFrom: {
-		en: "Nosepass",
-		fr: "Tarinor",
-		de: "Nasgnet",
-		it: "Nosepass",
-		es: "Nosepass",
-		pt: "Nosepass",
-		'es-mx': "Nosepass",
-	},
 	stage: "Stage1",
-	dexId: [476],
 
-	attacks: [
-	{
+	attacks: [{
 		cost: ["Fighting", "Fighting"],
 
 		name: {
 			en: "Rolling Rocks",
 			fr: "Rochers Roulants",
+			es: "Rocas Rodantes",
+			'es-mx': "Rocas Rodantes",
 			de: "Rollende Steine",
 			it: "Massi Rotolanti",
-			es: "Rocas Rodantes",
-			pt: "Pedras Rolantes",
-			'es-mx': "Rocas Rodantes",
+			pt: "Pedras Rolantes"
 		},
 
-		damage: 60,
-	},
-	{
+		damage: 60
+	}, {
 		cost: ["Fighting", "Fighting", "Fighting", "Colorless"],
 
 		name: {
 			en: "Obliterating Nose",
 			fr: "Nez Destructeur",
+			es: "Nariz Destructora",
+			'es-mx': "Nariz Destructora",
 			de: "Niederstreckende Nase",
 			it: "Naso Devastante",
-			es: "Nariz Destructora",
-			pt: "Obliteração Nasal",
-			'es-mx': "Nariz Destructora",
+			pt: "Obliteração Nasal"
 		},
-
-		damage: 260,
 
 		effect: {
 			en: "Discard 3 Energy from this Pokémon.",
 			fr: "Défaussez 3 Énergies de ce Pokémon.",
+			es: "Descarta 3 Energías de este Pokémon.",
+			'es-mx': "Descarta 3 Energías de este Pokémon.",
 			de: "Lege 3 Energien von diesem Pokémon auf deinen Ablagestapel.",
 			it: "Scarta tre Energie da questo Pokémon.",
-			es: "Descarta 3 Energías de este Pokémon.",
-			pt: "Descarte 3 Energias deste Pokémon.",
-			'es-mx': "Descarta 3 Energías de este Pokémon.",
+			pt: "Descarte 3 Energias deste Pokémon."
 		},
-	},
-	],
+
+		damage: 260
+	}],
 
 	retreat: 3,
 	regulationMark: "J",
 
 	thirdParty: {
 		tcgplayer: 684423,
-	},
+		cardmarket: 877452
+	}
 }
 
 export default card

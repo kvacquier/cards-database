@@ -7,44 +7,43 @@ const card: Card = {
 	name: {
 		en: "Salandit",
 		fr: "Tritox",
+		es: "Salandit",
+		'es-mx': "Salandit",
 		de: "Molunk",
 		it: "Salandit",
-		es: "Salandit",
-		pt: "Salandit",
-		'es-mx': "Salandit",
+		pt: "Salandit"
 	},
 
-	rarity: "None",
+	illustrator: "Kazuhisa Uragami",
+	rarity: "Common",
 	category: "Pokemon",
 	hp: 70,
 	types: ["Fire"],
 	stage: "Basic",
-	dexId: [757],
 
-	attacks: [
-	{
+	attacks: [{
 		cost: ["Fire"],
 
 		name: {
 			en: "Fire Claws",
 			fr: "Griffes Enflammées",
+			es: "Garras de Fuego",
+			'es-mx': "Garras de Fuego",
 			de: "Feuerkrallen",
 			it: "Artigli Infuocati",
-			es: "Garras de Fuego",
-			pt: "Garras de Fogo",
-			'es-mx': "Garras de Fuego",
+			pt: "Garras de Fogo"
 		},
 
-		damage: 20,
-	},
-	],
+		damage: 20
+	}],
 
 	retreat: 1,
 	regulationMark: "J",
 
 	thirdParty: {
 		tcgplayer: 684382,
-	},
+		cardmarket: 877427
+	}
 }
 
 export default card

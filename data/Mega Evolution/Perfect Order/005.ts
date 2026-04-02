@@ -7,54 +7,43 @@ const card: Card = {
 	name: {
 		en: "Servine",
 		fr: "Lianaja",
+		es: "Servine",
+		'es-mx': "Servine",
 		de: "Efoserp",
 		it: "Servine",
-		es: "Servine",
-		pt: "Servine",
-		'es-mx': "Servine",
+		pt: "Servine"
 	},
 
-	rarity: "None",
+	illustrator: "Kurata So",
+	rarity: "Common",
 	category: "Pokemon",
 	hp: 100,
 	types: ["Grass"],
-
-	evolveFrom: {
-		en: "Snivy",
-		fr: "Vipélierre",
-		de: "Serpifeu",
-		it: "Snivy",
-		es: "Snivy",
-		pt: "Snivy",
-		'es-mx': "Snivy",
-	},
 	stage: "Stage1",
-	dexId: [496],
 
-	attacks: [
-	{
+	attacks: [{
 		cost: ["Grass"],
 
 		name: {
 			en: "Solar Cutter",
 			fr: "Coupe Solaire",
+			es: "Corte Solar",
+			'es-mx': "Corte Solar",
 			de: "Solarschneider",
 			it: "Taglio Solare",
-			es: "Corte Solar",
-			pt: "Cortador Solar",
-			'es-mx': "Corte Solar",
+			pt: "Cortador Solar"
 		},
 
-		damage: 40,
-	},
-	],
+		damage: 40
+	}],
 
 	retreat: 1,
 	regulationMark: "J",
 
 	thirdParty: {
 		tcgplayer: 684401,
-	},
+		cardmarket: 877417
+	}
 }
 
 export default card

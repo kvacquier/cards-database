@@ -7,44 +7,43 @@ const card: Card = {
 	name: {
 		en: "Honedge",
 		fr: "Monorpale",
+		es: "Honedge",
+		'es-mx': "Honedge",
 		de: "Gramokles",
 		it: "Honedge",
-		es: "Honedge",
-		pt: "Honedge",
-		'es-mx': "Honedge",
+		pt: "Honedge"
 	},
 
-	rarity: "None",
+	illustrator: "Apios",
+	rarity: "Common",
 	category: "Pokemon",
 	hp: 70,
 	types: ["Metal"],
 	stage: "Basic",
-	dexId: [679],
 
-	attacks: [
-	{
+	attacks: [{
 		cost: ["Colorless"],
 
 		name: {
 			en: "Cut",
 			fr: "Coupe",
+			es: "Corte",
+			'es-mx': "Corte",
 			de: "Zerschneider",
 			it: "Taglio",
-			es: "Corte",
-			pt: "Cortar",
-			'es-mx': "Corte",
+			pt: "Cortar"
 		},
 
-		damage: 10,
-	},
-	],
+		damage: 10
+	}],
 
 	retreat: 2,
 	regulationMark: "J",
 
 	thirdParty: {
 		tcgplayer: 684378,
-	},
+		cardmarket: 877472
+	}
 }
 
 export default card

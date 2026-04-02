@@ -7,67 +7,65 @@ const card: Card = {
 	name: {
 		en: "Fletchling",
 		fr: "Passerouge",
+		es: "Fletchling",
+		'es-mx': "Fletchling",
 		de: "Dartiri",
 		it: "Fletchling",
-		es: "Fletchling",
-		pt: "Fletchling",
-		'es-mx': "Fletchling",
+		pt: "Fletchling"
 	},
 
-	rarity: "None",
+	illustrator: "sowsow",
+	rarity: "Common",
 	category: "Pokemon",
 	hp: 60,
 	types: ["Colorless"],
 	stage: "Basic",
-	dexId: [661],
 
-	attacks: [
-	{
+	attacks: [{
 		cost: ["Colorless"],
 
 		name: {
 			en: "Chirp",
 			fr: "Gazouillis",
+			es: "Gorjeo",
+			'es-mx': "Pío Pío",
 			de: "Zwitscherer",
 			it: "Cinguettio",
-			es: "Gorjeo",
-			pt: "Gorjeio",
-			'es-mx': "Gorjeo",
+			pt: "Gorjeio"
 		},
 
 		effect: {
 			en: "Search your deck for up to 2 Pokémon with {F} Resistance, reveal them, and put them into your hand. Then, shuffle your deck.",
 			fr: "Cherchez dans votre deck jusqu'à 2 Pokémon avec une Résistance à {F}, montrez-les, puis ajoutez-les à votre main. Mélangez ensuite votre deck.",
+			es: "Busca en tu baraja hasta 2 Pokémon con Resistencia a {F}, enséñalos y ponlos en tu mano. Después, baraja las cartas de tu baraja.",
+			'es-mx': "Busca en tu mazo hasta 2 Pokémon con Resistencia a {F}, muéstralos y ponlos en tu mano. Después, baraja tu mazo.",
 			de: "Durchsuche dein Deck nach bis zu 2 Pokémon mit {F}-Resistenz, zeige sie deinem Gegner und nimm sie auf deine Hand. Mische anschließend dein Deck.",
 			it: "Cerca nel tuo mazzo fino a due Pokémon con resistenza al tipo {F}, mostrali e aggiungili alle carte che hai in mano. Poi rimischia il tuo mazzo.",
-			es: "Busca en tu baraja hasta 2 Pokémon con Resistencia a {F}, enséñalos y ponlos en tu mano. Después, baraja las cartas de tu baraja.",
-			pt: "Procure por até 2 Pokémon com Resistência {F} no seu baralho, revele-os e coloque-os na sua mão. Em seguida, embaralhe o seu baralho.",
-			'es-mx': "Busca en tu baraja hasta 2 Pokémon con Resistencia a {F}, enséñalos y ponlos en tu mano. Después, baraja las cartas de tu baraja.",
-		},
-	},
-	{
+			pt: "Procure por até 2 Pokémon com Resistência {F} no seu baralho, revele-os e coloque-os na sua mão. Em seguida, embaralhe o seu baralho."
+		}
+	}, {
 		cost: ["Colorless", "Colorless"],
 
 		name: {
 			en: "Peck",
 			fr: "Picpic",
+			es: "Picotazo",
+			'es-mx': "Picotazo",
 			de: "Pikser",
 			it: "Beccata",
-			es: "Picotazo",
-			pt: "Bicada",
-			'es-mx': "Picotazo",
+			pt: "Bicada"
 		},
 
-		damage: 20,
-	},
-	],
+		damage: 20
+	}],
 
 	retreat: 1,
 	regulationMark: "J",
 
 	thirdParty: {
 		tcgplayer: 684403,
-	},
+		cardmarket: 877482
+	}
 }
 
 export default card

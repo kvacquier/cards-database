@@ -7,44 +7,43 @@ const card: Card = {
 	name: {
 		en: "Scatterbug",
 		fr: "Lépidonille",
+		es: "Scatterbug",
+		'es-mx': "Scatterbug",
 		de: "Purmel",
 		it: "Scatterbug",
-		es: "Scatterbug",
-		pt: "Scatterbug",
-		'es-mx': "Scatterbug",
+		pt: "Scatterbug"
 	},
 
-	rarity: "None",
+	illustrator: "OKACHEKE",
+	rarity: "Common",
 	category: "Pokemon",
 	hp: 40,
 	types: ["Grass"],
 	stage: "Basic",
-	dexId: [664],
 
-	attacks: [
-	{
+	attacks: [{
 		cost: ["Grass"],
 
 		name: {
 			en: "Gnaw",
 			fr: "Ronge",
+			es: "Roer",
+			'es-mx': "Mordisquear",
 			de: "Nagen",
 			it: "Rosicchiamento",
-			es: "Roer",
-			pt: "Roída",
-			'es-mx': "Roer",
+			pt: "Roída"
 		},
 
-		damage: 20,
-	},
-	],
+		damage: 20
+	}],
 
 	retreat: 1,
 	regulationMark: "J",
 
 	thirdParty: {
 		tcgplayer: 684363,
-	},
+		cardmarket: 877419
+	}
 }
 
 export default card

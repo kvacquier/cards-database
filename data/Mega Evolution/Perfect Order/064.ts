@@ -7,44 +7,43 @@ const card: Card = {
 	name: {
 		en: "Bunnelby",
 		fr: "Sapereau",
+		es: "Bunnelby",
+		'es-mx': "Bunnelby",
 		de: "Scoppel",
 		it: "Bunnelby",
-		es: "Bunnelby",
-		pt: "Bunnelby",
-		'es-mx': "Bunnelby",
+		pt: "Bunnelby"
 	},
 
-	rarity: "None",
+	illustrator: "MINAMINAMI Take",
+	rarity: "Common",
 	category: "Pokemon",
 	hp: 70,
 	types: ["Colorless"],
 	stage: "Basic",
-	dexId: [659],
 
-	attacks: [
-	{
+	attacks: [{
 		cost: ["Colorless"],
 
 		name: {
 			en: "Smash Kick",
 			fr: "Coud'Pattes",
+			es: "Patada Destrucción",
+			'es-mx': "Patada Devastadora",
 			de: "Schmetterkick",
 			it: "Calcio Esplosivo",
-			es: "Patada Destrucción",
-			pt: "Chute Poderoso",
-			'es-mx': "Patada Destrucción",
+			pt: "Chute Poderoso"
 		},
 
-		damage: 10,
-	},
-	],
+		damage: 10
+	}],
 
 	retreat: 1,
 	regulationMark: "J",
 
 	thirdParty: {
 		tcgplayer: 684441,
-	},
+		cardmarket: 877480
+	}
 }
 
 export default card

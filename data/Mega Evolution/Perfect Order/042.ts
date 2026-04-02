@@ -7,67 +7,65 @@ const card: Card = {
 	name: {
 		en: "Binacle",
 		fr: "Opermine",
+		es: "Binacle",
+		'es-mx': "Binacle",
 		de: "Bithora",
 		it: "Binacle",
-		es: "Binacle",
-		pt: "Binacle",
-		'es-mx': "Binacle",
+		pt: "Binacle"
 	},
 
-	rarity: "None",
+	illustrator: "nagimiso",
+	rarity: "Common",
 	category: "Pokemon",
 	hp: 80,
 	types: ["Fighting"],
 	stage: "Basic",
-	dexId: [688],
 
-	attacks: [
-	{
+	attacks: [{
 		cost: ["Fighting"],
 
 		name: {
 			en: "Double Draw",
 			fr: "Double Pioche",
+			es: "Roba Doble",
+			'es-mx': "Doble Robo",
 			de: "Zweifachzug",
 			it: "Pescata Doppia",
-			es: "Roba Doble",
-			pt: "Compra Dupla",
-			'es-mx': "Roba Doble",
+			pt: "Compra Dupla"
 		},
 
 		effect: {
 			en: "Draw 2 cards.",
 			fr: "Piochez 2 cartes.",
+			es: "Roba 2 cartas.",
+			'es-mx': "Roba 2 cartas.",
 			de: "Ziehe 2 Karten.",
 			it: "Pesca due carte.",
-			es: "Roba 2 cartas.",
-			pt: "Compre 2 cartas.",
-			'es-mx': "Roba 2 cartas.",
-		},
-	},
-	{
+			pt: "Compre 2 cartas."
+		}
+	}, {
 		cost: ["Fighting", "Fighting"],
 
 		name: {
 			en: "Scratch",
 			fr: "Griffe",
+			es: "Arañazo",
+			'es-mx': "Arañazo",
 			de: "Kratzer",
 			it: "Graffio",
-			es: "Arañazo",
-			pt: "Arranhão",
-			'es-mx': "Arañazo",
+			pt: "Arranhão"
 		},
 
-		damage: 30,
-	},
-	],
+		damage: 30
+	}],
 
 	retreat: 2,
 	regulationMark: "J",
 
 	thirdParty: {
 		tcgplayer: 684334,
-	},
+		cardmarket: 877456
+	}
 }
 
 export default card

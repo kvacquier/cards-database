@@ -8,27 +8,28 @@ const set: Set = {
 		de: "Optimale Ordnung",
 		en: "Perfect Order",
 		es: "Equilibrio Perfecto",
-		'es-mx': "Equilibrio Perfecto",
-		fr: "Equilibre Parfait",
-		it: "Equilibrio Perfecto",
-		pt: "Equilíbrio Perfeito"
+		'es-mx': 'Equilibrio Perfecto',
+		fr: "Équilibre Parfait",
+		it: "Equilibrio Perfetto",
+		pt: "Heróis Excelsos"
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 124
+		official: 88
 	},
 
-	releaseDate: "2026-03-28",
+	releaseDate: "2026-03-27",
 
 	abbreviations: {
-		official: "POR"
+		official: "POR",
+		fr: "ORP"
 	},
 
 	thirdParty: {
-		cardmarket: 6299,
-		tcgplayer: 24448
+		cardmarket: 6443,
+		tcgplayer: 24587
 	}
 }
 

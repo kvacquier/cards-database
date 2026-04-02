@@ -7,44 +7,43 @@ const card: Card = {
 	name: {
 		en: "Nosepass",
 		fr: "Tarinor",
+		es: "Nosepass",
+		'es-mx': "Nosepass",
 		de: "Nasgnet",
 		it: "Nosepass",
-		es: "Nosepass",
-		pt: "Nosepass",
-		'es-mx': "Nosepass",
+		pt: "Nosepass"
 	},
 
-	rarity: "None",
+	illustrator: "Jerky",
+	rarity: "Common",
 	category: "Pokemon",
 	hp: 90,
 	types: ["Fighting"],
 	stage: "Basic",
-	dexId: [299],
 
-	attacks: [
-	{
+	attacks: [{
 		cost: ["Fighting", "Fighting"],
 
 		name: {
 			en: "Rolling Rocks",
 			fr: "Rochers Roulants",
+			es: "Rocas Rodantes",
+			'es-mx': "Rocas Rodantes",
 			de: "Rollende Steine",
 			it: "Massi Rotolanti",
-			es: "Rocas Rodantes",
-			pt: "Pedras Rolantes",
-			'es-mx': "Rocas Rodantes",
+			pt: "Pedras Rolantes"
 		},
 
-		damage: 40,
-	},
-	],
+		damage: 40
+	}],
 
 	retreat: 3,
 	regulationMark: "J",
 
 	thirdParty: {
 		tcgplayer: 684422,
-	},
+		cardmarket: 877451
+	}
 }
 
 export default card

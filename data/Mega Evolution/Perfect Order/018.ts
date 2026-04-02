@@ -7,59 +7,57 @@ const card: Card = {
 	name: {
 		en: "Seel",
 		fr: "Otaria",
+		es: "Seel",
+		'es-mx': "Seel",
 		de: "Jurob",
 		it: "Seel",
-		es: "Seel",
-		pt: "Seel",
-		'es-mx': "Seel",
+		pt: "Seel"
 	},
 
-	rarity: "None",
+	illustrator: "Kanami Ogata",
+	rarity: "Common",
 	category: "Pokemon",
 	hp: 80,
 	types: ["Water"],
 	stage: "Basic",
-	dexId: [86],
 
-	attacks: [
-	{
+	attacks: [{
 		cost: ["Water"],
 
 		name: {
 			en: "Rain Splash",
 			fr: "Pluie Éclaboussante",
+			es: "Golpe de Lluvia",
+			'es-mx': "Salpicalluvia",
 			de: "Regenplatscher",
 			it: "Spruzzapioggia",
-			es: "Golpe de Lluvia",
-			pt: "Chuva Borrifante",
-			'es-mx': "Golpe de Lluvia",
+			pt: "Chuva Borrifante"
 		},
 
-		damage: 10,
-	},
-	{
+		damage: 10
+	}, {
 		cost: ["Water", "Water"],
 
 		name: {
 			en: "Wave Splash",
 			fr: "Grosse Vague",
+			es: "Chapoteo Ondulante",
+			'es-mx': "Acuasalpicadura",
 			de: "Wellenplatscher",
 			it: "Schizzi d'Onda",
-			es: "Chapoteo Ondulante",
-			pt: "Onda Borrifante",
-			'es-mx': "Chapoteo Ondulante",
+			pt: "Onda Borrifante"
 		},
 
-		damage: 30,
-	},
-	],
+		damage: 30
+	}],
 
 	retreat: 2,
 	regulationMark: "J",
 
 	thirdParty: {
 		tcgplayer: 684372,
-	},
+		cardmarket: 877430
+	}
 }
 
 export default card

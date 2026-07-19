@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Burmy"
 	},
 
+	illustrator: "Miki Tanaka",
 	rarity: "Common",
 	category: "Pokemon",
 	hp: 60,
@@ -44,21 +45,27 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "F",
 
-	variants: {
-		normal: true,
-		reverse: true,
-		holo: false,
-		firstEdition: false
-	},
 
 	description: {
 		en: "If its cloak is broken in battle, it quickly remakes the cloak with materials nearby.",
 	},
 
-	thirdParty: {
-		cardmarket: 608433,
-		tcgplayer: 263595
-	}
+	variants: [
+		{
+			type: 'normal',
+			thirdParty: {
+				cardmarket: 608433,
+				tcgplayer: 263595
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 608433,
+				tcgplayer: 263595
+			}
+		},
+	],
 }
 
 export default card

@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Kramshef V"
 	},
 
+	illustrator: "zig",
 	rarity: "Ultra Rare",
 	category: "Pokemon",
 	hp: 200,
@@ -82,17 +83,16 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 608708,
-		tcgplayer: 263881
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 608708,
+				tcgplayer: 263881
+			}
+		},
+	],
 }
 
 export default card

@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Heatran VMAX"
 	},
 
+	illustrator: "N-DESIGN Inc.",
 	rarity: "Secret Rare",
 	category: "Pokemon",
 	hp: 330,
@@ -85,17 +86,17 @@ const card: Card = {
 	retreat: 4,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 658852,
-		tcgplayer: 272445
-	}
+	variants: [
+		{
+			type: 'holo',
+			foil: 'rainbow',
+			thirdParty: {
+				cardmarket: 658852,
+				tcgplayer: 272445
+			}
+		},
+	],
 }
 
 export default card

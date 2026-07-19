@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Galar-Lavados V"
 	},
 
+	illustrator: "akyCG Works",
 	rarity: "Secret Rare",
 	category: "Pokemon",
 	hp: 220,
@@ -76,17 +77,17 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "E",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 608729,
-		tcgplayer: 263903
-	}
+	variants: [
+		{
+			type: 'holo',
+			foil: 'gold',
+			thirdParty: {
+				cardmarket: 608729,
+				tcgplayer: 263903
+			}
+		},
+	],
 }
 
 export default card

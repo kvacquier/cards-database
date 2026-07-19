@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Bamelin"
 	},
 
+	illustrator: "Tika Matsuno",
 	rarity: "Common",
 	category: "Pokemon",
 	hp: 60,
@@ -53,21 +54,27 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "F",
 
-	variants: {
-		normal: true,
-		reverse: true,
-		holo: false,
-		firstEdition: false
-	},
 
 	description: {
 		en: "It inflates the flotation sac around its neck and pokes its head out of the water to see what is going on.",
 	},
 
-	thirdParty: {
-		cardmarket: 608488,
-		tcgplayer: 263737
-	}
+	variants: [
+		{
+			type: 'normal',
+			thirdParty: {
+				cardmarket: 608488,
+				tcgplayer: 263737
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 608488,
+				tcgplayer: 263737
+			}
+		},
+	],
 }
 
 export default card

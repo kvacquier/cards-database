@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Damythir"
 	},
 
+	illustrator: "Mizue",
 	rarity: "Holo Rare",
 	category: "Pokemon",
 	hp: 140,
@@ -91,21 +92,27 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: true,
-		holo: true,
-		firstEdition: false
-	},
 
 	description: {
 		en: "The black orbs shine with an uncanny light when the Pokémon is erecting invisible barriers. The fur shed from its beard retains heat well and is a highly useful material for winter clothing.",
 	},
 
-	thirdParty: {
-		cardmarket: 658651,
-		tcgplayer: 272270
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 658651,
+				tcgplayer: 272270
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 658651,
+				tcgplayer: 272270
+			}
+		},
+	],
 }
 
 export default card

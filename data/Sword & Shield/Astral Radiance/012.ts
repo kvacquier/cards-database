@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Honweisel"
 	},
 
+	illustrator: "Yuya Oka",
 	rarity: "Rare",
 	category: "Pokemon",
 	hp: 120,
@@ -76,21 +77,27 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "F",
 
-	variants: {
-		normal: true,
-		reverse: true,
-		holo: false,
-		firstEdition: false
-	},
 
 	description: {
 		en: "It skillfully commands its grubs in battles with its enemies. The grubs are willing to risk their lives to defend Vespiquen.",
 	},
 
-	thirdParty: {
-		cardmarket: 658504,
-		tcgplayer: 272212
-	}
+	variants: [
+		{
+			type: 'normal',
+			thirdParty: {
+				cardmarket: 658504,
+				tcgplayer: 272212
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 658504,
+				tcgplayer: 272212
+			}
+		},
+	],
 }
 
 export default card

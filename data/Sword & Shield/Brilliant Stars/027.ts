@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Grillchita V"
 	},
 
+	illustrator: "5ban Graphics",
 	rarity: "Holo Rare V",
 	category: "Pokemon",
 	hp: 210,
@@ -76,17 +77,16 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 608477,
-		tcgplayer: 263726
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 608477,
+				tcgplayer: 263726
+			}
+		},
+	],
 }
 
 export default card

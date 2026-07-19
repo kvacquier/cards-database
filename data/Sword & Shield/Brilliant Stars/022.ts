@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Entei V"
 	},
 
+	illustrator: "PLANETA Mochizuki",
 	rarity: "Holo Rare V",
 	category: "Pokemon",
 	hp: 230,
@@ -76,17 +77,16 @@ const card: Card = {
 	retreat: 3,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 608472,
-		tcgplayer: 263715
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 608472,
+				tcgplayer: 263715
+			}
+		},
+	],
 }
 
 export default card

@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Evoli"
 	},
 
+	illustrator: "sowsow",
 	rarity: "Common",
 	category: "Pokemon",
 	hp: 50,
@@ -66,21 +67,27 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "F",
 
-	variants: {
-		normal: true,
-		reverse: true,
-		holo: false,
-		firstEdition: false
-	},
 
 	description: {
 		en: "It has the ability to alter the composition of its body to suit its surrounding environment.",
 	},
 
-	thirdParty: {
-		cardmarket: 658780,
-		tcgplayer: 272353
-	}
+	variants: [
+		{
+			type: 'normal',
+			thirdParty: {
+				cardmarket: 658780,
+				tcgplayer: 272353
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 658780,
+				tcgplayer: 272353
+			}
+		},
+	],
 }
 
 export default card

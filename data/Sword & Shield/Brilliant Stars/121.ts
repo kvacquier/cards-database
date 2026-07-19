@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Bidifas"
 	},
 
+	illustrator: "OKACHEKE",
 	rarity: "Holo Rare",
 	category: "Pokemon",
 	hp: 120,
@@ -85,21 +86,27 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: true,
-		holo: true,
-		firstEdition: false
-	},
 
 	description: {
 		en: "It makes its nest by damming streams with bark and mud. It is known as an industrious worker.",
 	},
 
-	thirdParty: {
-		cardmarket: 608667,
-		tcgplayer: 263846
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 608667,
+				tcgplayer: 263846
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 608667,
+				tcgplayer: 263846
+			}
+		},
+	],
 }
 
 export default card

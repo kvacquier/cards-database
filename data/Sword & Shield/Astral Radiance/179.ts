@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Kommandutan V"
 	},
 
+	illustrator: "Toyste Beach",
 	rarity: "Ultra Rare",
 	category: "Pokemon",
 	hp: 210,
@@ -76,17 +77,16 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 658840,
-		tcgplayer: 272429
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 658840,
+				tcgplayer: 272429
+			}
+		},
+	],
 }
 
 export default card

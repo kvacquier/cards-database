@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Panpyro"
 	},
 
+	illustrator: "KEIICHIRO ITO",
 	rarity: "Uncommon",
 	category: "Pokemon",
 	hp: 80,
@@ -76,21 +77,27 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "F",
 
-	variants: {
-		normal: true,
-		reverse: true,
-		holo: false,
-		firstEdition: false
-	},
 
 	description: {
 		en: "It uses ceilings and walls to launch aerial attacks. Its fiery tail is but one weapon.",
 	},
 
-	thirdParty: {
-		cardmarket: 608475,
-		tcgplayer: 263724
-	}
+	variants: [
+		{
+			type: 'normal',
+			thirdParty: {
+				cardmarket: 608475,
+				tcgplayer: 263724
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 608475,
+				tcgplayer: 263724
+			}
+		},
+	],
 }
 
 export default card

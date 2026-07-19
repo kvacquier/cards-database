@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Elfun V"
 	},
 
+	illustrator: "Saki Hayashiro",
 	rarity: "Holo Rare V",
 	category: "Pokemon",
 	hp: 190,
@@ -76,17 +77,16 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 608514,
-		tcgplayer: 263780
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 608514,
+				tcgplayer: 263780
+			}
+		},
+	],
 }
 
 export default card

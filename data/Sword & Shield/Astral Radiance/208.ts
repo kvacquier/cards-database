@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Ur-Palkia VSTAR"
 	},
 
+	illustrator: "aky CG Works",
 	rarity: "Secret Rare",
 	category: "Pokemon",
 	hp: 280,
@@ -64,17 +65,17 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 658551,
-		tcgplayer: 272463
-	}
+	variants: [
+		{
+			type: 'holo',
+			foil: 'gold',
+			thirdParty: {
+				cardmarket: 658869,
+				tcgplayer: 272463
+			}
+		},
+	],
 }
 
 export default card

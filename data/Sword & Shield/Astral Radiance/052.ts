@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Hisui-Tornupto"
 	},
 
+	illustrator: "Kouki Saitou",
 	rarity: "Holo Rare",
 	category: "Pokemon",
 	hp: 150,
@@ -91,21 +92,34 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: true,
-		holo: true,
-		firstEdition: false
-	},
 
 	description: {
 		en: "Said to purify lost, forsaken souls with its flames and guide them to the afterlife. I believe its form has been influenced by the energy of the sacred mountain towering at Hisui's center.",
 	},
 
-	thirdParty: {
-		cardmarket: 658603,
-		tcgplayer: 272253
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 658603,
+				tcgplayer: 272253
+			}
+		},
+		{
+			type: 'holo',
+			stamp: ['set-logo'],
+			thirdParty: {
+				cardmarket: 660427
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 658603,
+				tcgplayer: 272253
+			}
+		},
+	],
 }
 
 export default card

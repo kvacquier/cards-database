@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Galar-Arktos V"
 	},
 
+	illustrator: "5ban Graphics",
 	rarity: "Secret Rare",
 	category: "Pokemon",
 	hp: 210,
@@ -82,17 +83,17 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "E",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 608727,
-		tcgplayer: 263901
-	}
+	variants: [
+		{
+			type: 'holo',
+			foil: 'gold',
+			thirdParty: {
+				cardmarket: 608727,
+				tcgplayer: 263901
+			}
+		},
+	],
 }
 
 export default card

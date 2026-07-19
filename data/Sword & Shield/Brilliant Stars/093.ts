@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Pelzebub"
 	},
 
+	illustrator: "Shiburingaru",
 	rarity: "Uncommon",
 	category: "Pokemon",
 	hp: 90,
@@ -67,21 +68,27 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "F",
 
-	variants: {
-		normal: true,
-		reverse: true,
-		holo: false,
-		firstEdition: false
-	},
 
 	description: {
 		en: "When it gets down on all fours as if to beg for forgiveness, it's trying to lure opponents in so that it can stab them with its spear-like hair.",
 	},
 
-	thirdParty: {
-		cardmarket: 608639,
-		tcgplayer: 263811
-	}
+	variants: [
+		{
+			type: 'normal',
+			thirdParty: {
+				cardmarket: 608639,
+				tcgplayer: 263811
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 608639,
+				tcgplayer: 263811
+			}
+		},
+	],
 }
 
 export default card

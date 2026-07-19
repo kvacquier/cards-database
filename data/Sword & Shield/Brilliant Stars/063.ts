@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Palimpalim"
 	},
 
+	illustrator: "MAHOU",
 	rarity: "Common",
 	category: "Pokemon",
 	hp: 70,
@@ -70,21 +71,27 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "F",
 
-	variants: {
-		normal: true,
-		reverse: true,
-		holo: false,
-		firstEdition: false
-	},
 
 	description: {
 		en: "Emitting ultrasonic cries, it floats on winds to travel great distances.",
 	},
 
-	thirdParty: {
-		cardmarket: 608513,
-		tcgplayer: 263779
-	}
+	variants: [
+		{
+			type: 'normal',
+			thirdParty: {
+				cardmarket: 608513,
+				tcgplayer: 263779
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 608513,
+				tcgplayer: 263779
+			}
+		},
+	],
 }
 
 export default card

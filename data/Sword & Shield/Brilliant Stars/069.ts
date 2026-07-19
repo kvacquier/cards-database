@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Mimigma VMAX"
 	},
 
+	illustrator: "Studio Bora Inc.",
 	rarity: "Holo Rare VMAX",
 	category: "Pokemon",
 	hp: 300,
@@ -89,17 +90,16 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "E",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 608519,
-		tcgplayer: 263785
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 608519,
+				tcgplayer: 263785
+			}
+		},
+	],
 }
 
 export default card

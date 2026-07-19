@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Shaymin"
 	},
 
+	illustrator: "Kouki Saitou",
 	rarity: "Rare",
 	category: "Pokemon",
 	hp: 70,
@@ -64,21 +65,27 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "F",
 
-	variants: {
-		normal: true,
-		reverse: true,
-		holo: false,
-		firstEdition: false
-	},
 
 	description: {
 		en: "When the turning of seasons brings the cruel winter to its end and the joyous people give thanks to the heavens, Shaymin appears and covers the withered land with flowers.",
 	},
 
-	thirdParty: {
-		cardmarket: 658507,
-		tcgplayer: 272214
-	}
+	variants: [
+		{
+			type: 'normal',
+			thirdParty: {
+				cardmarket: 658507,
+				tcgplayer: 272214
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 658507,
+				tcgplayer: 272214
+			}
+		},
+	],
 }
 
 export default card

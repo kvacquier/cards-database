@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Galar-Zapdos V"
 	},
 
+	illustrator: "5ban Graphics",
 	rarity: "Secret Rare",
 	category: "Pokemon",
 	hp: 200,
@@ -76,17 +77,17 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "E",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 608728,
-		tcgplayer: 263902
-	}
+	variants: [
+		{
+			type: 'holo',
+			foil: 'gold',
+			thirdParty: {
+				cardmarket: 608728,
+				tcgplayer: 263902
+			}
+		},
+	],
 }
 
 export default card

@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Hisui-Silvarro V"
 	},
 
+	illustrator: "Shin Nagasawa",
 	rarity: "Holo Rare V",
 	category: "Pokemon",
 	hp: 220,
@@ -74,17 +75,16 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 658694,
-		tcgplayer: 272284
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 658694,
+				tcgplayer: 272284
+			}
+		},
+	],
 }
 
 export default card

@@ -29,21 +29,16 @@ const card: Card = {
 	trainerType: "Supporter",
 	regulationMark: "D",
 
-	description: {
-		en: "Boss's Orders (Giovanni)",
-		fr: "Ordres du Boss (Giovanni)",
-		es: "Órdenes de Jefes (Giovanni)",
-		it: "Ordini del Capo (Giovanni)",
-		pt: "Ordem da Chefia (Giovanni)",
-		de: "Befehl vom Boss (Giovanni)"
-	},
-
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	}
+	variants: [
+		{
+			type: 'holo',
+			foil: 'rainbow',
+			thirdParty: {
+				cardmarket: 457333,
+				tcgplayer: 213257
+			}
+		},
+	],
 }
 
 export default card

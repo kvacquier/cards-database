@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Ur-Palkia V"
 	},
 
+	illustrator: "Oswaldo KATO",
 	rarity: "Ultra Rare",
 	category: "Pokemon",
 	hp: 220,
@@ -74,17 +75,16 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 658828,
-		tcgplayer: 272419
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 658828,
+				tcgplayer: 272419
+			}
+		},
+	],
 }
 
 export default card

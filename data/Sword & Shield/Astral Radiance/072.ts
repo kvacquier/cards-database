@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Machomei V"
 	},
 
+	illustrator: "kawayoo",
 	rarity: "Holo Rare V",
 	category: "Pokemon",
 	hp: 220,
@@ -67,17 +68,16 @@ const card: Card = {
 	retreat: 3,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 658662,
-		tcgplayer: 272273
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 658662,
+				tcgplayer: 272273
+			}
+		},
+	],
 }
 
 export default card

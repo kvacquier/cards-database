@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Hisui-Admurai VSTAR"
 	},
 
+	illustrator: "5ban Graphics",
 	rarity: "Holo Rare VSTAR",
 	category: "Pokemon",
 	hp: 270,
@@ -64,17 +65,16 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 658762,
-		tcgplayer: 272303
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 658762,
+				tcgplayer: 272303
+			}
+		},
+	],
 }
 
 export default card

@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Impoleon"
 	},
 
+	illustrator: "Kouki Saitou",
 	rarity: "Holo Rare",
 	category: "Pokemon",
 	hp: 160,
@@ -83,21 +84,34 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: true,
-		holo: true,
-		firstEdition: false
-	},
 
 	description: {
 		en: "The three horns that extend from its beak attest to its power. The leader has the biggest horns.",
 	},
 
-	thirdParty: {
-		cardmarket: 608487,
-		tcgplayer: 263736
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 608487,
+				tcgplayer: 263736
+			}
+		},
+		{
+			type: 'holo',
+			foil: 'cosmos',
+			thirdParty: {
+				cardmarket: 730039
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 608487,
+				tcgplayer: 263736
+			}
+		},
+	],
 }
 
 export default card

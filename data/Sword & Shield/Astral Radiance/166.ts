@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Starmie V"
 	},
 
+	illustrator: "Eske Yoshinob",
 	rarity: "Ultra Rare",
 	category: "Pokemon",
 	hp: 190,
@@ -76,17 +77,16 @@ const card: Card = {
 	retreat: 0,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 658827,
-		tcgplayer: 272418
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 658827,
+				tcgplayer: 272418
+			}
+		},
+	],
 }
 
 export default card

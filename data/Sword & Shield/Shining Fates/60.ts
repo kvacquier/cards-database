@@ -29,21 +29,29 @@ const card: Card = {
 	trainerType: "Supporter",
 	regulationMark: "D",
 
-	description: {
-		en: "Professor's Research (Professor Juniper)",
-		de: "Forschung des Professors (Professor Esche)",
-		es: "Investigación de Profesores (Profesora Encina)",
-		fr: "Recherches Professorales (Professeure Keteleeria)",
-		it: "Ricerca Accademica (Professoressa Aralia)",
-		pt: "Pesquisa de Professores (Professor Juniper)"
-	},
-
-	variants: {
-		normal: true,
-		reverse: true,
-		holo: false,
-		firstEdition: false
-	}
+	variants: [
+		{
+			type: 'normal',
+			thirdParty: {
+				cardmarket: 539323,
+				tcgplayer: 232545
+			}
+		},
+		{
+			type: 'holo',
+			foil: 'cosmos',
+			thirdParty: {
+				cardmarket: 659583
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 539323,
+				tcgplayer: 232545
+			}
+		},
+	],
 }
 
 export default card

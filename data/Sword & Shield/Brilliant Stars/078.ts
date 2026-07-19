@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Riolu"
 	},
 
+	illustrator: "Teeziro",
 	rarity: "Common",
 	category: "Pokemon",
 	hp: 60,
@@ -44,21 +45,27 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "F",
 
-	variants: {
-		normal: true,
-		reverse: true,
-		holo: false,
-		firstEdition: false
-	},
 
 	description: {
 		en: "It's exceedingly energetic, with enough stamina to keep running all through the night. Taking it for walks can be a challenging experience.",
 	},
 
-	thirdParty: {
-		cardmarket: 608528,
-		tcgplayer: 263794
-	}
+	variants: [
+		{
+			type: 'normal',
+			thirdParty: {
+				cardmarket: 608528,
+				tcgplayer: 263794
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 608528,
+				tcgplayer: 263794
+			}
+		},
+	],
 }
 
 export default card

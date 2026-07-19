@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Machomei VMAX"
 	},
 
+	illustrator: "N-DESIGN Inc.",
 	rarity: "Secret Rare",
 	category: "Pokemon",
 	hp: 330,
@@ -85,17 +86,17 @@ const card: Card = {
 	retreat: 3,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 658855,
-		tcgplayer: 272448
-	}
+	variants: [
+		{
+			type: 'holo',
+			foil: 'rainbow',
+			thirdParty: {
+				cardmarket: 658855,
+				tcgplayer: 272448
+			}
+		},
+	],
 }
 
 export default card

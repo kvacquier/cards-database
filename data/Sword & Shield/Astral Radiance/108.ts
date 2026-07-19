@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Registeel"
 	},
 
+	illustrator: "hatachu",
 	rarity: "Rare",
 	category: "Pokemon",
 	hp: 130,
@@ -79,21 +80,27 @@ const card: Card = {
 	retreat: 3,
 	regulationMark: "F",
 
-	variants: {
-		normal: true,
-		reverse: true,
-		holo: false,
-		firstEdition: false
-	},
 
 	description: {
 		en: "Registeel's body is made of a strange material that is flexible enough to stretch and shrink but also more durable than any metal.",
 	},
 
-	thirdParty: {
-		cardmarket: 658769,
-		tcgplayer: 272708
-	}
+	variants: [
+		{
+			type: 'normal',
+			thirdParty: {
+				cardmarket: 658769,
+				tcgplayer: 272708
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 658769,
+				tcgplayer: 272708
+			}
+		},
+	],
 }
 
 export default card

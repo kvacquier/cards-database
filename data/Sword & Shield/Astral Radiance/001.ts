@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Bibor V"
 	},
 
+	illustrator: "Ayaka Yoshida",
 	rarity: "Holo Rare V",
 	category: "Pokemon",
 	hp: 210,
@@ -74,17 +75,16 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 658485,
-		tcgplayer: 272201
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 658485,
+				tcgplayer: 272201
+			}
+		},
+	],
 }
 
 export default card

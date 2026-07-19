@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Kirlia"
 	},
 
+	illustrator: "Saya Tsuruta",
 	rarity: "Uncommon",
 	category: "Pokemon",
 	hp: 90,
@@ -69,21 +70,27 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "F",
 
-	variants: {
-		normal: true,
-		reverse: true,
-		holo: false,
-		firstEdition: false
-	},
 
 	description: {
 		en: "If its Trainer becomes happy, it overflows with energy, dancing joyously while spinning about.",
 	},
 
-	thirdParty: {
-		cardmarket: 658634,
-		tcgplayer: 272262
-	}
+	variants: [
+		{
+			type: 'normal',
+			thirdParty: {
+				cardmarket: 658634,
+				tcgplayer: 272262
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 658634,
+				tcgplayer: 272262
+			}
+		},
+	],
 }
 
 export default card

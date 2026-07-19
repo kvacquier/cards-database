@@ -14,6 +14,7 @@ const card: Card = {
 		de: "Hisui-Dressella VSTAR"
 	},
 
+	illustrator: "5ban Graphics",
 	rarity: "Secret Rare",
 	category: "Pokemon",
 	hp: 260,
@@ -64,17 +65,17 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "F",
 
-	variants: {
-		normal: false,
-		reverse: false,
-		holo: true,
-		firstEdition: false
-	},
 
-	thirdParty: {
-		cardmarket: 658851,
-		tcgplayer: 272444
-	}
+	variants: [
+		{
+			type: 'holo',
+			foil: 'rainbow',
+			thirdParty: {
+				cardmarket: 658851,
+				tcgplayer: 272444
+			}
+		},
+	],
 }
 
 export default card

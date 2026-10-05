@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Coalossal"
 	},
 
+	evolveFrom: {
+		en: "Carkol",
+		fr: "Wagomine",
+		es: "Carkol",
+		'es-mx': "Carkol",
+		de: "Wagong",
+		it: "Carkol",
+		pt: "Carkol",
+	},
+
 	illustrator: "Nisota Niso",
 	rarity: "Rare",
 	category: "Pokemon",
@@ -81,6 +91,8 @@ const card: Card = {
 
 	description: {
 		en: "It’s gentle usually but fearsome when angered. With a body that burns at over 2,700 degrees Fahrenheit, it crushes foes and turns them to ash.",
+		fr: "Il est de nature paisible, mais ses colères sont effroyables. Il écrase ses adversaires de tout son corps, qui brûle à 1 500 °C, et les consume.",
+		de: "Verärgert man dieses sanftmütige Pokémon, wird es rasend und stürzt sich mit seinem 1500 ℃ heißen Körper auf Gegner, um sie zu verbrennen."
 	},
 
 	variants: [
@@ -95,7 +107,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870325,
+			cardmarket: 870326,
 			tcgplayer: 676947
 		}
 	},
@@ -103,7 +115,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870326,
+			cardmarket: 870325,
 			tcgplayer: 677087
 		}
 	},

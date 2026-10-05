@@ -3,6 +3,9 @@ import Set from '../SM Black Star Promos'
 
 const card: Card = {
 	dexId: [133],
+
+	cameoDexIds: [111, 236, 441],
+
 	set: Set,
 
 	name: {
@@ -54,6 +57,16 @@ const card: Card = {
 	description: {
 		en: "The question of why only Eevee has such unstable genes has still not been solved.",
 	},
+
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 412939,
+				tcgplayer: 200276
+			}
+		}
+	],
 }
 
 export default card

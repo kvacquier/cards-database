@@ -34,7 +34,7 @@ const card: Card = {
 			name: {
 				en: "Bite",
 				fr: "Morsure",
-				de: "Bite"
+				de: "Biss"
 			},
 
 			damage: 20,
@@ -53,21 +53,26 @@ const card: Card = {
 
 	description: {
 		en: "It fears nothing, not even opponents larger than itself.",
-		fr: "Il n'a peur de rien, pas même d'adversaires plus grands que lui."
+		fr: "Il n'a peur de rien, pas même d'adversaires plus grands que lui.",
+		de: "Es fürchtet sich vor nichts, mögen die Gegner noch so groß sein."
 	},
 
-	thirdParty: {
-		cardmarket: 274720,
-		tcgplayer: 85952
-	},
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				cardmarket: 274720,
+				tcgplayer: 85952
+			}
 		},
 		{
 			type: "normal",
-			stamp: ["1st-edition"]
+			stamp: ["1st-edition"],
+			thirdParty: {
+				cardmarket: 274720,
+				tcgplayer: 85952
+			}
 		}
 	]
 }

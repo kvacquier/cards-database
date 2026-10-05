@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Delcatty"
 	},
 
+	evolveFrom: {
+		en: "Skitty",
+		fr: "Skitty",
+		es: "Skitty",
+		'es-mx': "Skitty",
+		de: "Eneco",
+		it: "Skitty",
+		pt: "Skitty",
+	},
+
 	illustrator: "buchi",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -73,6 +83,8 @@ const card: Card = {
 
 	description: {
 		en: "It dislikes dirty places. It often searches for a comfortable place in which to groom itself.",
+		fr: "Il déteste la saleté et passe son temps à entretenir sa fourrure, confortablement installé.",
+		de: "Hasst schmutzige Orte. Behagt ihm ein Platz, fängt es sofort an, sein glänzendes Fell zu pflegen."
 	},
 
 	variants: [
@@ -87,7 +99,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870393,
+			cardmarket: 870394,
 			tcgplayer: 676981
 		}
 	},
@@ -95,7 +107,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870394,
+			cardmarket: 870393,
 			tcgplayer: 677121
 		}
 	},

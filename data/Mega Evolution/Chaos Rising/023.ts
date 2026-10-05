@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "It blocks opponents' attacks with the ice that shields its body. If the ice breaks, this Pokémon uses cold air to quickly create new ice.",
+		fr: "La glace qui couvre son corps bloque les attaques ennemies. Si elle se fissure, il la reconstitue immédiatement en utilisant de l'air glacé.",
+		de: "Das Eis, das seinen Körper umhüllt, schützt es vor gegnerischen Angriffen. Bruchstellen friert es mithilfe von kalter Luft wieder zu."
 	},
 
 
@@ -66,6 +68,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886415,
+				tcgplayer: 693456
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886415,
 				tcgplayer: 693456

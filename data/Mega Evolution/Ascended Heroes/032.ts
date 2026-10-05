@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Gemi",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [554],
 	hp: 80,
 	types: ["Fire"],
 	stage: "Basic",
@@ -62,6 +63,8 @@ const card: Card = {
 
 	description: {
 		en: "This popular symbol of good fortune will never fall over in its sleep, no matter how it’s pushed or pulled.",
+		fr: "On a beau le pousser ou le tirer, quand il dort, rien ne le fait vaciller. Cette qualité lui a valu de devenir un emblème pour les porte-bonheurs.",
+		de: "Während es schläft, lässt es sich nicht mal mit Gewalt umstoßen. Aus diesem Grund ist es ein beliebtes Motiv für Glücksbringer."
 	},
 
 	variants: [
@@ -76,7 +79,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870187,
+			cardmarket: 870188,
 			tcgplayer: 676878
 		}
 	},
@@ -84,7 +87,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870188,
+			cardmarket: 870187,
 			tcgplayer: 677018
 		}
 	},

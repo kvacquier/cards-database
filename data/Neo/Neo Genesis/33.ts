@@ -72,21 +72,26 @@ const card: Card = {
 
 	description: {
 		en: "Electricity runs across the surface of its body. In darkness, its entire body glows a whitish-blue.",
-		fr: "De l'électricité parcourt son corps sous sa peau. Dans le noir, il brille d'un éclat bleu."
+		fr: "De l'électricité parcourt son corps sous sa peau. Dans le noir, il brille d'un éclat bleu.",
+		de: "Elektrizität strömt über die Oberfläche seines Körpers. In der Dunkelheit leuchtet sein ganzer Körper weiß-bläulich."
 	},
 
-	thirdParty: {
-		cardmarket: 274433,
-		tcgplayer: 85109
-	},
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				cardmarket: 274433,
+				tcgplayer: 85109
+			}
 		},
 		{
 			type: "normal",
-			stamp: ["1st-edition"]
+			stamp: ["1st-edition"],
+			thirdParty: {
+				cardmarket: 274433,
+				tcgplayer: 85109
+			}
 		}
 	]
 }

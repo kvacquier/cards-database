@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "Metang combined to form it. With four brains, it has the intelligence of a supercomputer.",
+		fr: "Il est né de la fusion de plusieurs Métang. Grâce à ses quatre cerveaux, son intelligence est équivalente à celle d'un superordinateur.",
+		de: "Dieses Pokémon hat sich aus mehreren Metang gebildet. Mit seinen vier Gehirnen besitzt es die Intelligenz eines Supercomputers."
 	},
 
 
@@ -27,7 +29,9 @@ const card: Card = {
 	types: ["Metal"],
 
 	evolveFrom: {
-		en: "Metang"
+		en: "Metang",
+		fr: "Métang",
+		de: "Metang"
 	},
 
 	stage: "Stage2",
@@ -96,6 +100,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886453,
+				tcgplayer: 693522
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886453,
 				tcgplayer: 693522

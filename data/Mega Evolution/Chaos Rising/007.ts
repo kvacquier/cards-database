@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "Its tackle is forceful enough to flip a 50-ton tank. It shields its allies from danger with its own body.",
+		fr: "Il est si puissant qu'il peut renverser un char de 50 tonnes d'un seul assaut. Il se sert de son corps comme d'un bouclier pour protéger ses alliés.",
+		de: "Es ist so stark, dass es selbst 50 t schwere Panzer umkippen kann. Es schützt Kameraden, indem es sich ihnen als Schild anbietet."
 	},
 
 	name: {
@@ -26,7 +28,9 @@ const card: Card = {
 	types: ["Grass"],
 
 	evolveFrom: {
-		en: "Quilladin"
+		en: "Quilladin",
+		fr: "Boguérisse",
+		de: "Igastarnish"
 	},
 
 	stage: "Stage2",
@@ -91,6 +95,13 @@ const card: Card = {
 	variants: [
 		{
 			type: 'holo',
+			thirdParty: {
+				cardmarket: 886399,
+				tcgplayer: 693460
+			}
+		},
+		{
+			type: 'reverse',
 			thirdParty: {
 				cardmarket: 886399,
 				tcgplayer: 693460

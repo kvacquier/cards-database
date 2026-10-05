@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Beautifly"
 	},
 
+	evolveFrom: {
+		en: "Silcoon",
+		fr: "Armulys",
+		es: "Silcoon",
+		'es-mx': "Silcoon",
+		de: "Schaloko",
+		it: "Silcoon",
+		pt: "Silcoon",
+	},
+
 	illustrator: "Narumi Sato",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -83,6 +93,8 @@ const card: Card = {
 
 	description: {
 		en: "Vibrantly patterned wings are its prominent feature. It sucks sweet flower nectar with its long mouth.",
+		fr: "Réputé pour les motifs de ses ailes aux couleurs vives. Il allonge sa trompe pour butiner le nectar.",
+		de: "Die bunten Flügel sind sein Markenzeichen. Mit seinem Rüssel saugt es süßen Honig aus Blumen."
 	},
 
 	variants: [
@@ -97,7 +109,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "loveball",
 			thirdParty: {
-				cardmarket: 870155,
+				cardmarket: 870156,
 				tcgplayer: 676862
 			}
 		},
@@ -105,7 +117,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "energy",
 			thirdParty: {
-				cardmarket: 870156,
+				cardmarket: 870155,
 				tcgplayer: 677002
 			}
 		},

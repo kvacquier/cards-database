@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "It loves to drink other creatures' blood. It's said that if it finds others of its kind going hungry, it sometimes shares the blood it's gathered.",
+		fr: "Le sang des êtres vivants est son péché mignon. On dit qu'il partage parfois ce précieux breuvage avec ses congénères affamés.",
+		de: "Das Blut anderer Lebewesen ist seine Leibspeise. Man sagt, dass es das abgesaugte Blut manchmal mit hungrigen Artgenossen teilt."
 	},
 
 
@@ -27,7 +29,9 @@ const card: Card = {
 	types: ["Darkness"],
 
 	evolveFrom: {
-		en: "Zubat"
+		en: "Zubat",
+		fr: "Nosferapti",
+		de: "Zubat"
 	},
 
 	stage: "Stage1",
@@ -73,6 +77,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886442,
+				tcgplayer: 693493
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886442,
 				tcgplayer: 693493

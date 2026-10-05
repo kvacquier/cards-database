@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Jiro Sasumo",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [570],
 	hp: 70,
 	types: ["Darkness"],
 	stage: "Basic",
@@ -48,6 +49,8 @@ const card: Card = {
 
 	description: {
 		en: "It changes into the forms of others to surprise them. Apparently, it often transforms into a silent child.",
+		fr: "Il prend l'apparence des autres afin de les surprendre. On dit qu'il se transforme souvent en petit enfant silencieux.",
+		de: "Es übertölpelt andere, indem es deren Gestalt annimmt. Angeblich tarnt es sich oft als wortkarges Kind."
 	},
 
 	variants: [
@@ -62,7 +65,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870351,
+			cardmarket: 870352,
 			tcgplayer: 676960
 		}
 	},
@@ -70,7 +73,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870352,
+			cardmarket: 870351,
 			tcgplayer: 677100
 		}
 	},

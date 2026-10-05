@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Salazzle"
 	},
 
+	evolveFrom: {
+		en: "Salandit",
+		fr: "Tritox",
+		es: "Salandit",
+		'es-mx': "Salandit",
+		de: "Molunk",
+		it: "Salandit",
+		pt: "Salandit",
+	},
+
 	illustrator: "Taiga Kasai",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -81,6 +91,8 @@ const card: Card = {
 
 	description: {
 		en: "When two Salazzle meet, they will use their pheromone gas to fight over the males in each other’s group.",
+		fr: "Lorsque deux spécimens se rencontrent, ils tentent de séduire les mâles du groupe opposé en utilisant leur gaz de phéromones.",
+		de: "Wenn sich zwei Amfira begegnen, kämpfen sie mit Pheromongas um die Männchen in ihren Gruppen."
 	},
 
 	variants: [
@@ -95,7 +107,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870193,
+			cardmarket: 870194,
 			tcgplayer: 676881
 		}
 	},
@@ -103,7 +115,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870194,
+			cardmarket: 870193,
 			tcgplayer: 677021
 		}
 	},

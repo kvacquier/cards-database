@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Haunter"
 	},
 
+	evolveFrom: {
+		en: "Gastly",
+		fr: "Fantominus",
+		es: "Gastly",
+		'es-mx': "Gastly",
+		de: "Nebulak",
+		it: "Gastly",
+		pt: "Gastly",
+	},
+
 	illustrator: "Rianti Hidayat",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -49,6 +59,8 @@ const card: Card = {
 
 	description: {
 		en: "It likes to lurk in the dark and tap shoulders with a gaseous hand. Its touch causes endless shuddering.",
+		fr: "Il adore se tapir dans l'ombre et faire frissonner ses proies pour l'éternité en leur touchant l'épaule.",
+		de: "Es lauert gern im Dunkeln und tippt Leuten mit seiner gasförmigen Hand auf die Schulter. Seine Berührung erzeugt endloses Schaudern."
 	},
 
 	variants: [
@@ -63,7 +75,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870331,
+			cardmarket: 870332,
 			tcgplayer: 676950
 		}
 	},
@@ -71,7 +83,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870332,
+			cardmarket: 870331,
 			tcgplayer: 677090
 		}
 	},

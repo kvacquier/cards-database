@@ -25,7 +25,8 @@ const card: Card = {
 
 	evolveFrom: {
 		en: "Krabby",
-		fr: "Krabby"
+		fr: "Krabby",
+		de: "Krabby"
 	},
 
 	stage: "Stage1",
@@ -76,23 +77,28 @@ const card: Card = {
 
 	description: {
 		en: "The large pincer has 10,000 horsepower of crushing power. However, its huge size makes it unwieldy to use.",
-		fr: "Son énorme pince peut déployer une pression de 1000 Kg. Mais elle est très encombrante."
+		fr: "Son énorme pince peut déployer une pression de 1000 Kg. Mais elle est très encombrante.",
+		de: "Seine große Schere könnte 10.000 KP Schaden zufügen, wenn sie wegen ihrer Größe nicht so unhandlich wäre."
 	},
 
-	thirdParty: {
-		cardmarket: 273899,
-		tcgplayer: 44440
-	},
 
 	variants: [
 		{
 			type: "normal",
-			foil: "galaxy"
+			foil: "galaxy",
+			thirdParty: {
+				cardmarket: 273899,
+				tcgplayer: 44440
+			}
 		},
 		{
 			type: "normal",
 			stamp: ["1st-edition"],
-			foil: "galaxy"
+			foil: "galaxy",
+			thirdParty: {
+				cardmarket: 273899,
+				tcgplayer: 44440
+			}
 		},
 		{
 			type: "normal",

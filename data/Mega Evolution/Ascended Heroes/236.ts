@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Slurpuff"
 	},
 
+	evolveFrom: {
+		en: "Swirlix",
+		fr: "Sucroquin",
+		es: "Swirlix",
+		'es-mx': "Swirlix",
+		de: "Flauschling",
+		it: "Swirlix",
+		pt: "Swirlix",
+	},
+
 	illustrator: "Yoshimoto Yoshimon",
 	rarity: "Illustration rare",
 	category: "Pokemon",
@@ -63,6 +73,8 @@ const card: Card = {
 
 	description: {
 		en: "It can distinguish the faintest of scents. It puts its sensitive sense of smell to use by helping pastry chefs in their work.",
+		fr: "La finesse de son odorat lui permet de distinguer les nuances de parfums les plus subtiles, ce qui en fait un compagnon idéal pour les pâtissiers.",
+		de: "Es verfügt über einen feinen Geruchssinn, mit dem es selbst die schwächsten Gerüche erkennen kann. Es hilft deshalb oft in Konditoreien aus."
 	},
 
 	variants: [

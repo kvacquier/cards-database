@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Silcoon"
 	},
 
+	evolveFrom: {
+		en: "Wurmple",
+		fr: "Chenipotte",
+		es: "Wurmple",
+		'es-mx': "Wurmple",
+		de: "Waumpel",
+		it: "Wurmple",
+		pt: "Wurmple",
+	},
+
 	illustrator: "Eri Yamaki",
 	rarity: "Common",
 	category: "Pokemon",
@@ -73,6 +83,8 @@ const card: Card = {
 
 	description: {
 		en: "It wraps silk around the branches of a tree. It drinks rainwater on its silk while awaiting evolution.",
+		fr: "Il attend d'évoluer dans son cocon de soie accroché aux branches et se nourrit d'eau de pluie.",
+		de: "Es bindet sich mit Seide an Äste und trinkt Regenwasser, während es starr auf seine Entwicklung wartet."
 	},
 
 	variants: [
@@ -87,7 +99,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "loveball",
 			thirdParty: {
-				cardmarket: 870153,
+				cardmarket: 870154,
 				tcgplayer: 676861
 			}
 		},
@@ -95,7 +107,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "energy",
 			thirdParty: {
-				cardmarket: 870154,
+				cardmarket: 870153,
 				tcgplayer: 677001
 			}
 		},

@@ -55,6 +55,8 @@ const card: Card = {
 
 	description: {
 		en: "Its healthy appetite leads to visible growth spurts. It often has to replace the bones it wears as its size increases.",
+		fr: "Son gros appétit entraîne des poussées de croissance rapides. Il doit donc régulièrement changer le crâne qui lui sert de couche.",
+		de: "Durch seinen ständigen Appetit hat Skallyk fortlaufend Wachstumsschübe. Deshalb muss es seine Schädelwindel immerzu auswechseln."
 	},
 
 	variants: [
@@ -69,7 +71,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870353,
+			cardmarket: 870354,
 			tcgplayer: 676961
 		}
 	},
@@ -77,7 +79,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870354,
+			cardmarket: 870353,
 			tcgplayer: 677101
 		}
 	},

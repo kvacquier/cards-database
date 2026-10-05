@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "It moves while spinning around on its single foot. Some Baltoy have been seen spinning on their heads.",
+		fr: "Il se déplace en tournoyant sur son pied. On le voit parfois faire de même sur la tête.",
+		de: "Es bewegt sich, indem es auf seinem Fuß kreiselt. Vereinzelt sieht man auch Puppance, die dies kopfüber tun."
 	},
 
 
@@ -63,6 +65,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886438,
+				tcgplayer: 693452
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886438,
 				tcgplayer: 693452

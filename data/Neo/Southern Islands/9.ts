@@ -10,6 +10,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [39, 49],
 
 	dexId: [
 		12,
@@ -79,14 +80,14 @@ const card: Card = {
 	description: {
 		en: "The poison scales on its wings are waterproof, allowing this Pokémon to be active even on rainy days.",
 	},
-	thirdParty: {
-		cardmarket: 275639,
-		tcgplayer: 46483
-	},
 
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 275639,
+				tcgplayer: 46483
+			}
 		}
 	]
 }

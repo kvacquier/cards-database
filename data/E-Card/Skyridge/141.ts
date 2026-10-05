@@ -10,6 +10,7 @@ const card: Card = {
 	illustrator: "Midori Harada",
 	rarity: "Uncommon",
 	category: "Trainer",
+	trainerType: "Stadium",
 	set: Set,
 
 	effect: {
@@ -17,19 +18,22 @@ const card: Card = {
 		de: "Einmal während jedes Zugs eines Spielers kann dieser Spieler eine Amonitas- oder Kabuto-Karte aus seinem Ablagestapel auf seine Bank legen. (Karten, die auf diese Weise auf die Bank gelegt werden, gelten als Basis-Pokémon.)"
 	},
 
-	thirdParty: {
-		cardmarket: 275399,
-		tcgplayer: 90157
-	},
-
 	variants: [
 		{
 			type: 'normal',
+			thirdParty: {
+				tcgplayer: 90157,
+				cardmarket: 275399
+			},
 		},
 		{
 			type: 'reverse',
-		}
-	]
+			thirdParty: {
+				tcgplayer: 90157,
+				cardmarket: 275399
+			},
+		},
+	],
 }
 
 export default card

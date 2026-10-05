@@ -10,6 +10,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [49],
 
 	dexId: [
 		57,
@@ -67,14 +68,14 @@ const card: Card = {
 	description: {
 		en: "This Pokémon only calms down when there are no other animals or people around—which means no one has ever seen it when it's not angry.",
 	},
-	thirdParty: {
-		cardmarket: 275648,
-		tcgplayer: 46475
-	},
 
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 275648,
+				tcgplayer: 46475
+			}
 		}
 	]
 }

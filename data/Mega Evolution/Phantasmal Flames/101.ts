@@ -3,6 +3,7 @@ import Set from "../Phantasmal Flames"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [270, 328, 329, 946],
 
 	name: {
 		en: "Flygon",
@@ -12,6 +13,16 @@ const card: Card = {
 		de: "Libelldra",
 		it: "Flygon",
 		pt: "Flygon"
+	},
+
+	evolveFrom: {
+		en: "Vibrava",
+		fr: "Vibraninf",
+		es: "Vibrava",
+		'es-mx': "Vibrava",
+		de: "Vibrava",
+		it: "Vibrava",
+		pt: "Vibrava",
 	},
 
 	rarity: "Illustration rare",
@@ -73,6 +84,8 @@ const card: Card = {
 
 	description: {
 		en: "Known as the Desert Spirit, this Pokémon hides in the sandstorms it causes by beating its wings.",
+		fr: "On l'appelle « l'esprit du désert ». Il se dissimule dans des tempêtes de sable qu'il provoque en battant des ailes.",
+		de: "Dieses auch als „Geist der Wüste“ bekannte Pokémon versteckt sich in Sandstürmen, die es durch das Schlagen seiner Flügel erzeugt."
 	},
 
 	illustrator: "Ryota Murayama",

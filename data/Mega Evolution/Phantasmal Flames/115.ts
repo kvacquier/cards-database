@@ -3,6 +3,7 @@ import Set from "../Phantasmal Flames"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [428],
 
 	name: {
 		en: "Mega Lopunny ex",
@@ -23,6 +24,7 @@ const card: Card = {
 		pt: "Buneary",
 	},
 
+	suffix: "ex",
 	rarity: "Ultra Rare",
 	category: "Pokemon",
 

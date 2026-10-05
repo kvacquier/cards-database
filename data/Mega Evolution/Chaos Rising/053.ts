@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "The foul fluid from its rear is so revolting that it can make people feel queasy up to a mile and a quarter away.",
+		fr: "Le fluide nauséabond que son derrière expulse peut incommoder des gens dans un rayon de deux kilomètres.",
+		de: "Der Gestank der Flüssigkeit, die es aus seinem Hinterleib versprüht, dreht Menschen selbst auf 2 km Entfernung den Magen um."
 	},
 
 
@@ -53,6 +55,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886445,
+				tcgplayer: 693549
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886445,
 				tcgplayer: 693549

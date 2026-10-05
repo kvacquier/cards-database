@@ -22,7 +22,7 @@ const card: Card = {
 	],
 
 	evolveFrom: {
-		en: "Poochyena",
+		en: "Rattata",
 	},
 
 	stage: "Stage1",
@@ -75,14 +75,14 @@ const card: Card = {
 		en: "It uses its whiskers to maintain its balance. It seems to slow down if they are cut off.",
 	},
 
-	thirdParty: {
-		cardmarket: 273981,
-		tcgplayer: 42521
-	},
 
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 273981,
+				tcgplayer: 42521
+			}
 		}
 	]
 }

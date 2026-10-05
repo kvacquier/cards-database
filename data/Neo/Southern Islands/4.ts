@@ -10,6 +10,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [2, 8, 25],
 
 	dexId: [
 		175,
@@ -51,14 +52,14 @@ const card: Card = {
 	description: {
 		en: "This Pokémon is still immature. When threatened, it releases poison from its head and tries to drive its enemies away.",
 	},
-	thirdParty: {
-		cardmarket: 275634,
-		tcgplayer: 46478
-	},
 
 	variants: [
 		{
 			type: "reverse",
+			thirdParty: {
+				cardmarket: 275634,
+				tcgplayer: 46478
+			}
 		}
 	]
 }

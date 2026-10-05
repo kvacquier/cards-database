@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Kingambit"
 	},
 
+	evolveFrom: {
+		en: "Bisharp",
+		fr: "Scalproie",
+		es: "Bisharp",
+		'es-mx': "Bisharp",
+		de: "Caesurio",
+		it: "Bisharp",
+		pt: "Bisharp",
+	},
+
 	illustrator: "Teeziro",
 	rarity: "Rare",
 	category: "Pokemon",
@@ -89,6 +99,8 @@ const card: Card = {
 
 	description: {
 		en: "Though it commands a massive army in battle, it’s not skilled at devising complex strategies. It just uses brute strength to keep pushing.",
+		fr: "Ce Pokémon commande une grande armée, mais c'est un piètre stratège. Il s'obstine donc à recourir à la force brute.",
+		de: "Es führt eine große Armee in den Kampf. Da es jedoch kein guter Stratege ist, muss es sich letztendlich auf rohe Gewalt verlassen."
 	},
 
 	variants: [
@@ -103,7 +115,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870367,
+			cardmarket: 870368,
 			tcgplayer: 676968
 		}
 	},
@@ -111,7 +123,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870368,
+			cardmarket: 870367,
 			tcgplayer: 677108
 		}
 	},

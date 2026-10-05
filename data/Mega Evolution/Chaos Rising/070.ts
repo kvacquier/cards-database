@@ -3,9 +3,12 @@ import Set from "../Chaos Rising"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [670],
 
 	description: {
 		en: "Using food stored in cheek pouches, they can keep watch for days. They use their tails to communicate with others.",
+		fr: "Il stocke de la nourriture dans ses abajoues et peut faire le guet pendant des jours. Sa queue lui sert à communiquer avec ses congénères.",
+		de: "Es hortet in seinen Backentaschen Futter, um tagelang Wache stehen zu können, und gibt Kameraden über seine Rute Signale."
 	},
 
 
@@ -77,6 +80,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886462,
+				tcgplayer: 693529
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886462,
 				tcgplayer: 693529

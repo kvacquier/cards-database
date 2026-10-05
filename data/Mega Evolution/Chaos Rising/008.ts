@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "As its body grows larger, its six warm tails become more beautiful, with a more luxurious coat of fur.",
+		fr: "Ses six queues dégagent de la chaleur. Quand Goupix grandit, elles embellissent et leur fourrure devient plus épaisse.",
+		de: "Während es wächst, wird das Fell seiner sechs warmen Schweife noch schöner und weicher."
 	},
 
 	name: {
@@ -61,6 +63,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886400,
+				tcgplayer: 693558
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886400,
 				tcgplayer: 693558

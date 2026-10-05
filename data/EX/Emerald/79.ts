@@ -12,6 +12,9 @@ const card: Card = {
 	rarity: "Uncommon",
 	category: "Trainer",
 	set: Set,
+
+	cameoDexIds: [26],
+
 	trainerType: "Supporter",
 
 	effect: {
@@ -28,12 +31,20 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				tcgplayer: 87600,
+				cardmarket: 276590
+			},
 		},
 		{
-			type: "holo",
-			stamp: ["set-logo"]
+			type: "reverse",
+			stamp: ["set-logo"],
+			thirdParty: {
+				tcgplayer: 87600,
+				cardmarket: 276590
+			},
 		}
-	]
+	],
 }
 
 export default card

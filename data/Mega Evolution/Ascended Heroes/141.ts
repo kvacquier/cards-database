@@ -81,6 +81,8 @@ const card: Card = {
 
 	description: {
 		en: "This troublemaker sends anything and everything to faraway places using its loop, which can warp space.",
+		fr: "Ce fauteur de troubles est doté d'anneaux qui déforment l'espace et lui permettent d'expédier au loin n'importe quel objet.",
+		de: "Mittels seiner Ringe, die Raumkrümmungen verursachen, verfrachtet dieser Unruhestifter alles und jeden an die entlegensten Orte."
 	},
 
 	variants: [
@@ -95,7 +97,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870357,
+			cardmarket: 870358,
 			tcgplayer: 676963
 		}
 	},
@@ -103,7 +105,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870358,
+			cardmarket: 870357,
 			tcgplayer: 677103
 		}
 	},

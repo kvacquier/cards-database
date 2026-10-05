@@ -14,9 +14,20 @@ const card: Card = {
 		pt: "Spidops da Equipe Rocket"
 	},
 
+	evolveFrom: {
+		en: "Team Rocket's Tarountula",
+		fr: "Tissenboule de la Team Rocket",
+		es: "Tarountula del Team Rocket",
+		'es-mx': "Tarountula del Equipo Rocket",
+		de: "Team Rockets Tarundel",
+		it: "Tarountula del Team Rocket",
+		pt: "Tarountula da Equipe Rocket",
+	},
+
 	illustrator: "Taiga Kasai",
 	rarity: "Rare",
 	category: "Pokemon",
+	dexId: [918],
 	hp: 130,
 	types: ["Grass"],
 	stage: "Stage1",
@@ -82,6 +93,8 @@ const card: Card = {
 
 	description: {
 		en: "It clings to branches and ceilings using its threads and moves without a sound. It takes out its prey before the prey even notices it.",
+		fr: "Ce Pokémon s'accroche aux branches ou aux plafonds grâce à son fil et se déplace en silence. Il élimine ses proies sans qu'elles le remarquent.",
+		de: "Spinsidias hängt sich mit seinem Faden an Äste oder Decken und bewegt sich lautlos. Es erlegt seine Beute, bevor diese es bemerken kann."
 	},
 
 	variants: [

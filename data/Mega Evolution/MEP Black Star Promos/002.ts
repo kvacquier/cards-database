@@ -14,6 +14,16 @@ const card: Card = {
 		'es-mx': "Inteleon"
 	},
 
+	evolveFrom: {
+		en: "Drizzile",
+		fr: "Arrozard",
+		de: "Phlegleon",
+		it: "Drizzile",
+		es: "Drizzile",
+		pt: "Drizzile",
+		'es-mx': "Drizzile",
+	},
+
 	illustrator: "Kazumasa Yasukuni",
 	rarity: "Promo",
 	category: "Pokemon",
@@ -73,19 +83,26 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "I",
 
+	weaknesses: [{
+		type: "Lightning",
+		value: "x2"
+	}],
+
 	variants: [
 		{
 			type: "holo",
 			stamp: ["set-logo"],
 			thirdParty: {
-				cardmarket: 851045
+				cardmarket: 851045,
+				tcgplayer: 654596
 			}
 		},
 		{
 			type: "holo",
 			stamp: ["set-logo","staff"],
 			thirdParty: {
-				cardmarket: 851046
+				cardmarket: 851046,
+				tcgplayer: 656802
 			}
 		},
 	],

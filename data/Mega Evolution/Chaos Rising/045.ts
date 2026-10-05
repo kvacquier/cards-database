@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "Donphan is normally a calm Pokemon, but once it is enraged, it will curl its body into a ball and charge at you while rolling.",
+		fr: "Ce Pokémon est d'un naturel calme. Cependant, lorsqu'on le provoque, il se met en boule et charge en roulant.",
+		de: "Für gewöhnlich ist es von ruhigem Gemüt. Reizt man es jedoch, rollt es sich ein und donnert auf einen zu."
 	},
 
 
@@ -27,7 +29,9 @@ const card: Card = {
 	types: ["Fighting"],
 
 	evolveFrom: {
-		en: "Phanpy"
+		en: "Phanpy",
+		fr: "Phanpy",
+		de: "Phanpy"
 	},
 
 	stage: "Stage1",
@@ -91,6 +95,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886437,
+				tcgplayer: 693478
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886437,
 				tcgplayer: 693478

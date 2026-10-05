@@ -10,6 +10,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [39, 85, 103],
 
 	dexId: [
 		165,
@@ -70,14 +71,14 @@ const card: Card = {
 	description: {
 		en: "When it senses enemies approaching, this Pokémon releases an orange fluid from the joints in its legs and flees.",
 	},
-	thirdParty: {
-		cardmarket: 275637,
-		tcgplayer: 46481
-	},
 
 	variants: [
 		{
 			type: "reverse",
+			thirdParty: {
+				cardmarket: 275637,
+				tcgplayer: 46481
+			}
 		}
 	]
 }

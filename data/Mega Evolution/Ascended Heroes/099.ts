@@ -89,6 +89,8 @@ const card: Card = {
 
 	description: {
 		en: "Munkidori keeps itself somewhere safe while it toys with its foes, using psychokinesis to induce intense dizziness.",
+		fr: "Il se met en lieu sûr et il joue avec ses adversaires en provoquant chez eux de terribles vertiges grâce à ses pouvoirs psychiques.",
+		de: "Es spielt mit seinen Feinden, indem es von einem sicheren Ort aus telekinetische Energie ausstrahlt, die starken Schwindel verursacht."
 	},
 
 	variants: [
@@ -103,7 +105,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870293,
+			cardmarket: 870294,
 			tcgplayer: 676931
 		}
 	},
@@ -111,7 +113,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870294,
+			cardmarket: 870293,
 			tcgplayer: 677071
 		}
 	},

@@ -49,6 +49,8 @@ const card: Card = {
 
 	description: {
 		en: "Chunks of the surface of this Pokémon’s body that have grown old and flaked off have long been used for fuel as an alternative to coal.",
+		fr: "Au fil du temps, de petits morceaux de ce Pokémon se détachent. On s'en sert comme combustible à la place du charbon.",
+		de: "Bruchstücke der Oberfläche dieses Pokémon, die altersbedingt herabfallen, werden seit jeher als Brennstoffersatz für Steinkohle verwendet."
 	},
 
 	variants: [
@@ -63,7 +65,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870321,
+			cardmarket: 870322,
 			tcgplayer: 676945
 		}
 	},
@@ -71,7 +73,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870322,
+			cardmarket: 870321,
 			tcgplayer: 677085
 		}
 	},

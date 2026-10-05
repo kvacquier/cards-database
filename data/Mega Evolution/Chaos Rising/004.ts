@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "It attracts prey with its sweet-smelling saliva, then chomps down. It takes a whole day to eat prey.",
+		fr: "Il attire sa proie avec sa salive odorante avant de la croquer. Il lui faut une journée pour l'avaler.",
+		de: "Sein süßlich riechender Speichel zieht Beute an, die es frisst. Es braucht einen Tag, sie zu fressen."
 	},
 
 	name: {
@@ -62,6 +64,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886396,
+				tcgplayer: 693459
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886396,
 				tcgplayer: 693459

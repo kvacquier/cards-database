@@ -49,6 +49,8 @@ const card: Card = {
 
 	description: {
 		en: "It wraps its opponent in its gas-like body, slowly weakening its prey by poisoning it through the skin.",
+		fr: "Il enveloppe ses proies dans le nuage de gaz que forme son corps et les empoisonne à travers leur peau afin de les affaiblir petit à petit.",
+		de: "Es hüllt seine Beute in seinen Gaskörper ein und schwächt sie, indem es sie nach und nach über die Haut vergiftet."
 	},
 
 	variants: [
@@ -63,7 +65,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870110,
+			cardmarket: 870330,
 			tcgplayer: 676949
 		}
 	},
@@ -73,6 +75,14 @@ const card: Card = {
 		thirdParty: {
 			cardmarket: 870329,
 			tcgplayer: 677089
+		}
+	},
+	{
+		type: "holo",
+		foil: "cosmos",
+		thirdParty: {
+			cardmarket: 870110,
+			tcgplayer: 677399
 		}
 	},
 ],

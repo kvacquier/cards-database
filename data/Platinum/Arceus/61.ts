@@ -12,14 +12,12 @@ const card: Card = {
 	category: "Pokemon",
 	set: Set,
 
-	dexId: [
-		453,
-	],
+	dexId: [453],
 	
 	hp: 60,
 
 	types: [
-		"Fighting",
+		"Fighting"
 	],
 
 	stage: "Basic",
@@ -65,21 +63,26 @@ const card: Card = {
 
 	description: {
 		en: "It rarely fights fairly, but that is strictly to ensure survival. It is popular as a mascot.",
-	},
-
-	thirdParty: {
-		cardmarket: 278933,
-		tcgplayer: 84478
+		de: "Aufgrund seines starken Überlebensdrangs kämpft es selten fair. Beliebt als Maskottchen."
 	},
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 84478,
+				cardmarket: 278933
+			}
 		},
 		{
 			type: "reverse",
-		}
-	]
+			thirdParty: {
+				cardmarket: 278933,
+				tcgplayer: 84478
+			}
+		},
+	],
+
 }
 
 export default card

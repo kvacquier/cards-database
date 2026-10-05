@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "This very friendly dragon Pokémon will hug its beloved Trainer, leaving that Trainer covered in sticky slime.",
+		fr: "Ce Pokémon Dragon très affectueux aime faire des câlins à son partenaire adoré, le couvrant au passage de son mucus visqueux.",
+		de: "Dieses äußerst freundliche Drachen-Pokémon neigt dazu, seinen geliebten Trainer zu umarmen und so mit einer dicken Schleimschicht zu umhüllen."
 	},
 
 
@@ -27,7 +29,9 @@ const card: Card = {
 	types: ["Dragon"],
 
 	evolveFrom: {
-		en: "Sliggoo"
+		en: "Sliggoo",
+		fr: "Colimucus",
+		de: "Viscargot"
 	},
 
 	stage: "Stage2",
@@ -86,10 +90,24 @@ const card: Card = {
 
 	variants: [
 		{
+			type: "holo",
+			thirdParty: {
+				cardmarket: 886460,
+				tcgplayer: 693495
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886460,
+				tcgplayer: 693495
+			}
+		},
+		{
 			type: "normal",
 			thirdParty: {
 				cardmarket: 888530,
-				tcgplayer: 693495
+				tcgplayer: 694638
 			}
 		},
 	],

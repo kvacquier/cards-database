@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "ryoma uratsuka",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [775],
 	hp: 90,
 	types: ["Colorless"],
 	stage: "Basic",
@@ -80,13 +81,15 @@ const card: Card = {
 
 	description: {
 		en: "A potent anesthetic can be made by diluting Komala’s drool. This anesthetic was used for surgeries in the past.",
+		fr: "Diluée, la salive de Dodoala permet de fabriquer un puissant anesthésiant. On l'utilisait autrefois en chirurgie.",
+		de: "Verdünnt man Koalelus Speichel, so erhält man ein starkes Betäubungsmittel, das früher bei chirurgischen Eingriffen verwendet wurde."
 	},
 
 	variants: [
 	{
 		type: "normal",
 		thirdParty: {
-			cardmarket: 869786,
+			cardmarket: 870407,
 			tcgplayer: 675987
 		}
 	},
@@ -102,8 +105,16 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870407,
+			cardmarket: 870408,
 			tcgplayer: 677128
+		}
+	},
+	{
+		type: "holo",
+		foil: "cosmos",
+		thirdParty: {
+			cardmarket: 870107,
+			tcgplayer: 679249
 		}
 	},
 ],

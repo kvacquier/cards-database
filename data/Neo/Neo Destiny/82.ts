@@ -34,7 +34,7 @@ const card: Card = {
 			name: {
 				en: "Combustion",
 				fr: "Fournaise",
-				de: "Combustion"
+				de: "Glühen"
 			},
 
 			damage: 30,
@@ -53,21 +53,26 @@ const card: Card = {
 
 	description: {
 		en: "This Pokémon is often seen crawling around in volcanic regions.",
-		fr: "On voit souvent ce Pokémon ramper dans les régions volcaniques."
+		fr: "On voit souvent ce Pokémon ramper dans les régions volcaniques.",
+		de: "Dieses Pokémon kann man oft in vulkanischen Gebieten herumkriechen sehen."
 	},
 
-	thirdParty: {
-		cardmarket: 274734,
-		tcgplayer: 89337
-	},
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				cardmarket: 274734,
+				tcgplayer: 89337
+			}
 		},
 		{
 			type: "normal",
-			stamp: ["1st-edition"]
+			stamp: ["1st-edition"],
+			thirdParty: {
+				cardmarket: 274734,
+				tcgplayer: 89337
+			}
 		}
 	]
 }

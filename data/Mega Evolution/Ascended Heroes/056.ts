@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Raichu"
 	},
 
+	evolveFrom: {
+		en: "Pikachu",
+		fr: "Pikachu",
+		es: "Pikachu",
+		'es-mx': "Pikachu",
+		de: "Pikachu",
+		it: "Pikachu",
+		pt: "Pikachu",
+	},
+
 	illustrator: "Iori Suzuki",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -83,6 +93,8 @@ const card: Card = {
 
 	description: {
 		en: "When its electricity builds, its muscles are stimulated, and it becomes more aggressive than usual.",
+		fr: "Quand il se charge en électricité, ses muscles se contractent et il devient plus agressif.",
+		de: "Wenn Raichu sich auflädt, stimuliert dies seine Muskeln und es wird kampflustiger als sonst."
 	},
 
 	variants: [
@@ -97,7 +109,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "friendball",
 		thirdParty: {
-			cardmarket: 870227,
+			cardmarket: 870228,
 			tcgplayer: 676898
 		}
 	},
@@ -105,7 +117,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870228,
+			cardmarket: 870227,
 			tcgplayer: 677038
 		}
 	},

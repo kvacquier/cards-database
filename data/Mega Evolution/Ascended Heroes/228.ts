@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Weavile"
 	},
 
+	evolveFrom: {
+		en: "Sneasel",
+		fr: "Farfuret",
+		es: "Sneasel",
+		'es-mx': "Sneasel",
+		de: "Sniebel",
+		it: "Sneasel",
+		pt: "Sneasel",
+	},
+
 	illustrator: "Uninori",
 	rarity: "Illustration rare",
 	category: "Pokemon",
@@ -73,6 +83,8 @@ const card: Card = {
 
 	description: {
 		en: "They travel in groups of four or five, leaving signs for one another on trees and rocks. They bring down their prey with coordinated attacks.",
+		fr: "Ils voyagent en groupes de quatre ou cinq. Lors de la chasse, ils laissent des marques sur les arbres ou les rochers pour coordonner leurs attaques.",
+		de: "Sie sind immer zu viert oder fünft unterwegs. Bei der Jagd arbeiten sie zusammen, indem sie Zeichen in Felsen und Bäume ritzen."
 	},
 
 	variants: [

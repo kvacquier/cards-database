@@ -49,6 +49,8 @@ const card: Card = {
 
 	description: {
 		en: "On nights with a full moon, they gather together and dance. The surrounding area is enveloped in an abnormal magnetic field.",
+		fr: "Les nuits de pleine lune, ils se rassemblent pour danser, ce qui génère un mystérieux champ magnétique autour d'eux.",
+		de: "Bei Vollmond versammeln sie sich und tanzen gemeinsam. Um sie herum entsteht dadurch ein ungewöhnliches Magnetfeld."
 	},
 
 	variants: [
@@ -63,7 +65,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870251,
+			cardmarket: 870252,
 			tcgplayer: 676910
 		}
 	},
@@ -71,7 +73,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870252,
+			cardmarket: 870251,
 			tcgplayer: 677050
 		}
 	},

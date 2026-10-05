@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "Eating a twig fills it with energy, and its roomy ears give vent to air hotter than 390 degrees Fahrenheit.",
+		fr: "Quand il grignote des rameaux, il reprend des forces et ses grandes oreilles dégagent une chaleur qui dépasse les 200 °C.",
+		de: "Wenn es Zweige frisst, schöpft es neue Kraft und stößt aus seinen großen Ohren über 200 °C heiße Luft aus."
 	},
 
 
@@ -75,6 +77,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886403,
+				tcgplayer: 693484
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886403,
 				tcgplayer: 693484

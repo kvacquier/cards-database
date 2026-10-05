@@ -12,18 +12,17 @@ const card: Card = {
 	category: "Pokemon",
 	set: Set,
 
-	dexId: [
-		140,
-	],
+	dexId: [140],
 	
 	hp: 80,
 
 	types: [
-		"Fighting",
+		"Fighting"
 	],
 
 	evolveFrom: {
 		en: "Dome Fossil",
+		de: "Domfossil"
 	},
 
 	stage: "Stage1",
@@ -69,21 +68,26 @@ const card: Card = {
 
 	description: {
 		en: "It is thought to have inhabited beaches 300 million years ago. It is protected by a stiff shell.",
-	},
-
-	thirdParty: {
-		cardmarket: 278876,
-		tcgplayer: 86387
+		de: "Man geht davon aus, dass dieses PKMN vor 300 Millionen Jahren die Strände bevölkerte."
 	},
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 86387,
+				cardmarket: 278876
+			}
 		},
 		{
 			type: "reverse",
-		}
-	]
+			thirdParty: {
+				cardmarket: 278876,
+				tcgplayer: 86387
+			}
+		},
+	],
+
 }
 
 export default card

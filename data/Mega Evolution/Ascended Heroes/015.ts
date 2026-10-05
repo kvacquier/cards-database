@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Dustox"
 	},
 
+	evolveFrom: {
+		en: "Cascoon",
+		fr: "Blindalys",
+		es: "Cascoon",
+		'es-mx': "Cascoon",
+		de: "Panekon",
+		it: "Cascoon",
+		pt: "Cascoon",
+	},
+
 	illustrator: "kamonabe",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -83,6 +93,8 @@ const card: Card = {
 
 	description: {
 		en: "A nocturnal Pokémon. Drawn by streetlights, they messily eat the leaves of trees lining boulevards.",
+		fr: "Ce Pokémon nocturne est attiré par les lueurs de la ville et aime les feuilles des arbres urbains.",
+		de: "Nachtaktives Pokémon, das vom Licht der Stadt angezogen wird und dort die Blätter der Bäume frisst."
 	},
 
 	variants: [
@@ -97,7 +109,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "loveball",
 			thirdParty: {
-				cardmarket: 870159,
+				cardmarket: 870160,
 				tcgplayer: 676864
 			}
 		},
@@ -105,7 +117,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "energy",
 			thirdParty: {
-				cardmarket: 870160,
+				cardmarket: 870159,
 				tcgplayer: 677004
 			}
 		},

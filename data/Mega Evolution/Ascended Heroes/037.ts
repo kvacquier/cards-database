@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Raboot"
 	},
 
+	evolveFrom: {
+		en: "Scorbunny",
+		fr: "Flambino",
+		es: "Scorbunny",
+		'es-mx': "Scorbunny",
+		de: "Hopplo",
+		it: "Scorbunny",
+		pt: "Scorbunny",
+	},
+
 	illustrator: "aspara",
 	rarity: "Common",
 	category: "Pokemon",
@@ -63,6 +73,8 @@ const card: Card = {
 
 	description: {
 		en: "While it prides itself on its varied kicking moves, it can also deliver powerful headbutts once its flames have heated up its forehead.",
+		fr: "Sa maîtrise des différents types de coups de pied fait sa fierté, mais les coups de tête qu'il assène quand son front est brûlant sont aussi ravageurs.",
+		de: "Vielfältige Tritt-Attacken sind sein ganzer Stolz, aber ein Stoß mit seiner Stirn, die durch sein Feuer erhitzt wurde, hat es ebenfalls in sich."
 	},
 
 	variants: [
@@ -77,7 +89,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "friendball",
 		thirdParty: {
-			cardmarket: 870197,
+			cardmarket: 870198,
 			tcgplayer: 676883
 		}
 	},
@@ -85,7 +97,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870198,
+			cardmarket: 870197,
 			tcgplayer: 677023
 		}
 	},

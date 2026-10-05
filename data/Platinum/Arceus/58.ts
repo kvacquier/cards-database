@@ -12,14 +12,12 @@ const card: Card = {
 	category: "Pokemon",
 	set: Set,
 
-	dexId: [
-		412,
-	],
+	dexId: [412],
 	
 	hp: 40,
 
 	types: [
-		"Grass",
+		"Grass"
 	],
 
 	stage: "Basic",
@@ -34,7 +32,7 @@ const card: Card = {
 			effect: {
 				en: "Burmy Trash Cloak can evolve during the turn you play it.",
 				de: "Burmy Lumpenumhang kann in dem Zug entwickelt werden, in dem du es gespielt hast."
-			},
+			}
 		},
 	],
 
@@ -65,21 +63,26 @@ const card: Card = {
 
 	description: {
 		en: "Even if it is born where there are no cocooning materials, it somehow always ends up with a cloak.",
-	},
-
-	thirdParty: {
-		cardmarket: 278930,
-		tcgplayer: 84057
+		de: "Es erschafft sich immer irgendwie einen schützenden Umhang, selbst wenn es kaum Materialien findet."
 	},
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 84057,
+				cardmarket: 278930
+			}
 		},
 		{
 			type: "reverse",
-		}
-	]
+			thirdParty: {
+				cardmarket: 278930,
+				tcgplayer: 84057
+			}
+		},
+	],
+
 }
 
 export default card

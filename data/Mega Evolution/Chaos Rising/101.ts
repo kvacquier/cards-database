@@ -3,6 +3,7 @@ import Set from "../Chaos Rising"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [670],
 
 
 	name: {
@@ -22,7 +23,7 @@ const card: Card = {
 	hp: 250,
 	types: ["Psychic"],
 	stage: "Basic",
-	suffix: "EX",
+	suffix: "ex",
 
 	attacks: [{
 		name: {

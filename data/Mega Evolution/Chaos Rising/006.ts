@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "They strengthen their lower bodies by running into one another. They are very kind and won't start fights.",
+		fr: "Il renforce ses membres inférieurs en se ruant sur ses congénères. Naturellement paisible, il ne provoque jamais un combat.",
+		de: "Sie stärken ihren Unterleib, indem sie sich gegenseitig anrempeln. Sie sind sehr freundlich und würden niemals einen Streit anfangen."
 	},
 
 	name: {
@@ -26,7 +28,9 @@ const card: Card = {
 	types: ["Grass"],
 
 	evolveFrom: {
-		en: "Chespin"
+		en: "Chespin",
+		fr: "Marisson",
+		de: "Igamaro"
 	},
 
 	stage: "Stage1",
@@ -80,6 +84,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886398,
+				tcgplayer: 693537
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886398,
 				tcgplayer: 693537

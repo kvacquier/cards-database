@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Carkol"
 	},
 
+	evolveFrom: {
+		en: "Rolycoly",
+		fr: "Charbi",
+		es: "Rolycoly",
+		'es-mx': "Rolycoly",
+		de: "Klonkett",
+		it: "Rolycoly",
+		pt: "Rolycoly",
+	},
+
 	illustrator: "Apios",
 	rarity: "Common",
 	category: "Pokemon",
@@ -73,6 +83,8 @@ const card: Card = {
 
 	description: {
 		en: "Due to the coal tar created inside it, the heap of coal on Carkol’s back never falls apart, even when the Pokémon rolls around at high speeds.",
+		fr: "Grâce au goudron qu'il produit dans son tas de charbon, il peut avancer très rapidement sans que ce dernier s'affaisse.",
+		de: "Der Kohlehaufen auf seinem Rücken zerfällt selbst bei sehr schneller Fortbewegung nicht, was an dem Teer liegt, den es darin produziert."
 	},
 
 	variants: [
@@ -87,7 +99,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870323,
+			cardmarket: 870324,
 			tcgplayer: 676946
 		}
 	},
@@ -95,7 +107,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870324,
+			cardmarket: 870323,
 			tcgplayer: 677086
 		}
 	},

@@ -16,21 +16,25 @@ const card: Card = {
 	effect: {
 		en: "Each player plays with his or her Prize cards face up for the rest of the game.",
 		fr: "Chaque joueur joue avec ses cartes Récompenses découvertes jusqu'à la fin de la partie.",
-		de: "Each player plays with his or her Prize cards face up for the rest of the game."
+		de: "Jeder Spieler spielt für den Rest des Spiels mit offenen Preiskarten."
 	},
 
-	thirdParty: {
-		cardmarket: 274068,
-		tcgplayer: 86074
-	},
 
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 274068,
+				tcgplayer: 86074
+			}
 		},
 		{
 			type: "normal",
-			stamp: ["1st-edition"]
+			stamp: ["1st-edition"],
+			thirdParty: {
+				cardmarket: 274068,
+				tcgplayer: 86074
+			}
 		}
 	]
 }

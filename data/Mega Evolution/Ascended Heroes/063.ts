@@ -49,6 +49,8 @@ const card: Card = {
 
 	description: {
 		en: "The frills on either side of its head have cells that generate electricity when exposed to sunlight.",
+		fr: "Les plis de peau de chaque côté de sa tête sont dotés de cellules produisant de l'électricité quand elles sont exposées à la lumière du soleil.",
+		de: "Die Zellen der Hautlappen, die sich beidseitig an seinem Kopf befinden, erzeugen Strom, wenn sie von Sonnenstrahlen beschienen werden."
 	},
 
 	variants: [
@@ -63,7 +65,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870235,
+			cardmarket: 870236,
 			tcgplayer: 676902
 		}
 	},
@@ -71,7 +73,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870236,
+			cardmarket: 870235,
 			tcgplayer: 677042
 		}
 	},

@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Darmanitan"
 	},
 
+	evolveFrom: {
+		en: "Darumaka",
+		fr: "Darumarond",
+		es: "Darumaka",
+		'es-mx': "Darumaka",
+		de: "Flampion",
+		it: "Darumaka",
+		pt: "Darumaka",
+	},
+
 	rarity: "Uncommon",
 	category: "Pokemon",
 
@@ -59,6 +69,8 @@ const card: Card = {
 
 	description: {
 		en: "This Pokémon's power level rises along with the temperature of its fire, which can reach 2,500 degrees Fahrenheit.",
+		fr: "Sa puissance augmente à mesure que la flamme de son corps s'intensifie. La température de celle-ci peut parfois dépasser les 1 400 °C.",
+		de: "Je heißer das Feuer in ihm brennt, desto mehr Kraft steht ihm zur Verfügung. Seine innere Temperatur erreicht mitunter mehr als 1 400 ºC."
 	},
 
 	illustrator: "Uta",

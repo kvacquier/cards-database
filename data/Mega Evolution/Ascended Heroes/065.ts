@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Charjabug"
 	},
 
+	evolveFrom: {
+		en: "Grubbin",
+		fr: "Larvibule",
+		es: "Grubbin",
+		'es-mx': "Grubbin",
+		de: "Mabula",
+		it: "Grubbin",
+		pt: "Grubbin",
+	},
+
 	illustrator: "Misa Tsutsui",
 	rarity: "Common",
 	category: "Pokemon",
@@ -49,6 +59,8 @@ const card: Card = {
 
 	description: {
 		en: "While its durable shell protects it from attacks, Charjabug strikes at enemies with jolts of electricity discharged from the tips of its jaws.",
+		fr: "Il est bien protégé par sa robuste carapace, et se défend en générant un courant électrique au bout de ses mandibules.",
+		de: "Es schützt sich mithilfe seines robusten Panzers. Durch die Spitzen an seinem Kiefer leitet es Strom, mit dem es sich gegen Angreifer wehrt."
 	},
 
 	variants: [
@@ -63,7 +75,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870239,
+			cardmarket: 870240,
 			tcgplayer: 676904
 		}
 	},
@@ -71,7 +83,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870240,
+			cardmarket: 870239,
 			tcgplayer: 677044
 		}
 	},

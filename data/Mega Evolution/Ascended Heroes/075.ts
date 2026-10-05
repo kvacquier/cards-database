@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Clefable"
 	},
 
+	evolveFrom: {
+		en: "Clefairy",
+		fr: "Mélofée",
+		es: "Clefairy",
+		'es-mx': "Clefairy",
+		de: "Piepi",
+		it: "Clefairy",
+		pt: "Clefairy",
+	},
+
 	illustrator: "satoma",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -71,6 +81,8 @@ const card: Card = {
 
 	description: {
 		en: "It has an acute sense of hearing. It can easily hear a pin being dropped nearly 1,100 yards away.",
+		fr: "Ce Pokémon possède une ouïe très développée. Il peut facilement entendre une épingle tomber à 1 km de distance.",
+		de: "Es besitzt ein exzellentes Hörvermögen. Darum kann es eine Nadel fallen hören, selbst wenn sie 1 km entfernt ist."
 	},
 
 	variants: [
@@ -85,7 +97,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870253,
+			cardmarket: 870254,
 			tcgplayer: 676911
 		}
 	},
@@ -93,7 +105,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870254,
+			cardmarket: 870253,
 			tcgplayer: 677051
 		}
 	},

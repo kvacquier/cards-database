@@ -18,15 +18,20 @@ const card: Card = {
 	rarity: "Ultra Rare",
 	category: "Pokemon",
 	dexId: [609],
+
+	cameoDexIds: [609],
+
 	hp: 350,
 	types: ["Psychic"],
 
 	evolveFrom: {
-		en: "Lampent"
+		en: "Lampent",
+		fr: "Mélancolux",
+		de: "Laternecto"
 	},
 
 	stage: "Stage2",
-	suffix: "EX",
+	suffix: "ex",
 
 	abilities: [{
 		type: "Ability",

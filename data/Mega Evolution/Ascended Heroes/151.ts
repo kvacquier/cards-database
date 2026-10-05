@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Dragonair"
 	},
 
+	evolveFrom: {
+		en: "Dratini",
+		fr: "Minidraco",
+		es: "Dratini",
+		'es-mx': "Dratini",
+		de: "Dratini",
+		it: "Dratini",
+		pt: "Dratini",
+	},
+
 	illustrator: "Gemi",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -67,6 +77,8 @@ const card: Card = {
 
 	description: {
 		en: "Its crystalline orbs appear to give this Pokémon the power to freely control the weather.",
+		fr: "Ses orbes cristallins renfermeraient un pouvoir lui permettant de contrôler la météo.",
+		de: "Die kristallenen Bälle an seinem Schweif scheinen es ihm zu ermöglichen, das Wetter nach Belieben zu beeinflussen."
 	},
 
 	variants: [
@@ -81,7 +93,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870371,
+			cardmarket: 870372,
 			tcgplayer: 676970
 		}
 	},
@@ -89,7 +101,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870372,
+			cardmarket: 870371,
 			tcgplayer: 677110
 		}
 	},

@@ -49,6 +49,8 @@ const card: Card = {
 
 	description: {
 		en: "The shell seems to be filled with joy. It is said that it will share good luck when treated kindly.",
+		fr: "Sa coquille est remplie de joie. On dit que s'il est bien traité, il porte chance.",
+		de: "Seine Schale ist voll von Freude. Es heißt, wenn man es freundlich und gut behandelt, teile es sein Glück."
 	},
 
 	variants: [
@@ -63,7 +65,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870259,
+			cardmarket: 870260,
 			tcgplayer: 676914
 		}
 	},
@@ -71,7 +73,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870260,
+			cardmarket: 870259,
 			tcgplayer: 677054
 		}
 	},

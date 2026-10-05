@@ -18,6 +18,9 @@ const card: Card = {
 	rarity: "Rare",
 	category: "Pokemon",
 	dexId: [893],
+
+	cameoDexIds: [491],
+
 	hp: 130,
 	types: ["Darkness"],
 	stage: "Basic",
@@ -82,7 +85,7 @@ const card: Card = {
 
 	variants: [
 		{
-			type: "normal",
+			type: "holo",
 			thirdParty: {
 				cardmarket: 895841,
 				tcgplayer: 704813
@@ -95,6 +98,14 @@ const card: Card = {
 				tcgplayer: 704813
 			}
 		},
+		{
+			type: "holo",
+			foil: "cosmos",
+			thirdParty: {
+				cardmarket: 899378,
+				tcgplayer: 706251
+			}
+		}
 	],
 }
 

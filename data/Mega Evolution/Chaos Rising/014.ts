@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "They set off on their own from their pride and live by themselves to become stronger. These hot-blooded Pokémon are quick to fight.",
+		fr: "Ce Pokémon au sang chaud est prompt à se battre. Il quitte sa troupe et mène une existence solitaire pour devenir plus fort.",
+		de: "Um stärker zu werden, verlassen sie ihr Rudel und leben allein. Sie sind sehr hitzköpfig und streitlustig."
 	},
 
 
@@ -53,6 +55,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886406,
+				tcgplayer: 693505
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886406,
 				tcgplayer: 693505

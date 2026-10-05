@@ -13,18 +13,22 @@ const card: Card = {
 	category: "Pokemon",
 	set: Set,
 
-	dexId: [
-		147,
-	],
+	dexId: [147],
 
 	hp: 40,
 
 	types: [
-		"Colorless",
+		"Colorless"
 	],
 
 	stage: "Basic",
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "x2"
+		},
+	],
 	attacks: [
 		{
 			cost: [
@@ -41,28 +45,31 @@ const card: Card = {
 			effect: {
 				en: "Flip a coin. If tails, this attack does nothing.",
 				fr: "Lancez une pièce. Si c'est pile, cette attaque ne fait rien.",
-				de: "Wirf eine Münze. Bei \"Zahl\" hat dieser Angriff keine Auswirkungen."
+				de: "Wirf eine Münze. Bei „Zahl“ hat dieser Angriff keine Auswirkungen."
 			},
 
-			damage: 40
+			damage: 40,
 		},
 	],
 
 	retreat: 1,
 
-	thirdParty: {
-		cardmarket: 274982,
-		tcgplayer: 84931
-	},
-
-	variants:[
+	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				tcgplayer: 84931,
+				cardmarket: 274982
+			},
 		},
 		{
 			type: "reverse",
-		}
-	]
+			thirdParty: {
+				tcgplayer: 84931,
+				cardmarket: 274982
+			},
+		},
+	],
 }
 
 export default card

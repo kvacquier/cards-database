@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "AKIRA EGAWA",
 	rarity: "Rare",
 	category: "Pokemon",
+	dexId: [644],
 	hp: 130,
 	types: ["Dragon"],
 	stage: "Basic",
@@ -76,6 +77,8 @@ const card: Card = {
 
 	description: {
 		en: "When the interior part of its tail spins like a motor, Zekrom can generate many bolts of lightning to blast its surroundings.",
+		fr: "Lorsque sa queue se met à tourner comme un réacteur, il produit des éclairs qui transpercent tout autour de lui.",
+		de: "Rotiert das Innere seines Schweifs wie eine Turbine, werden dadurch unzählige Blitze erzeugt, welche die Umgebung durchzucken."
 	},
 
 	variants: [
@@ -87,10 +90,27 @@ const card: Card = {
 		}
 	},
 	{
+		type: "normal",
+		stamp: ["player-rewards-program"],
+		thirdParty: {
+			cardmarket: 894179,
+			tcgplayer: 704446
+		}
+	},
+	{
+		type: "holo",
+		foil: "cosmos",
+		stamp: ["player-rewards-program"],
+		thirdParty: {
+			cardmarket: 894178,
+			tcgplayer: 704447
+		}
+	},
+	{
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870377,
+			cardmarket: 870378,
 			tcgplayer: 676973
 		}
 	},
@@ -98,7 +118,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870378,
+			cardmarket: 870377,
 			tcgplayer: 677113
 		}
 	},

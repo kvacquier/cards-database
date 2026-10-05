@@ -3,6 +3,7 @@ import Set from "../Phantasmal Flames"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [6],
 
 	name: {
 		en: "Mega Charizard X ex",
@@ -14,6 +15,17 @@ const card: Card = {
 		pt: "Mega Charizard X ex"
 	},
 
+	evolveFrom: {
+		en: "Charmeleon",
+		fr: "Reptincel",
+		es: "Charmeleon",
+		'es-mx': "Charmeleon",
+		de: "Glutexo",
+		it: "Charmeleon",
+		pt: "Charmeleon",
+	},
+
+	suffix: "ex",
 	rarity: "Ultra Rare",
 	category: "Pokemon",
 

@@ -31,7 +31,7 @@ const card: Card = {
 			name: {
 				en: "[Keep]",
 				fr: "Keep",
-				de: "Keep"
+				de: "Keep [Keep]"
 			},
 			effect: {
 				en: "Your opponent's attacks, Pokémon Powers, and Trainer cards can't discard Energy cards from your Pokémon with Unown in their names. (Any other effects of attacks still happen.)",
@@ -68,21 +68,26 @@ const card: Card = {
 
 	description: {
 		en: "Their shapes look like hieroglyphs on ancient tablets. It is said that the two are somehow related.",
-		fr: "Ils ressemblent à des hiéroglyphes inscrits sur d'antiques tablettes. On prétend qu'ils sont de la même origine."
+		fr: "Ils ressemblent à des hiéroglyphes inscrits sur d'antiques tablettes. On prétend qu'ils sont de la même origine.",
+		de: "Ihre Gestalt erinnert an Hieroglyphen auf alten Steintafeln. Ob ein Zusammenhang besteht, ist unklar."
 	},
 
-	thirdParty: {
-		cardmarket: 274644,
-		tcgplayer: 90217
-	},
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				cardmarket: 274644,
+				tcgplayer: 90217
+			}
 		},
 		{
 			type: "normal",
-			stamp: ["1st-edition"]
+			stamp: ["1st-edition"],
+			thirdParty: {
+				cardmarket: 274644,
+				tcgplayer: 90217
+			}
 		}
 	]
 }

@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "It defends itself by launching spikes, but its aim isn't very good at first. Only after a lot of practice will it improve.",
+		fr: "Il se protège en projetant ses épines, mais il lui faut beaucoup d'entraînement pour réussir à tirer dans une direction précise.",
+		de: "Es schützt sich, indem es Dornen verschießt. Ein Kastadur muss jahrelang trainieren, um präzise zielen zu können."
 	},
 
 
@@ -58,6 +60,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886454,
+				tcgplayer: 693485
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886454,
 				tcgplayer: 693485

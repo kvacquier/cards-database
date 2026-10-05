@@ -39,7 +39,7 @@ const card: Card = {
 			effect: {
 				en: "Flip a coin. If heads, the Defending Pokémon is now Confused.",
 				fr: "Lancez une pièce. Si c'est face, le Pokémon Défenseur est maintenant Confus.",
-				de: "Wirf eine Münze. Bei 'Kopf' ist das verteidigende Pokémon jetzt verwirrt."
+				de: "Wirf eine Münze. Bei „Kopf“ ist das verteidigende Pokémon jetzt verwirrt."
 			},
 
 		},
@@ -79,23 +79,28 @@ const card: Card = {
 
 	description: {
 		en: "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.",
-		fr: "Se déplace en colonies dans les endroits sombres. Il se déplace grâce aux ultrasons."
+		fr: "Se déplace en colonies dans les endroits sombres. Il se déplace grâce aux ultrasons.",
+		de: "Bildet Kolonien an ewig dunklen Orten. Verwendet Ultraschall zum Identifizieren und Orten von Zielen."
 	},
 
-	thirdParty: {
-		cardmarket: 273918,
-		tcgplayer: 44459
-	},
 
 	variants: [
 		{
 			type: "normal",
-			foil: "galaxy"
+			foil: "galaxy",
+			thirdParty: {
+				cardmarket: 273918,
+				tcgplayer: 44459
+			}
 		},
 		{
 			type: "normal",
 			stamp: ["1st-edition"],
-			foil: "galaxy"
+			foil: "galaxy",
+			thirdParty: {
+				cardmarket: 273918,
+				tcgplayer: 44459
+			}
 		},
 		{
 			type: "normal",

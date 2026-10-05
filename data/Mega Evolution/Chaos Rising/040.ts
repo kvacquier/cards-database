@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "It was recently discovered that the different varieties of Pumpkaboo vary not only in size but also in the size of the souls they collect.",
+		fr: "Il a été confirmé récemment que chaque variété se distingue non seulement par sa taille, mais également par celle des âmes qu'elle enlève.",
+		de: "Jüngst entdeckte man, dass seine Sorten nicht nur je nach Körpergröße variieren, sondern auch je nach der Größe der Seelen, die sie entführen."
 	},
 
 
@@ -58,6 +60,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886432,
+				tcgplayer: 693536
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886432,
 				tcgplayer: 693536

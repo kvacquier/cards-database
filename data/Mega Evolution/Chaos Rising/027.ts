@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "Its fluffy coat doubles in size when static electricity builds up. Touching it can be shocking.",
+		fr: "Lorsque sa douce toison accumule de l'électricité statique, elle double de volume. Si on la touche, on reçoit une décharge.",
+		de: "Sein weiches Fell wird doppelt so dick, wenn sich statische Elektrizität darin ansammelt. Berührt man es, bekommt man einen Stromschlag."
 	},
 
 
@@ -63,6 +65,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886419,
+				tcgplayer: 693507
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886419,
 				tcgplayer: 693507

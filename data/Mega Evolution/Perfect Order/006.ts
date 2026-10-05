@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Serperior"
 	},
 
+	evolveFrom: {
+		en: "Servine",
+		fr: "Lianaja",
+		es: "Servine",
+		'es-mx': "Servine",
+		de: "Efoserp",
+		it: "Servine",
+		pt: "Servine",
+	},
+
 	illustrator: "kodama",
 	rarity: "Rare",
 	category: "Pokemon",
@@ -84,7 +94,7 @@ const card: Card = {
 
 	variants: [
 		{
-			type: "normal",
+			type: "holo",
 			thirdParty: {
 				tcgplayer: 684402,
 				cardmarket: 877418
@@ -97,7 +107,13 @@ const card: Card = {
 				cardmarket: 877418
 			}
 		},
-
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 881886,
+				tcgplayer: 689165
+			}
+		}
 	],
 
 }

@@ -18,6 +18,9 @@ const card: Card = {
 	dexId: [
 		570,
 	],
+
+	cameoDexIds: [571],
+
 	hp: 60,
 	types: [
 		"Darkness",
@@ -81,6 +84,16 @@ const card: Card = {
 	description: {
 		en: "It changes so it looks like its foe, tricks it, and then uses that opportunity to flee.",
 	},
+
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 312555,
+				tcgplayer: 149385
+			}
+		}
+	],
 }
 
 export default card

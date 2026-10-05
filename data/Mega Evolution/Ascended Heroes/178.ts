@@ -71,6 +71,8 @@ const card: Card = {
 
 	description: {
 		en: "The shell is made of crystallized Terastal energy. When struck by a move, this shell absorbs the move’s energy and transfers it to Terapagos.",
+		fr: "Il vivait à Paldea en des temps reculés. On le croyait disparu, emporté par un bouleversement tectonique.",
+		de: "Wird sein Terakristall-Panzer von einer gegnerischen Attacke getroffen, absorbiert es deren Energie und macht sie sich zu eigen."
 	},
 
 	variants: [
@@ -85,7 +87,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870413,
+			cardmarket: 870414,
 			tcgplayer: 676991
 		}
 	},
@@ -93,7 +95,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870414,
+			cardmarket: 870413,
 			tcgplayer: 677131
 		}
 	},

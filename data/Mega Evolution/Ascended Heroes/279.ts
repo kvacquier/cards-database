@@ -3,6 +3,7 @@ import Set from "../Ascended Heroes"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [81, 938],
 
 	name: {
 		en: "Iono's Bellibolt ex",
@@ -14,10 +15,21 @@ const card: Card = {
 		pt: "Bellibolt ex da Kissera"
 	},
 
+	evolveFrom: {
+		en: "Iono's Tadbulb",
+		fr: "Têtampoule de Mashynn",
+		es: "Tadbulb de e-Nigma",
+		'es-mx': "Tadbulb de e-Nigma",
+		de: "Enigmaras Blipp",
+		it: "Tadbulb di Kissara",
+		pt: "Tadbulb da Kissera",
+	},
+
 	suffix: "ex",
 	illustrator: "Akira Komayama",
 	rarity: "Special illustration rare",
 	category: "Pokemon",
+	dexId: [939],
 	hp: 280,
 	types: ["Lightning"],
 	stage: "Stage1",

@@ -43,6 +43,8 @@ const card: Card = {
 
 	description: {
 		en: "This Pokémon is full of life energy. It continually sheds its skin and grows steadily larger.",
+		fr: "Ce Pokémon est plein de vitalité. Il grandit de plus en plus chaque fois qu'il mue.",
+		de: "Dieses Pokémon strotzt vor Lebensenergie. Es häutet sich ständig und wird dadurch größer."
 	},
 
 	variants: [
@@ -54,10 +56,18 @@ const card: Card = {
 		}
 	},
 	{
+		type: "normal",
+		stamp: ["player-rewards-program"],
+		thirdParty: {
+			cardmarket: 894128,
+			tcgplayer: 704413
+		}
+	},
+	{
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870369,
+			cardmarket: 870370,
 			tcgplayer: 676969
 		}
 	},
@@ -65,7 +75,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870370,
+			cardmarket: 870369,
 			tcgplayer: 677109
 		}
 	},

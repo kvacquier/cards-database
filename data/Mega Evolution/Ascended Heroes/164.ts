@@ -14,10 +14,21 @@ const card: Card = {
 		pt: "Dudunsparce ex do Lauro"
 	},
 
+	evolveFrom: {
+		en: "Larry's Dunsparce",
+		fr: "Insolourdo d'Okuba",
+		es: "Dunsparce de Laureano",
+		'es-mx': "Dunsparce de Laureano",
+		de: "Aokis Dummimisel",
+		it: "Dunsparce di Ubaldo",
+		pt: "Dunsparce do Lauro",
+	},
+
 	suffix: "ex",
 	illustrator: "5ban Graphics",
 	rarity: "Double rare",
 	category: "Pokemon",
+	dexId: [982],
 	hp: 270,
 	types: ["Colorless"],
 	stage: "Stage1",

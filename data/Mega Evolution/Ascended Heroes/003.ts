@@ -14,10 +14,21 @@ const card: Card = {
 		pt: "Vileplume ex da Érica"
 	},
 
+	evolveFrom: {
+		en: "Erika's Gloom",
+		fr: "Ortide d'Erika",
+		es: "Gloom de Erika",
+		'es-mx': "Gloom de Erika",
+		de: "Erikas Duflor",
+		it: "Gloom di Erika",
+		pt: "Gloom da Érica",
+	},
+
 	suffix: "ex",
 	illustrator: "5ban Graphics",
 	rarity: "Double rare",
 	category: "Pokemon",
+	dexId: [45],
 	hp: 310,
 	types: ["Grass"],
 	stage: "Stage2",

@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Krookodile"
 	},
 
+	evolveFrom: {
+		en: "Krokorok",
+		fr: "Escroco",
+		es: "Krokorok",
+		'es-mx': "Krokorok",
+		de: "Rokkaiman",
+		it: "Krokorok",
+		pt: "Krokorok",
+	},
+
 	rarity: "Uncommon",
 	category: "Pokemon",
 
@@ -73,6 +83,8 @@ const card: Card = {
 
 	description: {
 		en: "After clamping down with its powerful jaws, it twists its body around to rip its prey in half.",
+		fr: "Une fois qu'il a attrapé une proie avec ses puissantes mâchoires, il secoue son corps de toutes ses forces pour la déchiqueter.",
+		de: "Wenn es mit seinem mächtigen Kiefer zubeißt, zerteilt es seine Beute mit einer Drehung seines Körpers."
 	},
 
 	illustrator: "Ryuta Fuse",

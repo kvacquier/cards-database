@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Frosmoth"
 	},
 
+	evolveFrom: {
+		en: "Snom",
+		fr: "Frissonille",
+		es: "Snom",
+		'es-mx': "Snom",
+		de: "Snomnom",
+		it: "Snom",
+		pt: "Snom",
+	},
+
 	illustrator: "cochi8i",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -83,6 +93,8 @@ const card: Card = {
 
 	description: {
 		en: "It causes blizzards as it flies around with its huge, chill-emanating wings. Clean meltwater is its favorite thing to drink.",
+		fr: "Ce Pokémon provoque des blizzards en battant de ses grandes ailes, qui dégagent de l'air froid. Il aime l'eau pure de la neige fraîchement fondue.",
+		de: "Seine großen Flügel setzen beim Fliegen eine Eiseskälte frei, wodurch es Schneestürme auslöst. Klares Schmelzwasser trinkt es besonders gern."
 	},
 
 	variants: [
@@ -97,7 +109,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "friendball",
 		thirdParty: {
-			cardmarket: 870221,
+			cardmarket: 870222,
 			tcgplayer: 676895
 		}
 	},
@@ -105,7 +117,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870222,
+			cardmarket: 870221,
 			tcgplayer: 677035
 		}
 	},

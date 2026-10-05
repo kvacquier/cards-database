@@ -3,6 +3,7 @@ import Set from "../Chaos Rising"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [691],
 
 
 	name: {
@@ -23,11 +24,13 @@ const card: Card = {
 	types: ["Dragon"],
 
 	evolveFrom: {
-		en: "Skrelp"
+		en: "Skrelp",
+		fr: "Venalgue",
+		de: "Algitt"
 	},
 
 	stage: "Stage1",
-	suffix: "EX",
+	suffix: "ex",
 
 	attacks: [{
 		name: {

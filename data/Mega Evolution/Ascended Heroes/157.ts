@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Noivern"
 	},
 
+	evolveFrom: {
+		en: "Noibat",
+		fr: "Sonistrelle",
+		es: "Noibat",
+		'es-mx': "Noibat",
+		de: "eF-eM",
+		it: "Noibat",
+		pt: "Noibat",
+	},
+
 	illustrator: "Natsumi Miyanose",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -77,6 +87,8 @@ const card: Card = {
 
 	description: {
 		en: "They fly around on moonless nights and attack careless prey. Nothing can beat them in a battle in the dark.",
+		fr: "Les nuits sans lune, il sillonne le ciel et attaque les proies distraites. Dans l'obscurité, rien ni personne ne peut rivaliser avec lui en combat.",
+		de: "Es fliegt in finsterer, mondloser Nacht umher und macht Jagd auf achtlose Beute. Bei Dunkelheit ist es im Kampf jedem Gegner überlegen."
 	},
 
 	variants: [
@@ -91,7 +103,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "friendball",
 		thirdParty: {
-			cardmarket: 870381,
+			cardmarket: 870382,
 			tcgplayer: 676975
 		}
 	},
@@ -99,7 +111,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870382,
+			cardmarket: 870381,
 			tcgplayer: 677115
 		}
 	},

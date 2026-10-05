@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "Often found in forests and grasslands. It has a sharp, toxic barb of around two inches on top of its head.",
+		fr: "On trouve souvent ce Pokémon dans les forêts et les hautes herbes. Le petit aiguillon acéré de 5 cm sur sa tête est empoisonné.",
+		de: "Es lebt bevorzugt in Wäldern und auf Wiesen. Der spitze, giftige Stachel auf seinem Kopf ist circa 5 cm lang."
 	},
 
 	name: {
@@ -62,6 +64,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886393,
+				tcgplayer: 693561
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886393,
 				tcgplayer: 693561

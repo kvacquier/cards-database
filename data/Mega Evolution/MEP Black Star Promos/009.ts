@@ -14,6 +14,16 @@ const card: Card = {
 		'es-mx': "Alakazam"
 	},
 
+	evolveFrom: {
+		en: "Kadabra",
+		fr: "Kadabra",
+		de: "Kadabra",
+		it: "Kadabra",
+		es: "Kadabra",
+		pt: "Kadabra",
+		'es-mx': "Kadabra",
+	},
+
 	illustrator: "Aya Kusube",
 	rarity: "Promo",
 	category: "Pokemon",
@@ -72,6 +82,16 @@ const card: Card = {
 
 	retreat: 1,
 	regulationMark: "I",
+
+	weaknesses: [{
+		type: "Darkness",
+		value: "x2"
+	}],
+
+	resistances: [{
+		type: "Fighting",
+		value: "-30"
+	}],
 
 	variants: [
 		{

@@ -14,6 +14,8 @@ const card: Card = {
 	category: "Trainer",
 	set: Set,
 
+	cameoDexIds: [14, 81],
+
 	effect: {
 		en: "Switch 1 of your own Benched Pokémon with your Active Pokémon.",
 		fr: "Échangez 1 Pokémon de votre Banc avec votre Pokémon actif.",
@@ -35,14 +37,16 @@ const card: Card = {
 			subtype: "shadowless",
 			stamp: ["1st-edition"],
 			thirdParty: {
-				tcgplayer: 107092
+				tcgplayer: 107092,
+				cardmarket: 660107
 			},
 		},
 		{
 			type: "normal",
 			subtype: "shadowless",
 			thirdParty: {
-				tcgplayer: 107092
+				tcgplayer: 107092,
+				cardmarket: 660107
 			},
 		},
 		{

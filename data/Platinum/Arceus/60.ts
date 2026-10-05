@@ -12,14 +12,12 @@ const card: Card = {
 	category: "Pokemon",
 	set: Set,
 
-	dexId: [
-		420,
-	],
+	dexId: [420],
 	
 	hp: 50,
 
 	types: [
-		"Grass",
+		"Grass"
 	],
 
 	stage: "Basic",
@@ -70,21 +68,26 @@ const card: Card = {
 
 	description: {
 		en: "The small ball is not only filled with nutrients, it is also tasty. Starly try to peck it off.",
-	},
-
-	thirdParty: {
-		cardmarket: 278932,
-		tcgplayer: 84263
+		de: "Der kleine Ball ist nicht nur voller Nährstoffe, sondern auch noch schmackhaft. STARALILI pickt oft danach."
 	},
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 84263,
+				cardmarket: 278932
+			}
 		},
 		{
 			type: "reverse",
-		}
-	]
+			thirdParty: {
+				cardmarket: 278932,
+				tcgplayer: 84263
+			}
+		},
+	],
+
 }
 
 export default card

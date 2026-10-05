@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "sui",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [69],
 	hp: 60,
 	types: ["Grass"],
 	stage: "Basic",
@@ -48,6 +49,8 @@ const card: Card = {
 
 	description: {
 		en: "Even though its body is extremely skinny, it is blindingly fast when catching its prey.",
+		fr: "Même si son corps est très frêle, ce Pokémon attrape ses proies en bougeant à une vitesse vertigineuse.",
+		de: "Obwohl sein Körper sehr schmal ist, schnappt es sich seine Beute mit Bewegungen, die so schnell sind, dass man sie mit bloßem Auge kaum sieht."
 	},
 
 	variants: [
@@ -62,7 +65,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "pokeball",
 			thirdParty: {
-				cardmarket: 870139,
+				cardmarket: 870140,
 				tcgplayer: 676854
 			}
 		},
@@ -70,7 +73,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "energy",
 			thirdParty: {
-				cardmarket: 870140,
+				cardmarket: 870139,
 				tcgplayer: 676994
 			}
 		},

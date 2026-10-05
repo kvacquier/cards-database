@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "Thanks to the slimy membrane covering its body punches or kicks from its enemies slide right off it.",
+		fr: "Son corps est recouvert d'une membrane gluante, aussi les coups des ennemis glissent sur lui sans lui faire le moindre mal.",
+		de: "Sein von einer glitschigen Schleimhaut umhüllter Körper lässt gegnerische Tritte und Schläge abgleiten."
 	},
 
 
@@ -58,6 +60,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886458,
+				tcgplayer: 693496
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886458,
 				tcgplayer: 693496

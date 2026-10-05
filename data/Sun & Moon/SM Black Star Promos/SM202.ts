@@ -20,6 +20,10 @@ const card: Card = {
 		591,
 	],
 
+
+
+	cameoDexIds: [590],
+
 	hp: 100,
 
 	types: [
@@ -94,6 +98,16 @@ const card: Card = {
 	description: {
 		en: "They show off their Poké Ball caps to lure prey, but very few Pokémon are fooled by this.",
 	},
+
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 377520,
+				tcgplayer: 196715
+			}
+		}
+	],
 }
 
 export default card

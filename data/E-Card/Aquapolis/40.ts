@@ -13,19 +13,18 @@ const card: Card = {
 	category: "Pokemon",
 	set: Set,
 
-	dexId: [
-		248,
-	],
+	dexId: [248],
 
 	hp: 120,
 
 	types: [
-		"Darkness",
+		"Darkness"
 	],
 
 	evolveFrom: {
 		en: "Pupitar",
-		fr: "Ymphect"
+		fr: "Ymphect",
+		de: "Pupitar"
 	},
 
 	stage: "Stage2",
@@ -43,7 +42,7 @@ const card: Card = {
 			effect: {
 				en: "Flip a coin. If heads, discard 1 Energy card attached to 1 of your opponent's Pokémon.",
 				fr: "Lancez une pièce. Si c'est face, choisissez une carte Énergie attachée à l'un des Pokémon de votre adversaire.",
-				de: "Wirf eine Münze. Lege bei 'Kopf' 1 Energiekarte, die an 1 Pokémon deines Gegners angelegt ist, auf seinen Ablagestapel."
+				de: "Wirf eine Münze. Lege bei „Kopf“ 1 Energiekarte, die an 1 Pokémon deines Gegners angelegt ist, auf seinen Ablagestapel."
 			},
 
 		},
@@ -88,10 +87,9 @@ const card: Card = {
 	weaknesses: [
 		{
 			type: "Fighting",
-			value: "×2"
+			value: "x2"
 		},
 	],
-
 	resistances: [
 		{
 			type: "Psychic",
@@ -101,18 +99,21 @@ const card: Card = {
 	retreat: 3,
 
 
-	thirdParty: {
-		cardmarket: 275071,
-		tcgplayer: 90117
-	},
-
 	variants: [
 		{
 			type: 'normal',
+			thirdParty: {
+				tcgplayer: 90117,
+				cardmarket: 275071
+			}
 		},
 		{
 			type: 'reverse',
-		}
+			thirdParty: {
+				tcgplayer: 90117,
+				cardmarket: 275071
+			}
+		},
 	]
 }
 

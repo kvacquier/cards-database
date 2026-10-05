@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Charmeleon"
 	},
 
+	evolveFrom: {
+		en: "Charmander",
+		fr: "Salamèche",
+		es: "Charmander",
+		'es-mx': "Charmander",
+		de: "Glumanda",
+		it: "Charmander",
+		pt: "Charmander",
+	},
+
 	illustrator: "Julie Hang",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -49,6 +59,8 @@ const card: Card = {
 
 	description: {
 		en: "It lashes about with its tail to knock down its foe. It then tears up the fallen opponent with sharp claws.",
+		fr: "Il se sert de sa queue pour faire tomber ses adversaires. Une fois qu'ils sont au sol, il les lacère de ses griffes acérées.",
+		de: "Es schlägt mit dem Schwanz um sich und stößt damit seine Gegner um. Anschließend zerfetzt es die Gegner mit seinen scharfen Klauen."
 	},
 
 	variants: [
@@ -63,7 +75,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "friendball",
 		thirdParty: {
-			cardmarket: 870171,
+			cardmarket: 870172,
 			tcgplayer: 676870
 		}
 	},
@@ -71,7 +83,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870172,
+			cardmarket: 870171,
 			tcgplayer: 677010
 		}
 	},

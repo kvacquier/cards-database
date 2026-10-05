@@ -3,26 +3,25 @@ import Set from '../Pokémon Rumble'
 
 const card: Card = {
 	name: {
-		en: "Gyarados",
+		en: "Gyarados"
 	},
 
 	illustrator: undefined,
 	rarity: "None",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [121],
 
-	dexId: [
-		130,
-	],
+	dexId: [130],
 
 	hp: 130,
 
 	types: [
-		"Water",
+		"Water"
 	],
 
 	evolveFrom: {
-		en: "Magikarp",
+		en: "Magikarp"
 	},
 
 	stage: "Stage1",
@@ -36,10 +35,10 @@ const card: Card = {
 				"Colorless",
 			],
 			name: {
-				en: "Thrash Tackle",
+				en: "Thrash Tackle"
 			},
 			effect: {
-				en: "Gyarados does 20 damage to itself.",
+				en: "Gyarados does 20 damage to itself."
 			},
 			damage: 80,
 
@@ -49,10 +48,9 @@ const card: Card = {
 	weaknesses: [
 		{
 			type: "Lightning",
-			value: "×2"
+			value: "x2"
 		},
 	],
-
 	resistances: [
 		{
 			type: "Fighting",
@@ -62,13 +60,13 @@ const card: Card = {
 	retreat: 3,
 
 
-	thirdParty: {
-		cardmarket: 278847
-	},
-
-	variants:[
+	variants: [
 		{
-			type:"normal"
+			type: "normal",
+			thirdParty: {
+				cardmarket: 278847,
+				tcgplayer: 87775
+			},
 		}
 	]
 }

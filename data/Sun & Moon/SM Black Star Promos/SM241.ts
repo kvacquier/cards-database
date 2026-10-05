@@ -3,6 +3,9 @@ import Set from '../SM Black Star Promos'
 
 const card: Card = {
 	dexId: [197, 491],
+
+	cameoDexIds: [25],
+
 	set: Set,
 
 	name: {
@@ -75,6 +78,16 @@ const card: Card = {
 	}],
 
 	retreat: 2,
+
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 449108,
+				tcgplayer: 211452
+			}
+		}
+	],
 }
 
 export default card

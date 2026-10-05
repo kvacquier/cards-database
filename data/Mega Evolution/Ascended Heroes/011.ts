@@ -49,6 +49,8 @@ const card: Card = {
 
 	description: {
 		en: "It loves to eat leaves. If it is attacked by a Starly, it will defend itself with its spiked rear.",
+		fr: "Il adore manger des feuilles. Si un Étourmi l'attaque, il riposte avec les piquants de son postérieur.",
+		de: "Es isst am liebsten Blätter. Wird es von einem Staralili angegriffen, verteidigt es sich mit Stacheln."
 	},
 
 	variants: [
@@ -63,7 +65,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "loveball",
 			thirdParty: {
-				cardmarket: 870151,
+				cardmarket: 870152,
 				tcgplayer: 676860
 			}
 		},
@@ -71,7 +73,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "energy",
 			thirdParty: {
-				cardmarket: 870152,
+				cardmarket: 870151,
 				tcgplayer: 677000
 			}
 		},

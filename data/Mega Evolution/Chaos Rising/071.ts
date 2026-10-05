@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "Using luminescent matter within its body, it makes its eyes and body glow and stuns attacking opponents.",
+		fr: "Il intimide ses assaillants en faisant briller son pelage et ses yeux grâce à une substance luminescente dans son corps.",
+		de: "Mit einer körpereigenen Leuchtsubstanz lässt es seine Augen und die Markierungen an seinem Körper aufleuchten. Dies schreckt seine Angreifer ab."
 	},
 
 
@@ -27,7 +29,9 @@ const card: Card = {
 	types: ["Colorless"],
 
 	evolveFrom: {
-		en: "Patrat"
+		en: "Patrat",
+		fr: "Ratentif",
+		de: "Nagelotz"
 	},
 
 	stage: "Stage1",
@@ -80,6 +84,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886463,
+				tcgplayer: 693559
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886463,
 				tcgplayer: 693559

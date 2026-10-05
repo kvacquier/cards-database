@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "It protects its skin by covering its body in delicate bubbles. Beneath its happy-go-lucky air, it keeps a watchful eye on its surroundings.",
+		fr: "Il protège son corps en l'entourant d'une mousse délicate. Malgré son apparente insouciance, ce Pokémon est en fait constamment à l'affût.",
+		de: "Es schützt seine Haut mit feinen Blasen, die den Körper umhüllen. Obwohl es sich sorglos gibt, hat es die Umgebung stets aufmerksam im Auge."
 	},
 
 
@@ -75,6 +77,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886412,
+				tcgplayer: 693488
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886412,
 				tcgplayer: 693488

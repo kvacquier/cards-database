@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "It keeps its intense psychic power from leaking out by using its ears to cover the organs emitting that power.",
+		fr: "Il utilise ses oreilles pour couvrir ses organes émetteurs de pouvoirs psychiques afin de contenir leur redoutable puissance.",
+		de: "Damit die starken Psycho-Kräfte dieses Pokémon nicht unkontrolliert nach außen dringen, bedeckt es das Organ, das sie freisetzt, mit seinen Ohren."
 	},
 
 
@@ -68,6 +70,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886428,
+				tcgplayer: 693483
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886428,
 				tcgplayer: 693483

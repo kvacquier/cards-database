@@ -21,12 +21,14 @@ const card: Card = {
 	types: ["Water"],
 
 	evolveFrom: {
-		en: "Frogadier"
+		en: "Frogadier",
+		fr: "Croâporal",
+		de: "Amphizel"
 	},
 	rarity: "Mega Hyper Rare",
 
 	stage: "Stage2",
-	suffix: "EX",
+	suffix: "ex",
 
 	abilities: [{
 		type: "Ability",

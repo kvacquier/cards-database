@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Dewgong"
 	},
 
+	evolveFrom: {
+		en: "Seel",
+		fr: "Otaria",
+		es: "Seel",
+		'es-mx': "Seel",
+		de: "Jurob",
+		it: "Seel",
+		pt: "Seel",
+	},
+
 	rarity: "Illustration rare",
 	category: "Pokemon",
 
@@ -83,9 +93,11 @@ const card: Card = {
 
 	description: {
 		en: "It sleeps under shallow ocean waters during the day, then looks for food at night when it's colder.",
+		fr: "Le jour, il dort dans les eaux peu profondes. La nuit, quand la température de la mer descend, il part à la recherche de nourriture.",
+		de: "Des Nachts, wenn die Wassertemperatur fällt, schwimmt es auf der Suche nach Nahrung umher. Tagsüber schläft es im seichten Meereswasser."
 	},
 
-	illustrator: "Taira Akitsu",
+	illustrator: "satoma",
 	variants: [
 		{
 			type: 'holo',

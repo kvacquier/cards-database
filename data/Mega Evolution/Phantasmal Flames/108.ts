@@ -3,6 +3,7 @@ import Set from "../Phantasmal Flames"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [214],
 
 	name: {
 		en: "Mega Heracross ex",
@@ -14,6 +15,7 @@ const card: Card = {
 		pt: "Mega Heracross ex"
 	},
 
+	suffix: "ex",
 	rarity: "Ultra Rare",
 	category: "Pokemon",
 

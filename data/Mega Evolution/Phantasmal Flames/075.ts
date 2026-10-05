@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Archaludon"
 	},
 
+	evolveFrom: {
+		en: "Duraludon",
+		fr: "Duralugon",
+		es: "Duraludon",
+		'es-mx': "Duraludon",
+		de: "Duraludon",
+		it: "Duraludon",
+		pt: "Duraludon",
+	},
+
 	rarity: "Uncommon",
 	category: "Pokemon",
 
@@ -65,6 +75,8 @@ const card: Card = {
 
 	description: {
 		en: "It gathers static electricity from its surroundings. The beams it launches when down on all fours are tremendously powerful.",
+		fr: "Il accumule l'électricité statique alentour. Le rayon qu'il tire quand il se met à quatre pattes est d'une puissance colossale.",
+		de: "Es sammelt statische Elektrizität aus der Umgebung. Die Strahlen, die es auf allen Vieren abfeuert, sind extrem stark."
 	},
 
 	illustrator: "toriyufu",

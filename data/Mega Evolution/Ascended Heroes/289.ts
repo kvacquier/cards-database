@@ -14,10 +14,21 @@ const card: Card = {
 		pt: "Metagross ex do Steven"
 	},
 
+	evolveFrom: {
+		en: "Steven's Metang",
+		fr: "Métang de Pierre",
+		es: "Metang de Máximo",
+		'es-mx': "Metang de Steven",
+		de: "Troys Metang",
+		it: "Metang di Rocco",
+		pt: "Metang do Steven",
+	},
+
 	suffix: "ex",
 	illustrator: "chibi",
 	rarity: "Special illustration rare",
 	category: "Pokemon",
+	dexId: [376],
 	hp: 340,
 	types: ["Metal"],
 	stage: "Stage2",

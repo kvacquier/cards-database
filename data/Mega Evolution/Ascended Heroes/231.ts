@@ -3,6 +3,7 @@ import Set from "../Ascended Heroes"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [81, 479],
 
 	name: {
 		en: "Iono's Wattrel",
@@ -17,6 +18,7 @@ const card: Card = {
 	illustrator: "mingo",
 	rarity: "Illustration rare",
 	category: "Pokemon",
+	dexId: [940],
 	hp: 60,
 	types: ["Lightning"],
 	stage: "Basic",
@@ -64,6 +66,8 @@ const card: Card = {
 
 	description: {
 		en: "When its wings catch the wind, the bones within produce electricity. This Pokémon dives into the ocean, catching prey by electrocuting them.",
+		fr: "Les os de ses ailes produisent de l'électricité grâce au vent. Pour chasser, ce Pokémon plonge dans la mer et électrocute ses proies.",
+		de: "Trifft Wind auf seine Flügel, erzeugen deren Knochen Strom. Es fängt Beute, indem es ins Meer taucht und ihr einen Stromschlag verpasst."
 	},
 
 	variants: [

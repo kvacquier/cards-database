@@ -10,6 +10,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [12, 70, 85],
 
 	dexId: [
 		39,
@@ -69,14 +70,14 @@ const card: Card = {
 	description: {
 		en: "After lulling its enemies with its large eyes, this Pokémon sings them to sleep with a relaxing melody.",
 	},
-	thirdParty: {
-		cardmarket: 275638,
-		tcgplayer: 46482
-	},
 
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 275638,
+				tcgplayer: 46482
+			}
 		}
 	]
 }

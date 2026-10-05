@@ -3,6 +3,9 @@ import Set from '../SM Black Star Promos'
 
 const card: Card = {
 	dexId: [25],
+
+	cameoDexIds: [187, 201, 232],
+
 	set: Set,
 
 	name: {
@@ -69,6 +72,16 @@ const card: Card = {
 	description: {
 		en: "It's in its nature to store electricity. It feels stressed now and then if it's unable to fully discharge the electricity.",
 	},
+
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 412934,
+				tcgplayer: 200275
+			}
+		}
+	],
 }
 
 export default card

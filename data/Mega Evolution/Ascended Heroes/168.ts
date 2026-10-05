@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Natsumi Miyanose",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [396],
 	hp: 60,
 	types: ["Colorless"],
 	stage: "Basic",
@@ -76,6 +77,8 @@ const card: Card = {
 
 	description: {
 		en: "Because they are weak individually, they form groups. However, they bicker if the group grows too big.",
+		fr: "Leur faiblesse les force à vivre en groupe, mais quand ils deviennent trop nombreux, ils finissent par se quereller.",
+		de: "Einzeln sind sie schwach, daher bilden sie Schwärme. Werden diese jedoch zu groß, zanken sie sich."
 	},
 
 	variants: [
@@ -90,7 +93,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870395,
+			cardmarket: 870396,
 			tcgplayer: 676982
 		}
 	},
@@ -98,7 +101,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870396,
+			cardmarket: 870395,
 			tcgplayer: 677122
 		}
 	},

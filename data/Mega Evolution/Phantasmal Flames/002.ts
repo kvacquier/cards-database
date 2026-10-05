@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Gloom"
 	},
 
+	evolveFrom: {
+		en: "Oddish",
+		fr: "Mystherbe",
+		es: "Oddish",
+		'es-mx': "Oddish",
+		de: "Myrapla",
+		it: "Oddish",
+		pt: "Oddish",
+	},
+
 	rarity: "Common",
 	category: "Pokemon",
 
@@ -59,6 +69,8 @@ const card: Card = {
 
 	description: {
 		en: "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey.",
+		fr: "Le liquide qui s'écoule lentement de sa bouche n'est pas que de la bave, mais une sorte de nectar qu'il utilise pour appâter sa proie.",
+		de: "Was aus seinem Mund sickert, ist kein Speichel, sondern eine Art Nektar, mit dem es seine Beute anlockt."
 	},
 
 	illustrator: "Yoriyuki Ikegami",
@@ -77,6 +89,14 @@ const card: Card = {
 				cardmarket: 857577,
 				tcgplayer: 662164,
 				cardtrader: 356786
+			}
+		},
+		{
+			type: 'holo',
+			foil: 'cosmos',
+			thirdParty: {
+				cardmarket: 884286,
+				tcgplayer: 684042
 			}
 		},
 	],

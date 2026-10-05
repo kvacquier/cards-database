@@ -59,6 +59,8 @@ const card: Card = {
 
 	description: {
 		en: "A Pokémon with a persistent nature, it chases its chosen prey until the prey becomes exhausted.",
+		fr: "Un Pokémon très obstiné qui poursuit sa proie jusqu'à ce qu'elle soit épuisée.",
+		de: "Har dieses beharrliche Pokémon erst einmal eine bestimmte Beute ins Auge gefasst, jagt es dieser nach, bis sie völlig erschöpft ist."
 	},
 
 	variants: [
@@ -73,7 +75,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870337,
+			cardmarket: 870338,
 			tcgplayer: 676953
 		}
 	},
@@ -81,7 +83,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870338,
+			cardmarket: 870337,
 			tcgplayer: 677093
 		}
 	},

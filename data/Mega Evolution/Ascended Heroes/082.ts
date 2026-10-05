@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Togekiss"
 	},
 
+	evolveFrom: {
+		en: "Togetic",
+		fr: "Togetic",
+		es: "Togetic",
+		'es-mx': "Togetic",
+		de: "Togetic",
+		it: "Togetic",
+		pt: "Togetic",
+	},
+
 	illustrator: "Narano",
 	rarity: "Rare",
 	category: "Pokemon",
@@ -73,6 +83,8 @@ const card: Card = {
 
 	description: {
 		en: "These Pokémon are never seen anywhere near conflict or turmoil. In recent times, they’ve hardly been seen at all.",
+		fr: "Il ne se montre jamais en temps de guerre ou de conflit. Ces derniers temps, il est rare de le croiser.",
+		de: "Es zeigt sich nie an Orten, wo Streit und Zwietracht herrschen. In letzter Zeit wird es kaum noch gesehen."
 	},
 
 	variants: [
@@ -87,7 +99,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870263,
+			cardmarket: 870264,
 			tcgplayer: 676916
 		}
 	},
@@ -95,7 +107,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870264,
+			cardmarket: 870263,
 			tcgplayer: 677056
 		}
 	},

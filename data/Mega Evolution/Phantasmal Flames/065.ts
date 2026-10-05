@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Krokorok"
 	},
 
+	evolveFrom: {
+		en: "Sandile",
+		fr: "Mascaïman",
+		es: "Sandile",
+		'es-mx': "Sandile",
+		de: "Ganovil",
+		it: "Sandile",
+		pt: "Sandile",
+	},
+
 	rarity: "Common",
 	category: "Pokemon",
 
@@ -63,6 +73,8 @@ const card: Card = {
 
 	description: {
 		en: "Protected by thin membranes, their eyes can see even in the dead of night. They live in groups of a few individuals.",
+		fr: "Leurs yeux sont recouverts d'une fine membrane qui leur permet de voir dans la nuit noire. Ils vivent en petites bandes.",
+		de: "Ihre Augen sind von einer dünnen Membran umgeben und können auch nachts sehen. Sie bilden kleine Rudel."
 	},
 
 	illustrator: "Uninori",

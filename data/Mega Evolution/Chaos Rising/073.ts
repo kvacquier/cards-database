@@ -23,11 +23,13 @@ const card: Card = {
 	types: ["Colorless"],
 
 	evolveFrom: {
-		en: "Minccino"
+		en: "Minccino",
+		fr: "Chinchidou",
+		de: "Picochilla"
 	},
 
 	stage: "Stage1",
-	suffix: "EX",
+	suffix: "ex",
 
 	abilities: [{
 		type: "Ability",

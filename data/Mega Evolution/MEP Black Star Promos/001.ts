@@ -14,6 +14,16 @@ const card: Card = {
 		'es-mx': "Meganium"
 	},
 
+	evolveFrom: {
+		en: "Bayleef",
+		fr: "Macronium",
+		de: "Lorblatt",
+		it: "Bayleef",
+		es: "Bayleef",
+		pt: "Bayleef",
+		'es-mx': "Bayleef",
+	},
+
 	illustrator: "Uninori",
 	rarity: "Promo",
 	category: "Pokemon",
@@ -65,19 +75,26 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "I",
 
+	weaknesses: [{
+		type: "Fire",
+		value: "x2"
+	}],
+
 	variants: [
 		{
 			type: "holo",
 			stamp: ["set-logo"],
 			thirdParty: {
-				cardmarket: 851043
+				cardmarket: 851043,
+				tcgplayer: 654594
 			}
 		},
 		{
 			type: "holo",
 			stamp: ["set-logo","staff"],
 			thirdParty: {
-				cardmarket: 851044
+				cardmarket: 851044,
+				tcgplayer: 656800
 			}
 		},
 	],

@@ -4,6 +4,8 @@ import Set from "../Prismatic Evolutions"
 const card: Card = {
 	set: Set,
 
+	cameoDexIds: [133],
+
 	name: {
 		en: "Friends in Paldea",
 		fr: "Amis de Paldea",
@@ -22,7 +24,7 @@ const card: Card = {
 		es: "Roba 3 cartas.",
 		pt: "Compre 3 cartas.",
 		it: "Pesca tre carte.",
-		de: "Ziehe 3 Karten."
+		de: "Ziehe 3 Karten. Du kannst während deines Zuges nur 1 Unterstützerkarte spielen."
 	},
 
 	trainerType: "Supporter",

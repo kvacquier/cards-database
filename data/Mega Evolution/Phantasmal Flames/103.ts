@@ -3,6 +3,7 @@ import Set from "../Phantasmal Flames"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [25, 335, 336],
 
 	name: {
 		en: "Toxtricity",
@@ -12,6 +13,16 @@ const card: Card = {
 		de: "Riffex",
 		it: "Toxtricity",
 		pt: "Toxtricity"
+	},
+
+	evolveFrom: {
+		en: "Toxel",
+		fr: "Toxizap",
+		es: "Toxel",
+		'es-mx': "Toxel",
+		de: "Toxel",
+		it: "Toxel",
+		pt: "Toxel",
 	},
 
 	rarity: "Illustration rare",
@@ -73,9 +84,11 @@ const card: Card = {
 
 	description: {
 		en: "As it scatters toxic sweat and emits electricity, a melody that sounds like it came from a guitar reverberates through the surrounding area.",
+		fr: "Lorsqu'il génère de l'électricité tout en projetant sa sueur toxique, on entend une mélodie qui ressemble à celle d'une guitare.",
+		de: "Wenn es Elektrizität absondert und dabei giftigen Schweiß verspritzt, so erklingt in der Umgebung eine Melodie wie von einer Gitarre."
 	},
 
-	illustrator: "DOM",
+	illustrator: "Terada Tera",
 	variants: [
 		{
 			type: 'holo',

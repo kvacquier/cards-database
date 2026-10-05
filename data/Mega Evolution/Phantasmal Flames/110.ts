@@ -14,6 +14,7 @@ const card: Card = {
 		pt: "Oricorio ex"
 	},
 
+	suffix: "ex",
 	rarity: "Ultra Rare",
 	category: "Pokemon",
 
@@ -71,7 +72,7 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "I",
 
-	illustrator: "akagi",
+	illustrator: "5ban Graphics",
 	variants: [
 		{
 			type: 'holo',

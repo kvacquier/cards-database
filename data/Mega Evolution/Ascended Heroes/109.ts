@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Tomomi Ozaki",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [443],
 	hp: 70,
 	types: ["Fighting"],
 	stage: "Basic",
@@ -58,6 +59,8 @@ const card: Card = {
 
 	description: {
 		en: "It skulks in caves, and when prey or an enemy passes by, it leaps out and chomps them. The force of its attack sometimes chips its teeth.",
+		fr: "Il attend qu'une proie passe pour bondir hors de son trou et la croquer. Dans son élan, il se casse parfois les dents.",
+		de: "Es verbirgt sich in kleinen Höhlen, aus denen es herausspringt und vorbeilaufende Gegner oder Beute beißt. Manchmal bricht dabei ein Zahn ab."
 	},
 
 	variants: [
@@ -72,7 +75,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870311,
+			cardmarket: 870312,
 			tcgplayer: 676940
 		}
 	},
@@ -80,7 +83,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870312,
+			cardmarket: 870311,
 			tcgplayer: 677080
 		}
 	},

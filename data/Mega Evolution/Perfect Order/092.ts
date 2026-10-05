@@ -3,6 +3,7 @@ import Set from "../Perfect Order"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [19],
 
 	dexId: [699],
 
@@ -14,6 +15,16 @@ const card: Card = {
 		de: "Amagarga",
 		it: "Aurorus",
 		pt: "Aurorus"
+	},
+
+	evolveFrom: {
+		en: "Amaura",
+		fr: "Amagara",
+		es: "Amaura",
+		'es-mx': "Amaura",
+		de: "Amarino",
+		it: "Amaura",
+		pt: "Amaura",
 	},
 
 	illustrator: "Masa",

@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "Its swiftness is unparalleled. It can scale a tower of more than 2,000 feet in a minute's time.",
+		fr: "Son agilité est incomparable. Il peut gravir une tour de 600 m de haut en une minute.",
+		de: "Seine Flinkheit sucht ihresgleichen. Es kann einen über 600 m hohen Turm innerhalb einer Minute erklimmen."
 	},
 
 
@@ -27,7 +29,9 @@ const card: Card = {
 	types: ["Water"],
 
 	evolveFrom: {
-		en: "Froakie"
+		en: "Froakie",
+		fr: "Grenousse",
+		de: "Froxy"
 	},
 
 	stage: "Stage1",
@@ -80,6 +84,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886413,
+				tcgplayer: 693490
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886413,
 				tcgplayer: 693490

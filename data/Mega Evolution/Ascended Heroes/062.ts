@@ -59,6 +59,8 @@ const card: Card = {
 
 	description: {
 		en: "It conceals itself in the mud of the seashore. Then it waits. When prey touch it, it delivers a jolt of electricity.",
+		fr: "Ce Pokémon guette ses proies en bord de mer, tapi dans la vase. Lorsque l'une d'elles le touche, il la paralyse avec une décharge électrique.",
+		de: "Es vergräbt sich im Morast der Meeresküste und lauert auf Beute. Wird es von dieser gestreift, lähmt es sie mit Strom."
 	},
 
 	variants: [
@@ -73,7 +75,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870233,
+			cardmarket: 870234,
 			tcgplayer: 676901
 		}
 	},
@@ -81,7 +83,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870234,
+			cardmarket: 870233,
 			tcgplayer: 677041
 		}
 	},

@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "It will do anything to win, taking advantage of every opening and finishing opponents off with the small claws on its front legs.",
+		fr: "Il ne recule devant rien pour gagner. Il profite de l'inattention de son adversaire pour lui administrer un coup décisif de ses petites griffes antérieures.",
+		de: "Es schreckt vor nichts zurück, um zu gewinnen. Sieht es eine Chance, schlägt es zu und gibt dem Opfer mit seinen Klauen schließlich den Rest."
 	},
 
 
@@ -27,7 +29,9 @@ const card: Card = {
 	types: ["Water"],
 
 	evolveFrom: {
-		en: "Wimpod"
+		en: "Wimpod",
+		fr: "Sovkipou",
+		de: "Reißlaus"
 	},
 
 	stage: "Stage1",
@@ -91,6 +95,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886418,
+				tcgplayer: 693494
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886418,
 				tcgplayer: 693494

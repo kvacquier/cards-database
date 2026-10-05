@@ -59,14 +59,18 @@ const card: Card = {
 
 	description: {
 		en: "Able to cut down anything with a single strike, it became known as the Fairy King's Sword, and it inspired awe in friend and foe alike.",
+		fr: "On dit qu'il s'agit de la figure fraternelle et du rival de Zamazenta, un Pokémon plongé dans un long sommeil.",
+		de: "Weil es alles und jeden vernichten konnte, trug es einst den Namen „Feenkönigsschwert“ und wurde gleichermaßen gefürchtet und verehrt."
 	},
 
 	illustrator: "kawayoo",
 	variants: [
 		{
-			type: 'normal',
+			type: 'holo',
 			thirdParty: {
-				cardmarket: 858507
+				cardmarket: 857620,
+				tcgplayer: 662244,
+				cardtrader: 356828
 			}
 		},
 		{
@@ -78,11 +82,18 @@ const card: Card = {
 			}
 		},
 		{
-			type: 'holo',
+			type: 'normal',
 			thirdParty: {
-				cardmarket: 857620,
-				tcgplayer: 662244,
-				cardtrader: 356828
+				cardmarket: 858507,
+				tcgplayer: 664005
+			}
+		},
+		{
+			type: 'holo',
+			foil: 'cosmos',
+			thirdParty: {
+				cardmarket: 891734,
+				tcgplayer: 696145
 			}
 		},
 	],	

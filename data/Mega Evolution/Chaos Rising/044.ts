@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "It is far stronger than it appears. If a Phanpy is swinging its trunk around and your arm gets hit by it, your arm bone will shatter.",
+		fr: "Ce Pokémon est beaucoup plus fort qu'il n'y paraît. Il peut casser le bras d'une personne d'un simple mouvement de trompe.",
+		de: "Es ist viel stärker, als es aussieht. Wenn es seinen Rüssel umherschwingt und einen dabei am Arm erwischt, ist dieser wahrscheinlich gebrochen."
 	},
 
 
@@ -66,6 +68,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886436,
+				tcgplayer: 693530
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886436,
 				tcgplayer: 693530

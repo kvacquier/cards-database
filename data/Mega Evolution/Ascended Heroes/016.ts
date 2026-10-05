@@ -57,6 +57,8 @@ const card: Card = {
 
 	description: {
 		en: "The pollen it releases contains poison. If this Pokémon is raised on clean water, the poison’s toxicity is increased.",
+		fr: "Plus l'eau dont il se nourrit est pure, plus le niveau de toxicité du pollen qu'il répand est élevé.",
+		de: "Es verstreut giftigen Pollen. Je sauberer das Wasser war, mit dem es gegossen wurde, desto stärker ist der Giftstoff."
 	},
 
 	variants: [
@@ -71,7 +73,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "friendball",
 			thirdParty: {
-				cardmarket: 870161,
+				cardmarket: 870162,
 				tcgplayer: 676865
 			}
 		},
@@ -79,7 +81,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "energy",
 			thirdParty: {
-				cardmarket: 870162,
+				cardmarket: 870161,
 				tcgplayer: 677005
 			}
 		},

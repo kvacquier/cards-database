@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Gliscor"
 	},
 
+	evolveFrom: {
+		en: "Gligar",
+		fr: "Scorplane",
+		es: "Gligar",
+		'es-mx': "Gligar",
+		de: "Skorgla",
+		it: "Gligar",
+		pt: "Gligar",
+	},
+
 	rarity: "Uncommon",
 	category: "Pokemon",
 
@@ -59,6 +69,8 @@ const card: Card = {
 
 	description: {
 		en: "If it succeeds in catching even a faint breeze properly, it can circle the globe without flapping once.",
+		fr: "Le moindre courant d'air peut lui donner assez d'élan pour faire le tour du monde sans donner un seul coup d'aile.",
+		de: "Erwischt es auch nur ein Lüftchen auf die richtige Weise, kann es den Planeten umkreisen, ohne ein einziges Mal mit den Flügeln zu schlagen."
 	},
 
 	illustrator: "Dsuke",

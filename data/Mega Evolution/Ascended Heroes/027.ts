@@ -73,6 +73,8 @@ const card: Card = {
 
 	description: {
 		en: "The magma in its body reaches 2,200 degrees Fahrenheit. Its hump gets smaller when it uses Fire-type moves.",
+		fr: "Son corps renferme du magma à 1 200 °C. Sa bosse se dégonfle lorsqu'il utilise des capacités de feu.",
+		de: "In seinem Körper fließt 1200 °C heißes Magma. Nach Einsatz einer Feuer-Attacke schrumpft sein Höcker."
 	},
 
 	variants: [
@@ -87,7 +89,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870179,
+			cardmarket: 870180,
 			tcgplayer: 676874
 		}
 	},
@@ -95,7 +97,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870180,
+			cardmarket: 870179,
 			tcgplayer: 677014
 		}
 	},

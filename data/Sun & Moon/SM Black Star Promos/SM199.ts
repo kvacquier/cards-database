@@ -20,6 +20,10 @@ const card: Card = {
 		54,
 	],
 
+
+
+	cameoDexIds: [164],
+
 	hp: 70,
 
 	types: [
@@ -60,6 +64,16 @@ const card: Card = {
 	description: {
 		en: "Using psychokinesis gives it a headache, so it normally passes the time spacing out and doing as little as possible.",
 	},
+
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 372000,
+				tcgplayer: 188321
+			}
+		}
+	],
 }
 
 export default card

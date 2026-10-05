@@ -22,11 +22,13 @@ const card: Card = {
 	types: ["Fighting"],
 
 	evolveFrom: {
-		en: "Cranidos"
+		en: "Cranidos",
+		fr: "Kranidos",
+		de: "Koknodon"
 	},
 
 	stage: "Stage2",
-	suffix: "EX",
+	suffix: "ex",
 
 	abilities: [{
 		type: "Ability",

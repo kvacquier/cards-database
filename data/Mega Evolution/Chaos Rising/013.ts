@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "Using psychic power, it generates a fiery vortex of 5,400 degrees Fahrenheit, incinerating foes swept into this whirl of flame.",
+		fr: "Ses pouvoirs psychiques lui permettent de créer des tourbillons de flammes à 3 000 °C qui enveloppent et consument ses ennemis.",
+		de: "Mit seinen Psycho-Kräften kontrolliert es einen 3000 °C heißen Flammenwirbel, mit dem es seine Gegner umhüllt und sie verbrennt."
 	},
 
 
@@ -27,7 +29,9 @@ const card: Card = {
 	types: ["Fire"],
 
 	evolveFrom: {
-		en: "Braixen"
+		en: "Braixen",
+		fr: "Roussil",
+		de: "Rutena"
 	},
 
 	stage: "Stage2",
@@ -91,17 +95,32 @@ const card: Card = {
 
 	variants: [
 		{
+			type: "holo",
+			thirdParty: {
+				cardmarket: 886405,
+				tcgplayer: 693473
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886405,
+				tcgplayer: 693473
+			}
+		},
+		{
 			type: "normal",
 			thirdParty: {
 				cardmarket: 888552,
-				tcgplayer: 693473
+				tcgplayer: 694632
 			}
 		},
 		{
 			type: 'holo',
 			stamp: ['set-logo'],
 			thirdParty: {
-				cardmarket: 886624
+				cardmarket: 886624,
+				tcgplayer: 694677
 			}
 		},
 	],

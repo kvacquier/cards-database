@@ -14,9 +14,20 @@ const card: Card = {
 		pt: "Gloom da Érica"
 	},
 
+	evolveFrom: {
+		en: "Erika's Oddish",
+		fr: "Mystherbe d'Erika",
+		es: "Oddish de Erika",
+		'es-mx': "Oddish de Erika",
+		de: "Erikas Myrapla",
+		it: "Oddish di Erika",
+		pt: "Oddish da Érica",
+	},
+
 	illustrator: "MARINA Chikazawa",
 	rarity: "Uncommon",
 	category: "Pokemon",
+	dexId: [44],
 	hp: 90,
 	types: ["Grass"],
 	stage: "Stage1",
@@ -58,6 +69,8 @@ const card: Card = {
 
 	description: {
 		en: "It secretes a sticky, drool-like nectar. Though sweet, it smells too repulsive to get very close.",
+		fr: "Il sécrète un nectar gluant, semblable à de la bave. Ce nectar est sucré, mais sent bien trop mauvais pour qu'on puisse s'en approcher.",
+		de: "Es scheidet klebrigen, speichelähnlichen Nektar aus. Obwohl dieser sehr süß ist, stinkt er so schlimm, dass man sich ihm nicht nähern kann."
 	},
 
 	variants: [
@@ -72,7 +85,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "pokeball",
 			thirdParty: {
-				cardmarket: 870137,
+				cardmarket: 870138,
 				tcgplayer: 676853
 			}
 		},
@@ -80,7 +93,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "energy",
 			thirdParty: {
-				cardmarket: 870138,
+				cardmarket: 870137,
 				tcgplayer: 676993
 			}
 		},

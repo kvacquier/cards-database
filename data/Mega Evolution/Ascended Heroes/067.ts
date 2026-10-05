@@ -81,6 +81,8 @@ const card: Card = {
 
 	description: {
 		en: "Although it’s called a guardian deity, if a person or Pokémon puts it in a bad mood, it will become a malevolent deity and attack.",
+		fr: "Bien qu'on le considère comme une divinité protectrice, il peut se montrer cruel envers les humains et les Pokémon qui l'ont offensé.",
+		de: "Trotz seiner Rolle als Schutzpatron kommt es vor, dass es wild wird und andere Pokémon oder Menschen angreift, die ihm die Laune verderben."
 	},
 
 	variants: [
@@ -95,7 +97,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870243,
+			cardmarket: 870244,
 			tcgplayer: 676906
 		}
 	},
@@ -103,7 +105,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870244,
+			cardmarket: 870243,
 			tcgplayer: 677046
 		}
 	},

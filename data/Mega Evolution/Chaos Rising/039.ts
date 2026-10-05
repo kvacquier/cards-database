@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "Using its roots as a nervous system, it controls the trees in the forest. It's kind to the Pokémon that reside in its body.",
+		fr: "Ses racines sont un véritable système nerveux qui lui permet de contrôler les arbres de la forêt. Il est très gentil avec les Pokémon vivant sur lui.",
+		de: "Es nutzt seine Wurzeln als Nervensystem und kontrolliert so die Bäume des Waldes. Zu den Pokémon, die in ihm hausen, ist es stets nett."
 	},
 
 
@@ -27,7 +29,9 @@ const card: Card = {
 	types: ["Psychic"],
 
 	evolveFrom: {
-		en: "Phantump"
+		en: "Phantump",
+		fr: "Brocélôme",
+		de: "Paragoni"
 	},
 
 	stage: "Stage1",
@@ -96,6 +100,13 @@ const card: Card = {
 	variants: [
 		{
 			type: 'holo',
+			thirdParty: {
+				cardmarket: 886431,
+				tcgplayer: 693556
+			}
+		},
+		{
+			type: 'reverse',
 			thirdParty: {
 				cardmarket: 886431,
 				tcgplayer: 693556

@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Vikavolt"
 	},
 
+	evolveFrom: {
+		en: "Charjabug",
+		fr: "Chrysapile",
+		es: "Charjabug",
+		'es-mx': "Charjabug",
+		de: "Akkup",
+		it: "Charjabug",
+		pt: "Charjabug",
+	},
+
 	illustrator: "Tonji Matsuno",
 	rarity: "Illustration rare",
 	category: "Pokemon",
@@ -73,6 +83,8 @@ const card: Card = {
 
 	description: {
 		en: "When carrying a Charjabug, Vikavolt can receive electricity from it and then rapidly fire powerful electromagnetic beams from its large jaws.",
+		fr: "Il transporte un Chrysapile pour se charger en électricité. Ses grandes mandibules peuvent alors tirer une rafale de rayons électromagnétiques.",
+		de: "Trägt es ein Akkup, wird es von diesem mit Strom versorgt, den es als starke elektromagnetische Strahlen aus seinem großen Kiefer abfeuert."
 	},
 
 	variants: [

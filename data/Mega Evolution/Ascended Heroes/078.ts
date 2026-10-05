@@ -14,9 +14,20 @@ const card: Card = {
 		pt: "Exeggutor da Equipe Rocket"
 	},
 
+	evolveFrom: {
+		en: "Team Rocket's Exeggcute",
+		fr: "Noeunoeuf de la Team Rocket",
+		es: "Exeggcute del Team Rocket",
+		'es-mx': "Exeggcute del Equipo Rocket",
+		de: "Team Rockets Owei",
+		it: "Exeggcute del Team Rocket",
+		pt: "Exeggcute da Equipe Rocket",
+	},
+
 	illustrator: "Ryuta Fuse",
 	rarity: "Rare",
 	category: "Pokemon",
+	dexId: [103],
 	hp: 140,
 	types: ["Psychic"],
 	stage: "Stage1",
@@ -86,6 +97,8 @@ const card: Card = {
 
 	description: {
 		en: "It is said that on rare occasions, one of its heads will drop off and continue on as an Exeggcute.",
+		fr: "On raconte qu'en de très rares occasions, une de ses têtes tombe au sol et devient un Noeunoeuf.",
+		de: "Es heißt, in sehr seltenen Fällen falle einer seiner Köpfe zu Boden und lebe als Owei weiter."
 	},
 
 	variants: [

@@ -67,6 +67,8 @@ const card: Card = {
 
 	description: {
 		en: "It lives in the ozone layer far above the clouds and cannot be seen from the ground.",
+		fr: "Il vit dans la couche d'ozone, au-dessus des nuages. Il est invisible depuis le sol.",
+		de: "Es lebt in der Ozonschicht hoch über den Wolken und kann daher vom Boden aus nicht gesehen werden."
 	},
 
 	variants: [
@@ -81,7 +83,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "friendball",
 		thirdParty: {
-			cardmarket: 870373,
+			cardmarket: 870374,
 			tcgplayer: 676971
 		}
 	},
@@ -89,7 +91,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870374,
+			cardmarket: 870373,
 			tcgplayer: 677111
 		}
 	},

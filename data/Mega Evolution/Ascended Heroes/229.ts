@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Heliolisk"
 	},
 
+	evolveFrom: {
+		en: "Helioptile",
+		fr: "Galvaran",
+		es: "Helioptile",
+		'es-mx': "Helioptile",
+		de: "Eguana",
+		it: "Helioptile",
+		pt: "Helioptile",
+	},
+
 	illustrator: "Takeshi Nakamura",
 	rarity: "Illustration rare",
 	category: "Pokemon",
@@ -83,6 +93,8 @@ const card: Card = {
 
 	description: {
 		en: "They flare their frills and generate energy. A single Heliolisk can generate sufficient electricity to power a skyscraper.",
+		fr: "L'électricité que produit un seul Iguolta en déployant sa collerette suffit à alimenter un immeuble entier.",
+		de: "Es stellt seinen Kragen auf und erzeugt so Strom. Ein einzelnes Elezard generiert genug Elektrizität, um einen ganzen Wolkenkratzer zu versorgen."
 	},
 
 	variants: [

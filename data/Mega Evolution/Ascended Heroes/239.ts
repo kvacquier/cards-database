@@ -14,9 +14,20 @@ const card: Card = {
 		pt: "Dugtrio da Equipe Rocket"
 	},
 
+	evolveFrom: {
+		en: "Team Rocket's Diglett",
+		fr: "Taupiqueur de la Team Rocket",
+		es: "Diglett del Team Rocket",
+		'es-mx': "Diglett del Equipo Rocket",
+		de: "Team Rockets Digda",
+		it: "Diglett del Team Rocket",
+		pt: "Diglett da Equipe Rocket",
+	},
+
 	illustrator: "Whisker",
 	rarity: "Illustration rare",
 	category: "Pokemon",
+	dexId: [51],
 	hp: 100,
 	types: ["Fighting"],
 	stage: "Stage1",
@@ -72,6 +83,8 @@ const card: Card = {
 
 	description: {
 		en: "In battle, it digs through the ground and strikes the unsuspecting foe from an unexpected direction.",
+		fr: "En combat, il s'enfouit sous terre pour pouvoir frapper ses adversaires par surprise depuis n'importe quelle direction.",
+		de: "Im Kampf gräbt es sich ein und attackiert den Gegner plötzlich aus einer unvorhersehbaren Richtung."
 	},
 
 	variants: [

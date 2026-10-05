@@ -23,11 +23,13 @@ const card: Card = {
 	types: ["Darkness"],
 
 	evolveFrom: {
-		en: "Krokorok"
+		en: "Krokorok",
+		fr: "Escroco",
+		de: "Rokkaiman"
 	},
 
 	stage: "Stage2",
-	suffix: "EX",
+	suffix: "ex",
 
 	attacks: [{
 		name: {

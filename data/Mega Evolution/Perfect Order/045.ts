@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Tyrantrum"
 	},
 
+	evolveFrom: {
+		en: "Tyrunt",
+		fr: "Ptyranidur",
+		es: "Tyrunt",
+		'es-mx': "Tyrunt",
+		de: "Balgoras",
+		it: "Tyrunt",
+		pt: "Tyrunt",
+	},
+
 	illustrator: "Dsuke",
 	rarity: "Rare",
 	category: "Pokemon",
@@ -98,7 +108,19 @@ const card: Card = {
 			}
 		},
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				cardmarket: 881888,
+				tcgplayer: 688902
+			}
+		},
+		{
+			type: "holo",
+			foil: "cosmos",
+			thirdParty: {
+				cardmarket: 898809,
+				tcgplayer: 709698
+			}
 		}
 	],
 

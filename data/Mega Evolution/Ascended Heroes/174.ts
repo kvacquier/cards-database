@@ -14,9 +14,20 @@ const card: Card = {
 		pt: "Braviary do Lauro"
 	},
 
+	evolveFrom: {
+		en: "Larry's Rufflet",
+		fr: "Furaiglon d'Okuba",
+		es: "Rufflet de Laureano",
+		'es-mx': "Rufflet de Laureano",
+		de: "Aokis Geronimatz",
+		it: "Rufflet di Ubaldo",
+		pt: "Rufflet do Lauro",
+	},
+
 	illustrator: "Ryuta Fuse",
 	rarity: "Uncommon",
 	category: "Pokemon",
+	dexId: [628],
 	hp: 130,
 	types: ["Colorless"],
 	stage: "Stage1",
@@ -88,6 +99,8 @@ const card: Card = {
 
 	description: {
 		en: "For the sake of its friends, this brave warrior of the sky will not stop battling, even if injured.",
+		fr: "Un guerrier du ciel, brave et intrépide. Pour les siens, il combat au mépris du danger, sans jamais fléchir.",
+		de: "Ein tapferer Krieger der Lüfte, der für seine Kameraden ohne Rücksicht auf eigene Verletzungen immer weiterkämpft."
 	},
 
 	variants: [
@@ -102,7 +115,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870405,
+			cardmarket: 870406,
 			tcgplayer: 676987
 		}
 	},
@@ -110,7 +123,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870406,
+			cardmarket: 870405,
 			tcgplayer: 677127
 		}
 	},

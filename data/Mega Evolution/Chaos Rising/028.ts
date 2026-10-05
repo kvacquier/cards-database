@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "If its coat becomes fully charged with electricity, its tail lights up. Flaaffy can fire wool that zaps on impact.",
+		fr: "Lorsque sa toison est complètement chargée d'électricité, sa queue s'allume. Il projette des poils qui lancent une décharge à leur contact.",
+		de: "Ist sein Fell vollständig elektrisch geladen, leuchtet sein Schweif. Es feuert Haare ab, die sich bei Berührung entladen."
 	},
 
 
@@ -27,7 +29,9 @@ const card: Card = {
 	types: ["Lightning"],
 
 	evolveFrom: {
-		en: "Mareep"
+		en: "Mareep",
+		fr: "Wattouat",
+		de: "Voltilamm"
 	},
 
 	stage: "Stage1",
@@ -68,6 +72,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886420,
+				tcgplayer: 693487
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886420,
 				tcgplayer: 693487

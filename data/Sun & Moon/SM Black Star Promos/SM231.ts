@@ -4,6 +4,8 @@ import Set from '../SM Black Star Promos'
 const card: Card = {
 	set: Set,
 
+	cameoDexIds: [1, 4, 7, 25, 54, 68, 103, 133, 235, 402, 479, 627, 656, 666, 673, 725, 741, 808],
+
 	name: {
 		en: "Champions Festival",
 		fr: "Festival des Champions",
@@ -26,7 +28,17 @@ const card: Card = {
 		de: "Einmal während seines Zuges darf jeder Spieler, falls er 6 Pokémon im Spiel hat, 10 Schadenspunkte bei jedem seiner Pokémon heilen."
 	},
 
-	trainerType: "Stadium"
+	trainerType: "Stadium",
+
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 313448,
+				tcgplayer: 198360
+			}
+		}
+	],
 }
 
 export default card

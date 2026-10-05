@@ -57,6 +57,8 @@ const card: Card = {
 
 	description: {
 		en: "While one alone doesn’t have much power, a chain of many Tynamo can be as powerful as lightning.",
+		fr: "Tout seuls, ils ne dégagent pas beaucoup d'électricité, mais un banc d'Anchwatt produit la même puissance qu'un éclair.",
+		de: "Allein erzeugt es nur wenig Strom, doch wenn sich viele Zapplardin miteinander verbinden, gleicht ihre Kraft der eines Blitzes."
 	},
 
 	variants: [
@@ -71,7 +73,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870229,
+			cardmarket: 870230,
 			tcgplayer: 676899
 		}
 	},
@@ -79,7 +81,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870230,
+			cardmarket: 870229,
 			tcgplayer: 677039
 		}
 	},

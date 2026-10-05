@@ -55,6 +55,8 @@ const card: Card = {
 
 	description: {
 		en: "It loves to feed on feelings like envy and malice. Its upright horn catches the emotions of people.",
+		fr: "Sa corne capte les émotions des êtres humains. Il adore se nourrir de sentiments tels que la jalousie et la rancune.",
+		de: "Es verspeist am liebsten Gefühle wie Neid und Bosheit. Sein aufrechtes Horn fängt die Emotionen der Menschen ein."
 	},
 
 	variants: [
@@ -69,7 +71,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870275,
+			cardmarket: 870276,
 			tcgplayer: 676922
 		}
 	},
@@ -77,7 +79,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870276,
+			cardmarket: 870275,
 			tcgplayer: 677062
 		}
 	},

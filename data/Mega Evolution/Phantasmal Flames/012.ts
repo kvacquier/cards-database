@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Charmeleon"
 	},
 
+	evolveFrom: {
+		en: "Charmander",
+		fr: "Salamèche",
+		es: "Charmander",
+		'es-mx': "Charmander",
+		de: "Glumanda",
+		it: "Charmander",
+		pt: "Charmander",
+	},
+
 	rarity: "Common",
 	category: "Pokemon",
 
@@ -49,6 +59,8 @@ const card: Card = {
 
 	description: {
 		en: "When it swings its burning tail, the temperature around it rises higher and higher, tormenting its opponents.",
+		fr: "En agitant sa queue enflammée, il peut élever la température ambiante de manière exponentielle et ainsi tourmenter ses adversaires.",
+		de: "Wenn Glutexo seinen brennenden Schwanz schwingt, steigt die Temperatur um es herum immer weiter an und setzt seinen Gegnern zu."
 	},
 
 	variants: [

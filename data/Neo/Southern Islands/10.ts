@@ -10,6 +10,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [149],
 
 	dexId: [
 		73,
@@ -94,14 +95,14 @@ const card: Card = {
 	description: {
 		en: "This Pokémon attacks its prey with its eighty toxin-producing tentacles.",
 	},
-	thirdParty: {
-		cardmarket: 275640,
-		tcgplayer: 46467
-	},
 
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 275640,
+				tcgplayer: 46467
+			}
 		}
 	]
 }

@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "This Pokémon scrapes its spikes across rocks, and then uses the tips of its feelers to absorb the nutrients it finds within the stone.",
+		fr: "Il fissure la roche avec ses épines pour ensuite absorber les nutriments qui s'y trouvent grâce à l'extrémité de ses tentacules.",
+		de: "Es kratzt mit seinen Dornen Kerben in Felswände und extrahiert dann mit den Dornenspitzen an seinen Schlingen Nährstoffe aus dem Gestein."
 	},
 
 
@@ -27,7 +29,9 @@ const card: Card = {
 	types: ["Metal"],
 
 	evolveFrom: {
-		en: "Ferroseed"
+		en: "Ferroseed",
+		fr: "Grindur",
+		de: "Kastadur"
 	},
 
 	stage: "Stage1",
@@ -97,6 +101,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886455,
+				tcgplayer: 693486
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886455,
 				tcgplayer: 693486

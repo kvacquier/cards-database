@@ -14,6 +14,8 @@ const card: Card = {
 	category: "Trainer",
 	set: Set,
 
+	cameoDexIds: [13],
+
 	effect: {
 		en: "Choose 1 of your opponent's Benched Pokémon and switch it with his or her Active Pokémon.",
 		fr: "Choisissez 1 Pokémon du Banc votre adversaire et échangez-le avec son Pokémon actif.",
@@ -35,14 +37,16 @@ const card: Card = {
 			subtype: "shadowless",
 			stamp: ["1st-edition"],
 			thirdParty: {
-				tcgplayer: 107090
+				tcgplayer: 107090,
+				cardmarket: 660110
 			},
 		},
 		{
 			type: "normal",
 			subtype: "shadowless",
 			thirdParty: {
-				tcgplayer: 107090
+				tcgplayer: 107090,
+				cardmarket: 660110
 			},
 		},
 		{

@@ -49,6 +49,8 @@ const card: Card = {
 
 	description: {
 		en: "It can deftly dodge its foe’s attacks while shooting fireballs from its nose. It roasts berries before it eats them.",
+		fr: "Il évite agilement les attaques ennemies et lance des boules de feu par le groin. Il aime griller des Baies pour les manger.",
+		de: "Es weicht flink gegnerischen Angriffen aus und schießt Feuerbälle aus seinem Rüssel. Bevor es Beeren verspeist, röstet es sie mit Flammen."
 	},
 
 	variants: [
@@ -63,7 +65,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "friendball",
 		thirdParty: {
-			cardmarket: 870183,
+			cardmarket: 870184,
 			tcgplayer: 676876
 		}
 	},
@@ -71,8 +73,16 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870184,
+			cardmarket: 870183,
 			tcgplayer: 677016
+		}
+	},
+	{
+		type: "holo",
+		foil: "cosmos",
+		thirdParty: {
+			cardmarket: 878075,
+			tcgplayer: 681895
 		}
 	},
 ],

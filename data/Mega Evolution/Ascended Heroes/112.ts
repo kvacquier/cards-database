@@ -59,6 +59,8 @@ const card: Card = {
 
 	description: {
 		en: "They communicate with one another using their auras. They are able to run all through the night.",
+		fr: "Les Riolu communiquent entre eux à l'aide de leur aura. Ils sont capables de courir toute la nuit.",
+		de: "Dieses Pokémon nutzt seine Aura, um mit seinen Artgenossen zu kommunizieren. Es kann eine ganze Nacht lang laufen."
 	},
 
 	variants: [
@@ -73,7 +75,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "friendball",
 		thirdParty: {
-			cardmarket: 870315,
+			cardmarket: 870316,
 			tcgplayer: 676942
 		}
 	},
@@ -81,7 +83,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870316,
+			cardmarket: 870315,
 			tcgplayer: 677082
 		}
 	},

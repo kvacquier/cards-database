@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "Camouflaged as rotten kelp, this Pokemon sprays liquid poison to take down prey that approach unawares.",
+		fr: "Il se cache parmi les algues en décomposition pour mieux surprendre ses proies, qu'il élimine en les aspergeant de poison.",
+		de: "Als verfaulter Seetang getarnt, bespritzt es Beute, die sich ahnungslos nähert, mit flüssigem Gift und gibt ihr so den Rest."
 	},
 
 
@@ -53,6 +55,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886450,
+				tcgplayer: 693543
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886450,
 				tcgplayer: 693543

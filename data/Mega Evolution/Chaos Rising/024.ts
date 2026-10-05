@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "Its ice-covered body is as hard as steel. Its enormous frame crushes anything that stands in its way.",
+		fr: "Son immense corps recouvert de glace est aussi solide que de l'acier. Quand il se déplace, il écrase tout ce qui se trouve sur son passage.",
+		de: "Sein eisbedeckter Körper ist so hart wie Stahl. Es nutzt diese stahlharte Hülle, um Hindernisse zu zerschmettern und sich so seinen Weg zu bahnen."
 	},
 
 
@@ -27,7 +29,9 @@ const card: Card = {
 	types: ["Water"],
 
 	evolveFrom: {
-		en: "Bergmite"
+		en: "Bergmite",
+		fr: "Grelaçon",
+		de: "Arktip"
 	},
 
 	stage: "Stage1",
@@ -82,6 +86,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886416,
+				tcgplayer: 693448
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886416,
 				tcgplayer: 693448

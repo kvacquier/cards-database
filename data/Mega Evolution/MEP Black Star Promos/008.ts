@@ -13,6 +13,15 @@ const card: Card = {
 		pt: "Golduck"
 	},
 
+	evolveFrom: {
+		en: "Psyduck",
+		fr: "Psykokwak",
+		de: "Enton",
+		it: "Psyduck",
+		es: "Psyduck",
+		pt: "Psyduck",
+	},
+
 	illustrator: "Jiro Sasumo",
 	rarity: "Promo",
 	category: "Pokemon",
@@ -69,6 +78,11 @@ const card: Card = {
 
 	retreat: 1,
 	regulationMark: "I",
+
+	weaknesses: [{
+		type: "Lightning",
+		value: "x2"
+	}],
 
 	variants: [
 		{

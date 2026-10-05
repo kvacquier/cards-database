@@ -14,10 +14,21 @@ const card: Card = {
 		pt: "Grimmsnarl ex da Marine"
 	},
 
+	evolveFrom: {
+		en: "Marnie's Morgrem",
+		fr: "Fourbelin de Rosemary",
+		es: "Morgrem de Roxy",
+		'es-mx': "Morgrem de Marnie",
+		de: "Marys Pelzebub",
+		it: "Morgrem di Mary",
+		pt: "Morgrem da Marine",
+	},
+
 	suffix: "ex",
 	illustrator: "Ligton",
 	rarity: "Special illustration rare",
 	category: "Pokemon",
+	dexId: [861],
 	hp: 320,
 	types: ["Darkness"],
 	stage: "Stage2",

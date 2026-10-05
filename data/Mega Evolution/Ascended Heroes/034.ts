@@ -59,6 +59,8 @@ const card: Card = {
 
 	description: {
 		en: "Only female Salandit can produce gas laden with pheromones. Males entranced by this gas will do whatever the females tell them.",
+		fr: "Les Tritox femelles sont capables de produire un gaz chargé de phéromones. Sous l'effet de ce dernier, les mâles obéissent aveuglément.",
+		de: "Die Weibchen produzieren ein pheromonhaltiges Gas. Kommt ein Männchen damit in Kontakt, gehorcht es dem Weibchen aufs Wort."
 	},
 
 	variants: [
@@ -73,7 +75,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870191,
+			cardmarket: 870192,
 			tcgplayer: 676880
 		}
 	},
@@ -81,7 +83,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870192,
+			cardmarket: 870191,
 			tcgplayer: 677020
 		}
 	},

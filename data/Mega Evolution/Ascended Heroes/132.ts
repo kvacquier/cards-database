@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Obstagoon de Galar"
 	},
 
+	evolveFrom: {
+		en: "Galarian Linoone",
+		fr: "Linéon de Galar",
+		es: "Linoone de Galar",
+		'es-mx': "Linoone de Galar",
+		de: "Galar-Geradaks",
+		it: "Linoone di Galar",
+		pt: "Linoone de Galar",
+	},
+
 	illustrator: "Dsuke",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -83,6 +93,8 @@ const card: Card = {
 
 	description: {
 		en: "Its voice is staggering in volume. Obstagoon has a tendency to take on a threatening posture and shout—this move is known as Obstruct.",
+		fr: "Il possède une puissance vocale remarquable. On appelle Blocage sa technique qui consiste à intimider l'ennemi avec son cri guttural.",
+		de: "Es verfügt über eine beeindruckende Stimmkraft. Sein von Schreien begleitetes Drohverhalten nennt man auch „Abblocker“."
 	},
 
 	variants: [
@@ -97,7 +109,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870345,
+			cardmarket: 870346,
 			tcgplayer: 676957
 		}
 	},
@@ -105,7 +117,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870346,
+			cardmarket: 870345,
 			tcgplayer: 677097
 		}
 	},

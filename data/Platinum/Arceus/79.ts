@@ -12,14 +12,12 @@ const card: Card = {
 	category: "Pokemon",
 	set: Set,
 
-	dexId: [
-		252,
-	],
+	dexId: [252],
 	
 	hp: 60,
 
 	types: [
-		"Grass",
+		"Grass"
 	],
 
 	stage: "Basic",
@@ -70,21 +68,26 @@ const card: Card = {
 
 	description: {
 		en: "The soles of its feet are covered by countless tiny spikes, enabling it to walk on walls and ceilings.",
-	},
-
-	thirdParty: {
-		cardmarket: 278950,
-		tcgplayer: 90042
+		de: "Seine Fußsohlen sind mit kleinen Stacheln bedeckt, so dass es an Wänden und Decken Halt findet."
 	},
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 90042,
+				cardmarket: 278950
+			}
 		},
 		{
 			type: "reverse",
-		}
-	]
+			thirdParty: {
+				cardmarket: 278950,
+				tcgplayer: 90042
+			}
+		},
+	],
+
 }
 
 export default card

@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Saboteri",
 	rarity: "Uncommon",
 	category: "Pokemon",
+	dexId: [845],
 	hp: 110,
 	types: ["Colorless"],
 	stage: "Basic",
@@ -64,6 +65,8 @@ const card: Card = {
 
 	description: {
 		en: "Cramorant instinctively swallow everything whole. They’re at their most formidable when they’re struggling to swallow overly large prey.",
+		fr: "Les Nigosier avalent tout en une bouchée. Ils sont particulièrement redoutables lorsqu'ils se démènent pour gober une proie trop grosse.",
+		de: "Es hat die Angewohnheit, alles in einem Stück zu verschlingen. Je mehr es damit ringt, übergroße Beute runterzuschlucken, desto zäher wird es."
 	},
 
 	variants: [
@@ -78,7 +81,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870411,
+			cardmarket: 870412,
 			tcgplayer: 676990
 		}
 	},
@@ -86,7 +89,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870412,
+			cardmarket: 870411,
 			tcgplayer: 677130
 		}
 	},

@@ -71,6 +71,8 @@ const card: Card = {
 
 	description: {
 		en: "A sweet aroma gently wafts from the leaf on its head. It is docile and loves to soak up sun rays.",
+		fr: "Ce Pokémon est très docile et adore prendre des bains de soleil. Un parfum légèrement sucré émane de la feuille sur sa tête.",
+		de: "Ein leicht süßlicher Duft geht von dem Blatt auf seinem Kopf aus. Es ist sanftmütig und badet gern in der Sonne."
 	},
 
 	variants: [
@@ -85,7 +87,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "friendball",
 			thirdParty: {
-				cardmarket: 870147,
+				cardmarket: 870148,
 				tcgplayer: 676858
 			}
 		},
@@ -93,8 +95,16 @@ const card: Card = {
 			type: "reverse",
 			foil: "energy",
 			thirdParty: {
-				cardmarket: 870148,
+				cardmarket: 870147,
 				tcgplayer: 676998
+			}
+		},
+		{
+			type: "holo",
+			foil: "cosmos",
+			thirdParty: {
+				cardmarket: 878074,
+				tcgplayer: 680709
 			}
 		},
 	],

@@ -12,6 +12,8 @@ const card: Card = {
 	category: "Trainer",
 	set: Set,
 
+	cameoDexIds: [303],
+
 	effect: {
 		fr: "Votre tour ne se termine pas si le Pokémon auquel cette carte est attachée devient M-Mysdibule-EX.",
 		en: "Your turn does not end if the Pokémon this card is attached to becomes M Mawile-EX."

@@ -65,6 +65,8 @@ const card: Card = {
 
 	description: {
 		en: "Any chips in its blades would prove fatal for it. After each battle, it diligently maintains its blades using its favorite sharpening stone.",
+		fr: "Toute brèche sur ses lames lui serait fatale. Après chaque combat, il les entretient scrupuleusement en utilisant sa pierre à aiguiser préférée.",
+		de: "Nach jedem Kampf pflegt es seine Klingen sorgfältig mit seinem Lieblingswetzstein. Schartige Klingen könnten seinen Tod bedeuten."
 	},
 
 	variants: [
@@ -79,7 +81,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870363,
+			cardmarket: 870364,
 			tcgplayer: 676966
 		}
 	},
@@ -87,7 +89,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870364,
+			cardmarket: 870363,
 			tcgplayer: 677106
 		}
 	},

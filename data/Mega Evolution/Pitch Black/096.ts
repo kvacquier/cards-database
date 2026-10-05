@@ -22,11 +22,13 @@ const card: Card = {
 	types: ["Grass"],
 
 	evolveFrom: {
-		en: "Fomantis"
+		en: "Fomantis",
+		fr: "Mimantis",
+		de: "Imantis"
 	},
 
 	stage: "Stage1",
-	suffix: "EX",
+	suffix: "ex",
 
 	attacks: [{
 		name: {

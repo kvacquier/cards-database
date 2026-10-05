@@ -12,14 +12,12 @@ const card: Card = {
 	category: "Pokemon",
 	set: Set,
 
-	dexId: [
-		114,
-	],
+	dexId: [114],
 	
 	hp: 60,
 
 	types: [
-		"Grass",
+		"Grass"
 	],
 
 	stage: "Basic",
@@ -51,7 +49,7 @@ const card: Card = {
 			},
 			effect: {
 				en: "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
-				de: "Wirf 1 Münze. Bei \"Kopf\" ist das Verteidigende Pokémon jetzt gelähmt."
+				de: "Wirf 1 Münze. Bei „Kopf“ ist das Verteidigende Pokémon jetzt gelähmt."
 			},
 			damage: 30,
 
@@ -76,21 +74,26 @@ const card: Card = {
 
 	description: {
 		en: "The blue vines shrouding its body are covered in a growth of fine hair. It is known to be ticklish.",
-	},
-
-	thirdParty: {
-		cardmarket: 278948,
-		tcgplayer: 89747
+		de: "Die blauen Ranken an seinem Körper sind von feinen Haaren bedeckt. Es gilt zudem als kitzlig."
 	},
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 89747,
+				cardmarket: 278948
+			}
 		},
 		{
 			type: "reverse",
-		}
-	]
+			thirdParty: {
+				cardmarket: 278948,
+				tcgplayer: 89747
+			}
+		},
+	],
+
 }
 
 export default card

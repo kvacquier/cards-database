@@ -73,6 +73,8 @@ const card: Card = {
 
 	description: {
 		en: "It is constantly wracked by a headache. When the headache turns intense, it begins using mysterious powers.",
+		fr: "Ce Pokémon a tout le temps la migraine. Quand la douleur devient trop intense, il se met à utiliser des pouvoirs mystérieux.",
+		de: "Es wird permanent von Kopfschmerzen geplagt. Wird der Schmerz stärker, setzt es geheimnisvolle Kräfte ein."
 	},
 
 	variants: [
@@ -84,10 +86,27 @@ const card: Card = {
 		}
 	},
 	{
+		type: "normal",
+		stamp: ["player-rewards-program"],
+		thirdParty: {
+			cardmarket: 894183,
+			tcgplayer: 704451
+		}
+	},
+	{
+		type: "holo",
+		foil: "cosmos",
+		stamp: ["player-rewards-program"],
+		thirdParty: {
+			cardmarket: 894184,
+			tcgplayer: 704452
+		}
+	},
+	{
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870199,
+			cardmarket: 870200,
 			tcgplayer: 676884
 		}
 	},
@@ -95,7 +114,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870200,
+			cardmarket: 870199,
 			tcgplayer: 677024
 		}
 	},

@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Eelektrik"
 	},
 
+	evolveFrom: {
+		en: "Tynamo",
+		fr: "Anchwatt",
+		es: "Tynamo",
+		'es-mx': "Tynamo",
+		de: "Zapplardin",
+		it: "Tynamo",
+		pt: "Tynamo",
+	},
+
 	illustrator: "Jerky",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -73,6 +83,8 @@ const card: Card = {
 
 	description: {
 		en: "They coil around foes and shock them with electricity-generating organs that seem simply to be circular patterns.",
+		fr: "Ses taches rondes émettent de l'électricité. Il s'enroule autour de ses proies et les électrocute.",
+		de: "Die rund gemaserten Flächen erzeugen Strom. Es schlingt sich um den Gegner, presst sie gegen ihn und aktiviert sie."
 	},
 
 	variants: [
@@ -87,7 +99,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870231,
+			cardmarket: 870232,
 			tcgplayer: 676900
 		}
 	},
@@ -95,7 +107,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870232,
+			cardmarket: 870231,
 			tcgplayer: 677040
 		}
 	},

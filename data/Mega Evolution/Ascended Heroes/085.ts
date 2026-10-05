@@ -63,6 +63,8 @@ const card: Card = {
 
 	description: {
 		en: "It loves to bite and yank people's hair from behind without warning, just to see their shocked reactions.",
+		fr: "Il adore mordre les gens et leur tirer les cheveux par surprise, juste pour voir leur réaction.",
+		de: "Es zieht Leute gerne von hinten an den Haaren oder beißt sich plötzlich in ihren Schopf fest, um sich an der verdutzten Reaktion zu erfreuen."
 	},
 
 	variants: [
@@ -77,7 +79,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870267,
+			cardmarket: 870268,
 			tcgplayer: 676918
 		}
 	},
@@ -85,7 +87,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870268,
+			cardmarket: 870267,
 			tcgplayer: 677058
 		}
 	},

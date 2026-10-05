@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "This mysterious Pokémon started life as an ancient clay figurine made over 20,000 years ago.",
+		fr: "Ce Pokémon mystérieux serait né d'une figurine d'argile vieille de près de 20 000 ans.",
+		de: "Dieses rätselhafte Pokémon ist aus einer Lehmpuppe entstanden, die vor 20 000 Jahren von einem uralten Volk angefertigt wurde."
 	},
 
 
@@ -27,7 +29,9 @@ const card: Card = {
 	types: ["Fighting"],
 
 	evolveFrom: {
-		en: "Baltoy"
+		en: "Baltoy",
+		fr: "Balbuto",
+		de: "Puppance"
 	},
 
 	stage: "Stage1",
@@ -68,6 +72,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886439,
+				tcgplayer: 693466
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886439,
 				tcgplayer: 693466

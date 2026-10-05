@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "The tail's tip shines brightly and can be seen from far away. It acts as a beacon for lost people.",
+		fr: "Le bout de sa queue brille si intensément qu'il est visible de très loin. Il sert de balise aux personnes égarées.",
+		de: "Seine Schwanzspitze leuchtet hell. Ihr Licht ist von Weitem zu sehen und dient all jenen, die sich verirrt haben, als Orientierungspunkt."
 	},
 
 
@@ -27,7 +29,9 @@ const card: Card = {
 	types: ["Lightning"],
 
 	evolveFrom: {
-		en: "Flaaffy"
+		en: "Flaaffy",
+		fr: "Lainergie",
+		de: "Waaty"
 	},
 
 	stage: "Stage2",
@@ -91,10 +95,24 @@ const card: Card = {
 
 	variants: [
 		{
+			type: "holo",
+			thirdParty: {
+				cardmarket: 886421,
+				tcgplayer: 693445
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886421,
+				tcgplayer: 693445
+			}
+		},
+		{
 			type: "normal",
 			thirdParty: {
 				cardmarket: 888542,
-				tcgplayer: 693445
+				tcgplayer: 694633
 			}
 		},
 	],

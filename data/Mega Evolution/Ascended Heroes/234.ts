@@ -3,6 +3,7 @@ import Set from "../Ascended Heroes"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [179, 278, 337, 749],
 
 	name: {
 		en: "Banette",
@@ -12,6 +13,16 @@ const card: Card = {
 		de: "Banette",
 		it: "Banette",
 		pt: "Banette"
+	},
+
+	evolveFrom: {
+		en: "Shuppet",
+		fr: "Polichombr",
+		es: "Shuppet",
+		'es-mx': "Shuppet",
+		de: "Shuppet",
+		it: "Shuppet",
+		pt: "Shuppet",
 	},
 
 	illustrator: "YASHIRO Nanaco",
@@ -77,6 +88,8 @@ const card: Card = {
 
 	description: {
 		en: "This Pokémon developed from an abandoned doll that amassed a grudge. It is seen in dark alleys.",
+		fr: "Ce Pokémon est une poupée abandonnée que la rancune a animée. Il hante les ruelles sombres.",
+		de: "Es war einst eine weggeworfene Plüschpuppe, die durch einen tiefen Groll zu einem Pokémon wurde. Man findet es in dunklen Gassen."
 	},
 
 	variants: [

@@ -59,6 +59,8 @@ const card: Card = {
 
 	description: {
 		en: "It does its level best to glare and pull a scary face, but it can’t help grinning if anyone pats its head.",
+		fr: "Il tente à tout prix de se donner un air menaçant, mais ne peut pas s'empêcher de sourire dès qu'on lui caresse la tête.",
+		de: "Es gibt alles, um ein finsteres Gesicht zu machen und sein Gegenüber böse anzustarren, aber wenn es am Kopf gestreichelt wird, muss es unwillkürlich grinsen."
 	},
 
 	variants: [
@@ -73,7 +75,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870317,
+			cardmarket: 870318,
 			tcgplayer: 676943
 		}
 	},
@@ -81,7 +83,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870318,
+			cardmarket: 870317,
 			tcgplayer: 677083
 		}
 	},

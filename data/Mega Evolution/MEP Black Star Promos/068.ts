@@ -7,11 +7,6 @@ const card: Card = {
 	name: {
 		en: "Makuhita",
 		fr: "Makuhita",
-		de: "Makuhita",
-		it: "Makuhita",
-		es: "Makuhita",
-		pt: "Makuhita",
-		'es-mx': "Makuhita"
 	},
 
 	illustrator: "Takeshi Nakamura",
@@ -28,11 +23,6 @@ const card: Card = {
 		name: {
 			en: "Corkscrew Punch",
 			fr: "Poing Tire-Bouchon",
-			de: "Korkenzieherhieb",
-			it: "Pugno Rotante",
-			es: "Puño Tirabuzón",
-			pt: "Soco Saca-rolha",
-			'es-mx': "Puño Sacacorchos"
 		},
 
 		damage: 10
@@ -42,11 +32,6 @@ const card: Card = {
 		name: {
 			en: "Confront",
 			fr: "Confrontation",
-			de: "Konfrontieren",
-			it: "Confronto",
-			es: "Confrontar",
-			pt: "Confrontar",
-			'es-mx': "Confrontar"
 		},
 
 		damage: 30
@@ -63,6 +48,7 @@ const card: Card = {
 	variants: [
 		{
 			type: "holo",
+			foil: "cosmos",
 			thirdParty: {
 				cardmarket: 879250,
 				tcgplayer: 686275

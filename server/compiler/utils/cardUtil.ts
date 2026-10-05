@@ -69,6 +69,12 @@ export function enhanceTrainerLegality(
 }
 
 export async function getCardPictures(cardId: string, card: Card, lang: SupportedLanguages): Promise<string | undefined> {
+
+	// temporary hack
+	if (card.set.id === '30th') {
+		return `https://assets.tcgdex.net/${lang}/${card.set.serie.id}/${card.set.id}/${cardId}`
+	}
+
 	try {
 		const file = await fetchRemoteFile('https://assets.tcgdex.net/datas.json')
 		const fileExists = Boolean(file[lang]?.[card.set.serie.id]?.[card.set.id]?.[cardId])
@@ -174,6 +180,7 @@ export async function cardToCardSingle(localId: string, card: Card, lang: Suppor
 			: variantsToVariantsDetailed(card.variants, lang),
 
 		dexId: card.dexId,
+		cameoDexIds: card.cameoDexIds,
 		hp: card.hp,
 		types: card.types?.map((t) => translate('types', t, lang)) as Array<Types>,
 		evolveFrom: card.evolveFrom && resolveText(card.evolveFrom, lang),

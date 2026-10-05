@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Lokix"
 	},
 
+	evolveFrom: {
+		en: "Nymble",
+		fr: "Lilliterelle",
+		es: "Nymble",
+		'es-mx': "Nymble",
+		de: "Micrick",
+		it: "Nymble",
+		pt: "Nymble",
+	},
+
 	rarity: "Uncommon",
 	category: "Pokemon",
 
@@ -73,6 +83,8 @@ const card: Card = {
 
 	description: {
 		en: "When it decides to fight all out, it stands on its previously folded legs to enter Showdown Mode. It neutralizes its enemies in short order.",
+		fr: "Quand les choses deviennent sérieuses, il passe en mode assaut et se tient sur son autre paire de pattes. Il neutralise ses ennemis en un clin d'œil.",
+		de: "Macht es ernst, so stellt es sich auf sein zuvor eingeklapptes Beinpaar und schaltet in den Showdown-Modus. So bezwingt es Gegner im Nu."
 	},
 
 	illustrator: "Taiga Kasai",

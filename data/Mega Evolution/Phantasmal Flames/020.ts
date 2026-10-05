@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Ceruledge"
 	},
 
+	evolveFrom: {
+		en: "Charcadet",
+		fr: "Charbambin",
+		es: "Charcadet",
+		'es-mx': "Charcadet",
+		de: "Knarbon",
+		it: "Charcadet",
+		pt: "Charcadet",
+	},
+
 	rarity: "Uncommon",
 	category: "Pokemon",
 
@@ -59,6 +69,8 @@ const card: Card = {
 
 	description: {
 		en: "The fiery blades on its arms burn fiercely with the lingering resentment of a sword wielder who fell before accomplishing their goal.",
+		fr: "Les flammes de ses épées sont animées par la rancœur d'une âme guerrière qui a péri avant de pouvoir accomplir son but.",
+		de: "Die Flammenschwerter an beiden Armen lodern mit dem Groll eines Schwertkämpfers, der fiel, ehe er sein Ziel erreichen konnte."
 	},
 
 	illustrator: "Gemi",

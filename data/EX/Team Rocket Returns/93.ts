@@ -11,6 +11,9 @@ const card: Card = {
 	rarity: "Uncommon",
 	category: "Trainer",
 	set: Set,
+
+	cameoDexIds: [1, 255],
+
 	trainerType: "Rocket's Secret Machine",
 
 	effect: {
@@ -18,21 +21,25 @@ const card: Card = {
 		de: "Flip a coin. If heads, put 1 damage counter on 1 of your opponent's Pokémon. If tails, put 1 damage counter on 1 of your Pokémon."
 	},
 
-	thirdParty: {
-		cardmarket: 276385,
-		tcgplayer: 90310
-	},
 
 	variants: [
 		{
-			type: "holo",
-			stamp: ["set-logo"]
+			type: "reverse",
+			stamp: ["set-logo"],
+			thirdParty: {
+				cardmarket: 276385,
+				tcgplayer: 90310
+			},
 		},
 		{
 			type: "normal",
-		}
-	]
+			thirdParty: {
+				cardmarket: 276385,
+				tcgplayer: 90310
+			},
+		},
+	],
+
 }
 
 export default card
-

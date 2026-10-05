@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Pignite"
 	},
 
+	evolveFrom: {
+		en: "Tepig",
+		fr: "Gruikui",
+		es: "Tepig",
+		'es-mx': "Tepig",
+		de: "Floink",
+		it: "Tepig",
+		pt: "Tepig",
+	},
+
 	illustrator: "Aliya Chen",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -59,6 +69,8 @@ const card: Card = {
 
 	description: {
 		en: "The more it eats, the more fuel it has to make the fire in its stomach stronger. This fills it with even more power.",
+		fr: "Plus il mange, plus il a de combustible pour attiser les flammes dans son estomac, ce qui lui permet de déployer davantage de puissance.",
+		de: "Je mehr es frisst, desto mehr Brennstoff hat es, um das Feuer in seinem Magen zu schüren und so seine Kraft zu erhöhen."
 	},
 
 	variants: [
@@ -73,7 +85,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "friendball",
 		thirdParty: {
-			cardmarket: 870185,
+			cardmarket: 870186,
 			tcgplayer: 676877
 		}
 	},
@@ -81,7 +93,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870186,
+			cardmarket: 870185,
 			tcgplayer: 677017
 		}
 	},

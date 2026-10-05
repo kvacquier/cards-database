@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Bisharp"
 	},
 
+	evolveFrom: {
+		en: "Pawniard",
+		fr: "Scalpion",
+		es: "Pawniard",
+		'es-mx': "Pawniard",
+		de: "Gladiantri",
+		it: "Pawniard",
+		pt: "Pawniard",
+	},
+
 	illustrator: "Scav",
 	rarity: "Common",
 	category: "Pokemon",
@@ -65,6 +75,8 @@ const card: Card = {
 
 	description: {
 		en: "Bisharp mercilessly cuts its opponents to pieces with the sharp blades covering its body. It will do anything to win.",
+		fr: "Ce Pokémon découpe ses ennemis sans pitié à l'aide des lames tranchantes sur son corps. Il est prêt à tout pour remporter la victoire.",
+		de: "Mit den scharfen Klingen an seinem Körper hackt es Gegner gnadenlos in Stücke. Um den Sieg zu erringen, ist ihm jedes Mittel recht."
 	},
 
 	variants: [
@@ -79,7 +91,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870365,
+			cardmarket: 870366,
 			tcgplayer: 676967
 		}
 	},
@@ -87,7 +99,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870366,
+			cardmarket: 870365,
 			tcgplayer: 677107
 		}
 	},

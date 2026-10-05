@@ -7,10 +7,6 @@ const card: Card = {
 	name: {
 		en: "Cottonee",
 		fr: "Doudouvet",
-		de: "Waumboll",
-		it: "Cottonee",
-		es: "Cottonee",
-		pt: "Cottonee"
 	},
 
 	illustrator: "Kariya",
@@ -27,28 +23,26 @@ const card: Card = {
 		name: {
 			en: "Collect",
 			fr: "Collecte",
-			de: "Sammeln",
-			it: "Tassa",
-			es: "Coleccionar",
-			pt: "Coleta"
 		},
 
 		effect: {
 			en: "Draw a card.",
 			fr: "Piochez une carte.",
-			de: "Ziehe 1 Karte.",
-			it: "Pesca una carta.",
-			es: "Roba 1 carta.",
-			pt: "Compre uma carta."
 		}
 	}],
 
 	retreat: 1,
 	regulationMark: "I",
 
+	weaknesses: [{
+		type: "Metal",
+		value: "x2"
+	}],
+
 	variants: [
 		{
 			type: "holo",
+			foil: "cosmos",
 			thirdParty: {
 				cardmarket: 859021,
 				tcgplayer: 664051

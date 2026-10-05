@@ -23,11 +23,13 @@ const card: Card = {
 	types: ["Fire"],
 
 	evolveFrom: {
-		en: "Litleo"
+		en: "Litleo",
+		fr: "Hélionceau",
+		de: "Leufeo"
 	},
 
 	stage: "Stage1",
-	suffix: "EX",
+	suffix: "ex",
 
 	attacks: [{
 		name: {

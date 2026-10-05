@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "Its instinct is to bury itself in holes. It often steals the nesting holes of others to sleep in them.",
+		fr: "Il se cache dans des trous. Il lui arrive même de voler les trous de ses semblables.",
+		de: "Es schläft instinktiv in Löchern. Oft usupiert es die Schlafplätze von anderen."
 	},
 
 
@@ -27,7 +29,9 @@ const card: Card = {
 	types: ["Water"],
 
 	evolveFrom: {
-		en: "Remoraid"
+		en: "Remoraid",
+		fr: "Rémoraid",
+		de: "Remoraid"
 	},
 
 	stage: "Stage1",
@@ -91,6 +95,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886409,
+				tcgplayer: 693528
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886409,
 				tcgplayer: 693528

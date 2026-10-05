@@ -6,6 +6,8 @@ const card: Card = {
 
 	description: {
 		en: "It has nine long tails and fur that gleams gold. It is said to live for 1,000 years.",
+		fr: "Il a neuf longues queues et une fourrure qui brille comme de l'or. On dit qu'il peut vivre 1 000 ans.",
+		de: "Es hat neun lange Schweife und sein Fell glänzt gülden. Man sagt, es soll mindestens 1000 Jahre lang leben."
 	},
 
 	name: {
@@ -26,7 +28,9 @@ const card: Card = {
 	types: ["Fire"],
 
 	evolveFrom: {
-		en: "Vulpix"
+		en: "Vulpix",
+		fr: "Goupix",
+		de: "Vulpix"
 	},
 
 	stage: "Stage1",
@@ -79,6 +83,13 @@ const card: Card = {
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 886401,
+				tcgplayer: 693526
+			}
+		},
+		{
+			type: "reverse",
 			thirdParty: {
 				cardmarket: 886401,
 				tcgplayer: 693526

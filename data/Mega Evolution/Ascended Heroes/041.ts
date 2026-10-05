@@ -59,6 +59,8 @@ const card: Card = {
 
 	description: {
 		en: "It is small but rough and tough. It won't hesitate to take a bite out of anything that moves.",
+		fr: "Ce Pokémon est très turbulent malgré sa petite taille. Dès qu'il voit quelque chose bouger, son premier réflexe est de mordre.",
+		de: "Dieses Pokémon ist trotz seiner geringen Größe sehr wild. Sobald es sieht, dass sich etwas bewegt, schnappt es danach."
 	},
 
 	variants: [
@@ -73,7 +75,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "friendball",
 		thirdParty: {
-			cardmarket: 870203,
+			cardmarket: 870204,
 			tcgplayer: 676886
 		}
 	},
@@ -81,8 +83,16 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870204,
+			cardmarket: 870203,
 			tcgplayer: 677026
+		}
+	},
+	{
+		type: "holo",
+		foil: "cosmos",
+		thirdParty: {
+			cardmarket: 878076,
+			tcgplayer: 680710
 		}
 	},
 ],

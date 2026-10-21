@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 4 * * *"
   workflow_dispatch:
+    inputs:
+      deploy:
+        description: Redeploy the server even if nothing was merged
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -16,6 +21,8 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     name: Merge tcgdex/cards-database master into develop
+    outputs:
+      merged: ${{ steps.merge.outputs.merged }}
     steps:
       - name: Checkout develop
         uses: actions/checkout@v6
@@ -24,6 +31,7 @@ jobs:
           fetch-depth: 0
 
       - name: Merge upstream master
+        id: merge
         run: |
           git config user.name "kvacquier"
           git config user.email "kvacquier@gmail.com"
@@ -31,7 +39,33 @@ jobs:
           git fetch upstream master
           if git merge-base --is-ancestor upstream/master HEAD; then
             echo "develop already contains upstream/master"
+            echo "merged=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git merge --no-edit upstream/master -m "Merge upstream master into develop"
           git push origin develop
+          echo "merged=true" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    runs-on: ubuntu-latest
+    name: Rebuild and restart the server
+    needs: sync
+    if: needs.sync.outputs.merged == 'true' || inputs.deploy
+    permissions: {}
+    steps:
+      - name: Configure SSH
+        env:
+          SSH_KEY: ${{ secrets.PROXMOX_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.PROXMOX_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          echo "$SSH_KEY" > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          echo "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+
+      - name: Pull, compile and reboot CT 102
+        env:
+          TARGET: ${{ secrets.PROXMOX_USER }}@${{ secrets.PROXMOX_HOST }}
+        run: |
+          ssh -i ~/.ssh/id_deploy -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes "$TARGET" \
+            "pct exec 102 -- bash -lc 'set -e; cd /root/cards-database && git pull && cd server && bun run compile' && pct reboot 102"

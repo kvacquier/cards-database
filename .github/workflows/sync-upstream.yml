@@ -1,0 +1,37 @@
+name: Sync develop with upstream master
+
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    name: Merge tcgdex/cards-database master into develop
+    steps:
+      - name: Checkout develop
+        uses: actions/checkout@v6
+        with:
+          ref: develop
+          fetch-depth: 0
+
+      - name: Merge upstream master
+        run: |
+          git config user.name "kvacquier"
+          git config user.email "kvacquier@gmail.com"
+          git remote add upstream https://github.com/tcgdex/cards-database.git
+          git fetch upstream master
+          if git merge-base --is-ancestor upstream/master HEAD; then
+            echo "develop already contains upstream/master"
+            exit 0
+          fi
+          git merge --no-edit upstream/master -m "Merge upstream master into develop"
+          git push origin develop

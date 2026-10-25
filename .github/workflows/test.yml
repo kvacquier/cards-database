@@ -13,13 +13,19 @@ env:
 
 permissions: {}
 
+concurrency:
+  group: test-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test:
     runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
     permissions: {}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        # Linux only: the data doesn't depend on the OS (macOS/Windows added 20+ min per run)
+        os: [ubuntu-latest]
 
     steps:
     - name: Checkout

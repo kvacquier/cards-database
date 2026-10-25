@@ -1,8 +1,10 @@
 name: Sync develop with upstream master
 
 on:
+  # Weekly (Monday ~05:17 Paris): new sets land a few times a year, daily was overkill.
+  # Run it by hand from the Actions tab when a set drops.
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "17 3 * * 1"
   workflow_dispatch:
     inputs:
       deploy:
@@ -20,6 +22,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     name: Merge tcgdex/cards-database master into develop
     outputs:
       merged: ${{ steps.merge.outputs.merged }}
@@ -48,6 +51,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     name: Rebuild and restart the server
     needs: sync
     if: needs.sync.outputs.merged == 'true' || inputs.deploy
@@ -63,9 +67,11 @@ jobs:
           chmod 600 ~/.ssh/id_deploy
           echo "$KNOWN_HOSTS" > ~/.ssh/known_hosts
 
-      - name: Pull, compile and reboot CT 102
+      # Launch and forget: the compile (~7 min) runs detached on the Proxmox host, the runner exits
+      # right away. Output in /var/log/cards-deploy.log on the host; no reboot if the compile fails.
+      - name: Start pull, compile and reboot of CT 102 (detached)
         env:
           TARGET: ${{ secrets.PROXMOX_USER }}@${{ secrets.PROXMOX_HOST }}
         run: |
           ssh -i ~/.ssh/id_deploy -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes "$TARGET" \
-            "pct exec 102 -- bash -lc 'set -e; cd /root/cards-database && git pull && cd server && bun run compile' && pct reboot 102"
+            'setsid nohup bash -c "date; pct exec 102 -- bash -lc \"set -e; cd /root/cards-database && git pull && cd server && bun run compile\" && pct reboot 102 && echo deployed" > /var/log/cards-deploy.log 2>&1 < /dev/null &'

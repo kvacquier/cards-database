@@ -1,10 +1,10 @@
 name: Sync develop with upstream master
 
 on:
-  # Weekly (Monday ~05:17 Paris): new sets land a few times a year, daily was overkill.
-  # Run it by hand from the Actions tab when a set drops.
+  # Daily (~05:17 Paris). The check takes ~15 s and is free (public repo); the server is only
+  # rebuilt when upstream actually changed. Run it by hand from the Actions tab if needed.
   schedule:
-    - cron: "17 3 * * 1"
+    - cron: "17 3 * * *"
   workflow_dispatch:
     inputs:
       deploy:

@@ -6,12 +6,21 @@ const card: Card = {
 
 
 	name: {
+		en: "Professor's Research",
+		fr: "Recherches Professorales",
+		es: "Investigación de Profesores",
+		it: "Ricerca Accademica",
+		pt: "Pesquisa de Professores",
+		de: "Forschung des Professors"
+	},
+
+	description: {
 		en: "Professor's Research (Professor Oak)",
 		fr: "Recherches Professorales (Professeur Chen)",
 		es: "Investigación de Profesores (Profesor Oak)",
 		it: "Ricerca Accademica (Professor Oak)",
-		pt: "Pesquisa de Professores",
-		de: "Forschung des Professors (Prof. Eich)"
+		pt: "Pesquisa de Professores (Professor Oak)",
+		de: "Forschung des Professors (Professor Eich)"
 	},
 
 	rarity: "Holo Rare",
@@ -23,7 +32,7 @@ const card: Card = {
 		es: "Descarta las cartas de tu mano y roba 7 cartas.",
 		it: "Scarta le carte che hai in mano e pesca sette carte.",
 		pt: "Descarte a sua mão e compre 7 cartas.",
-		de: "Lege deine Handkarten auf deinen Ablagestapel und ziehe 7 Karten."
+		de: "Lege deine Handkarten auf deinen Ablagestapel und ziehe 7 Karten. Du kannst während deines Zuges nur 1 Unterstützerkarte spielen."
 	},
 
 	trainerType: "Supporter",

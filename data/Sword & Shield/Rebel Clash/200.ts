@@ -5,8 +5,8 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		en: "Boss's Orders (Giovanni)",
-		fr: "Ordres du Boss (Giovanni)",
+		en: "Boss's Orders",
+		fr: "Ordres du Boss",
 		es: "Órdenes de Jefes",
 		it: "Ordini del Capo",
 		pt: "Ordem da Chefia",

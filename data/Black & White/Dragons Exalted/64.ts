@@ -46,7 +46,7 @@ const card: Card = {
 				de: "Turbodreher"
 			},
 			effect: {
-				en: "Switch this Pokémon with 1 of your Benched Pokémon. Then, your opponent switches the Defending Pokémon with 1 of his or her Benched Pok��mon.",
+				en: "Switch this Pokémon with 1 of your Benched Pokémon. Then, your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon.",
 				fr: "Échangez ce Pokémon avec 1 de vos Pokémon de Banc. Ensuite, votre adversaire échange le Pokémon Défenseur avec 1 de ses Pokémon de Banc.",
 				de: "Tausche dieses Pokémon gegen 1 Pokémon auf deiner Bank aus. Danach tauscht dein Gegner das Verteidigende Pokémon gegen 1 Pokémon auf seiner Bank aus."
 			},
@@ -88,10 +88,22 @@ const card: Card = {
 		de: "Eine antike Lehmstatue, die durch ein mysteriöses Licht zum Leben erwacht ist."
 	},
 
-	thirdParty: {
-		cardmarket: 280503,
-		tcgplayer: 84339
-	}
+	variants: [
+		{
+			type: 'normal',
+			thirdParty: {
+				cardmarket: 280503,
+				tcgplayer: 84339
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 280503,
+				tcgplayer: 84339
+			}
+		},
+	],
 }
 
 export default card

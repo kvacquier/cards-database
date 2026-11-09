@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Toyste Beach",
 	rarity: "Uncommon",
 	category: "Trainer",
+	regulationMark: "J",
 	trainerType: "Tool",
 
 	thirdParty: {

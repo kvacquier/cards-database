@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Shimaris Yukichi",
 	rarity: "Special illustration rare",
 	category: "Trainer",
+	regulationMark: "J",
 	trainerType: "Supporter",
 
 	thirdParty: {

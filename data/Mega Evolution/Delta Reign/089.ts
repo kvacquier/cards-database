@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Sanosuke Sakuma",
 	rarity: "Uncommon",
 	category: "Trainer",
+	regulationMark: "J",
 	trainerType: "Supporter",
 
 	thirdParty: {

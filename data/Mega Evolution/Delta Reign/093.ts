@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Souichirou Gunjima",
 	rarity: "Uncommon",
 	category: "Trainer",
+	regulationMark: "J",
 	trainerType: "Supporter",
 
 	thirdParty: {

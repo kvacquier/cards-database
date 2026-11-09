@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "DOM",
 	rarity: "Ultra Rare",
 	category: "Trainer",
+	regulationMark: "J",
 	trainerType: "Supporter",
 
 	thirdParty: {

@@ -26,6 +26,7 @@ jobs:
     name: Merge tcgdex/cards-database master into develop
     outputs:
       sha: ${{ steps.merge.outputs.sha }}
+      deploy: ${{ steps.check.outputs.deploy }}
     steps:
       - name: Checkout develop
         uses: actions/checkout@v6
@@ -48,14 +49,31 @@ jobs:
           fi
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
-  # Runs every time: the host keeps the last develop commit it compiled successfully, so a deploy
-  # that failed or was interrupted is retried on the next run instead of being skipped.
+      # The tag server-deployed points to the last develop commit deployed successfully, so a
+      # deploy that failed or was interrupted is retried on the next run instead of being skipped.
+      - name: Check whether the server runs this commit
+        id: check
+        env:
+          WANT: ${{ steps.merge.outputs.sha }}
+          FORCE: ${{ inputs.deploy && 'true' || 'false' }}
+        run: |
+          have=$(git ls-remote origin refs/tags/server-deployed | cut -f1)
+          if [ "$have" = "$WANT" ] && [ "$FORCE" != true ]; then
+            echo "The server already runs $WANT"
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "The server runs ${have:-an unknown commit}, deploying $WANT"
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          fi
+
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 20
     name: Rebuild and restart the server
     needs: sync
-    permissions: {}
+    if: needs.sync.outputs.deploy == 'true'
+    permissions:
+      contents: write
     steps:
       - name: Configure SSH
         env:
@@ -67,49 +85,21 @@ jobs:
           chmod 600 ~/.ssh/id_deploy
           echo "$KNOWN_HOSTS" > ~/.ssh/known_hosts
 
-      # The compile (~7 min) runs in a transient systemd unit on the Proxmox host, outside the SSH
-      # session, so the runner disconnects right away without killing it. On the host:
-      #   tail -f /var/log/cards-deploy.log    (or journalctl -u cards-deploy)
-      # No reboot, and the commit is not recorded, if the compile fails.
-      - name: Start pull, compile and reboot of CT 102 if it is not on develop yet
+      # The deploy key has a forced command on the Proxmox host: whatever is sent, the host runs its
+      # own pull and compile, so the runner stays connected until it ends (~7 min). Killing the
+      # connection kills the compile, hence the long timeout.
+      - name: Pull, compile and reboot CT 102
         env:
           TARGET: ${{ secrets.PROXMOX_USER }}@${{ secrets.PROXMOX_HOST }}
-          WANT: ${{ needs.sync.outputs.sha }}
-          FORCE: ${{ inputs.deploy && 'true' || 'false' }}
         run: |
-          cat > deploy.sh <<'EOF'
-          set -euo pipefail
-          want="$1" force="$2"
-          echo "cards-deploy: connected to $(hostname)"
-          have=$(cat /var/lib/cards-deploy/deployed-sha 2>/dev/null || true)
-          if systemctl is-active --quiet cards-deploy; then
-            echo "A deploy is already running, see /var/log/cards-deploy.log"
-            exit 0
-          fi
-          if [ "$have" = "$want" ] && [ "$force" != true ]; then
-            echo "The server already runs $want"
-            exit 0
-          fi
-          echo "The server runs ${have:-an unknown commit}, deploying $want"
-          systemd-run --unit=cards-deploy --collect --quiet bash -c '
-            exec > /var/log/cards-deploy.log 2>&1
-            set -e
-            date
-            pct exec 102 -- bash -lc "set -e; cd /root/cards-database && git pull && cd server && bun run compile"
-            sha=$(pct exec 102 -- git -C /root/cards-database rev-parse HEAD)
-            mkdir -p /var/lib/cards-deploy
-            echo "$sha" > /var/lib/cards-deploy/deployed-sha
-            pct reboot 102
-            echo "deployed $sha"
-          '
-          echo "Started; follow it on the host with: tail -f /var/log/cards-deploy.log"
-          EOF
-          status=0
-          timeout 60 ssh -i ~/.ssh/id_deploy -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
-            -o BatchMode=yes -o ConnectTimeout=20 "$TARGET" bash -s -- "$WANT" "$FORCE" < deploy.sh > out.txt 2>&1 || status=$?
-          cat out.txt
-          if ! grep -q '^cards-deploy: connected' out.txt; then
-            echo "::error::The host did not run the script sent by this step. Check for a forced command on the deploy key (command=\"...\" in /root/.ssh/authorized_keys) or a ForceCommand in /etc/ssh/sshd_config."
-            exit 1
-          fi
-          exit "$status"
+          ssh -i ~/.ssh/id_deploy -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
+            -o BatchMode=yes -o ConnectTimeout=20 -o ServerAliveInterval=30 "$TARGET" \
+            "pct exec 102 -- bash -lc 'set -e; cd /root/cards-database && git pull && cd server && bun run compile' && pct reboot 102"
+
+      - name: Record the deployed commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ needs.sync.outputs.sha }}
+        run: |
+          gh api -X PATCH "repos/$GITHUB_REPOSITORY/git/refs/tags/server-deployed" -f sha="$SHA" -F force=true \
+            || gh api -X POST "repos/$GITHUB_REPOSITORY/git/refs" -f ref=refs/tags/server-deployed -f sha="$SHA"

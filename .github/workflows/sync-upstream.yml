@@ -5,6 +5,13 @@ on:
   # rebuilt when upstream actually changed. Run it by hand from the Actions tab if needed.
   schedule:
     - cron: "17 3 * * *"
+  push:
+    branches: [develop]
+    paths:
+      - "data/**"
+      - "data-asia/**"
+      - "meta/**"
+      - "server/**"
   workflow_dispatch:
     inputs:
       deploy:

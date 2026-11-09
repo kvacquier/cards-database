@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "GIDORA",
 	rarity: "Uncommon",
 	category: "Trainer",
+	regulationMark: "J",
 	trainerType: "Supporter",
 
 	thirdParty: {

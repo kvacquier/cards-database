@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "inose yukie",
 	rarity: "Uncommon",
 	category: "Trainer",
+	regulationMark: "J",
 	trainerType: "Item",
 
 	thirdParty: {

@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "danciao",
 	rarity: "Uncommon",
 	category: "Trainer",
+	regulationMark: "J",
 	trainerType: "Stadium",
 
 	thirdParty: {

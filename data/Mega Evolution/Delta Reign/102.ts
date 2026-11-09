@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Yuu Nishida",
 	rarity: "Uncommon",
 	category: "Trainer",
+	regulationMark: "J",
 	trainerType: "Supporter",
 
 	thirdParty: {

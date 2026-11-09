@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "AYUMI ODASHIMA",
 	rarity: "Uncommon",
 	category: "Trainer",
+	regulationMark: "J",
 
 	attacks: [{
 		name: {

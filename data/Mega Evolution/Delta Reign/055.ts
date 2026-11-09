@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "tayu",
 	rarity: "Common",
 	category: "Pokemon",
+	regulationMark: "J",
 	hp: 60,
 	types: ["Darkness"],
 	stage: "Basic",

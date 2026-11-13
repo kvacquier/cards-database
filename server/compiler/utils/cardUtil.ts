@@ -71,7 +71,7 @@ export function enhanceTrainerLegality(
 export async function getCardPictures(cardId: string, card: Card, lang: SupportedLanguages): Promise<string | undefined> {
 
 	// temporary hack
-	if (card.set.id === '30th') {
+	if (card.set.id === '30th' || card.set.id === 'me06') {
 		return `https://assets.tcgdex.net/${lang}/${card.set.serie.id}/${card.set.id}/${cardId}`
 	}
 
